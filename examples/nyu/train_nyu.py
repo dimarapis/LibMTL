@@ -4,14 +4,19 @@ import torch.nn.functional as F
 
 from utils import *
 from aspp import DeepLabHead
-from create_dataset import NYUv2
-
+#from create_dataset import NYUv2
+from mine.create_dataset2 import NYUv2
 from LibMTL import Trainer
 from LibMTL.model import resnet_dilated
 from LibMTL.utils import set_random_seed, set_device
 from LibMTL.config import LibMTL_args, prepare_args
 import LibMTL.weighting as weighting_method
 import LibMTL.architecture as architecture_method
+
+def force_cudnn_initialization():
+    s = 32
+    dev = torch.device('cuda')
+    torch.nn.functional.conv2d(torch.zeros(s, s, s, s, device=dev), torch.zeros(s, s, s, s, device=dev))
 
 def parse_args(parser):
     parser.add_argument('--aug', action='store_true', default=False, help='data augmentation')
@@ -25,8 +30,13 @@ def main(params):
     kwargs, optim_param, scheduler_param = prepare_args(params)
 
     # prepare dataloaders
-    nyuv2_train_set = NYUv2(root=params.dataset_path, mode=params.train_mode, augmentation=params.aug)
-    nyuv2_test_set = NYUv2(root=params.dataset_path, mode='test', augmentation=False)
+        # define dataset
+    force_cudnn_initialization()
+    nyuv2_train_set = NYUv2(root=params.dataset_path, train=True, augmentation=True)
+    nyuv2_test_set = NYUv2(root=params.dataset_path, train=False)
+    
+    #nyuv2_train_set = NYUv2(root=params.dataset_path, mode=params.train_mode, augmentation=params.aug)
+    #nyuv2_test_set = NYUv2(root=params.dataset_path, mode='test', augmentation=False)
     
     nyuv2_train_loader = torch.utils.data.DataLoader(
         dataset=nyuv2_train_set,
