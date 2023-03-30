@@ -1,9 +1,9 @@
 #!/bin/sh
 ### General options
 ### –- specify queue --
-#BSUB -q gpua100
+#BSUB -q gpuv100
 ### -- set the job Name --
-#BSUB -J autolambda
+#BSUB -J libmtl
 ### -- ask for number of cores (default: 1) --
 #BSUB -n 1
 ### -- Select the resources: 1 gpu in exclusive process mode --
@@ -34,7 +34,7 @@
 unset PYTHONPATH
 unset PYTHONHOME
 source ~/miniconda3/bin/activate
-conda activate autolambda
+conda activate libmtl
 pip install -e .
 #python trainer_dense.py --dataset sim_warehouse --task all --gpu 0 --weight autolconfigs/trainer_dwa_none.yaml
 
@@ -42,10 +42,11 @@ pip install -e .
 #python trainer_dense.py --dataset nyuv2 --task all --weight equal --grad_method pcgrad --gpu 0
 #python trainer_dense_single.py 
 
-python examples/nyu/train_nyu.py --weighting EW --arch HPS --dataset_path dataset/nyuv2 --gpu_id 0 --scheduler step
-
+#python examples/nyu/train_nyu.py --weighting EW --arch HPS --dataset_path dataset/nyuv2 --gpu_id 0 --scheduler step  
+#python examples/warehouseSIM/train_warehouseSIM.py --weighting EW --arch HPS --dataset_path dataset/warehouseSIM --gpu_id 0 --scheduler step --aug
+#
 ## submit by using: bsub < jobscript.sh
-
+python examples/warehouseSIM/train_warehouseSIM.py --weighting EW --arch HPS --dataset_path dataset/warehouseSIM --gpu_id 0 --scheduler step 
 #run1 seed0
 #run2 seed29
 

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 126, in <module>
+    main(params)
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 107, in main
+    NYUmodel = NYUtrainer(wandb_run = wandb_run,
+NameError: name 'wandb_run' is not defined

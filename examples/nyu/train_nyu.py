@@ -12,6 +12,8 @@ from LibMTL.utils import set_random_seed, set_device
 from LibMTL.config import LibMTL_args, prepare_args
 import LibMTL.weighting as weighting_method
 import LibMTL.architecture as architecture_method
+import wandb
+
 
 def force_cudnn_initialization():
     s = 32
@@ -31,6 +33,12 @@ def main(params):
 
     # prepare dataloaders
         # define dataset
+        
+    #print(params)
+    wandb.init(project='libmtlnyu',entity='wandbdimar',
+               name='{}_{}_{}_{}'.format(params.arch,params.weighting,params.scheduler,params.aug))
+        #name='{}_{}_{}_{}_{}'.format(opt.data.dataset,opt.network.task,opt.network.weight,opt.network.archit,opt.network.grad_method),
+        #config = wandb_config)
     force_cudnn_initialization()
     nyuv2_train_set = NYUv2(root=params.dataset_path, train=True, augmentation=True)
     nyuv2_test_set = NYUv2(root=params.dataset_path, train=False)
@@ -69,8 +77,9 @@ def main(params):
     
     # define encoder and decoders
     def encoder_class(): 
-        return resnet_dilated('resnet50')
+        return resnet_dilated('resnet50',pretrained=False)
     num_out_channels = {'segmentation': 13, 'depth': 1, 'normal': 3}
+    
     decoders = nn.ModuleDict({task: DeepLabHead(2048, 
                                                 num_out_channels[task]) for task in list(task_dict.keys())})
     

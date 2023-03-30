@@ -74,7 +74,11 @@ class NYUv2(Dataset):
         semantic = torch.from_numpy(np.load(self.data_path + '/label/{:d}.npy'.format(index)))
         depth = torch.from_numpy(np.moveaxis(np.load(self.data_path + '/depth/{:d}.npy'.format(index)), -1, 0))
         normal = torch.from_numpy(np.moveaxis(np.load(self.data_path + '/normal/{:d}.npy'.format(index)), -1, 0))
-
+        print(f'Image shape: {image.shape}, min: {torch.min(image)}, max{torch.max(image)}')
+        print(f'Semantic shape: {semantic.shape}, min: {torch.min(semantic)}, max{torch.max(semantic)}')
+        print(f'Depth shape: {depth.shape}, min: {torch.min(depth)}, max{torch.max(depth)}')
+        print(f'Normal shape: {normal.shape}, min: {torch.min(normal)}, max{torch.max(normal)}') 
+        
         # apply data augmentation if required
         if self.augmentation:
             image, semantic, depth, normal = RandomScaleCrop()(image, semantic, depth, normal)

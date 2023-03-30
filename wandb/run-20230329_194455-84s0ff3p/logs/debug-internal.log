@@ -1,0 +1,54 @@
+2023-03-29 19:44:58,251 INFO    MainThread:9895 [internal.py:wandb_internal():92] W&B internal server running at pid: 9895, started at: 2023-03-29 19:44:58.249781
+2023-03-29 19:44:58,255 INFO    WriterThread:9895 [datastore.py:open_for_write():77] open: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194455-84s0ff3p/run-84s0ff3p.wandb
+2023-03-29 19:44:58,261 DEBUG   SenderThread:9895 [sender.py:send():235] send: header
+2023-03-29 19:44:58,261 DEBUG   SenderThread:9895 [sender.py:send():235] send: run
+2023-03-29 19:44:58,511 INFO    SenderThread:9895 [dir_watcher.py:__init__():169] watching files in: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194455-84s0ff3p/files
+2023-03-29 19:44:58,511 INFO    SenderThread:9895 [sender.py:_start_run_threads():812] run started: 84s0ff3p with start time 1680111895
+2023-03-29 19:44:58,511 DEBUG   SenderThread:9895 [sender.py:send():235] send: summary
+2023-03-29 19:44:58,512 DEBUG   HandlerThread:9895 [handler.py:handle_request():141] handle_request: check_version
+2023-03-29 19:44:58,513 INFO    SenderThread:9895 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2023-03-29 19:44:58,514 DEBUG   SenderThread:9895 [sender.py:send_request():249] send_request: check_version
+2023-03-29 19:44:58,592 DEBUG   HandlerThread:9895 [handler.py:handle_request():141] handle_request: run_start
+2023-03-29 19:44:58,604 DEBUG   HandlerThread:9895 [meta.py:__init__():37] meta init
+2023-03-29 19:44:58,604 DEBUG   HandlerThread:9895 [meta.py:__init__():51] meta init done
+2023-03-29 19:44:58,604 DEBUG   HandlerThread:9895 [meta.py:probe():211] probe
+2023-03-29 19:44:58,613 DEBUG   HandlerThread:9895 [meta.py:_setup_git():201] setup git
+2023-03-29 19:44:58,654 DEBUG   HandlerThread:9895 [meta.py:_setup_git():208] setup git done
+2023-03-29 19:44:58,655 DEBUG   HandlerThread:9895 [meta.py:_save_pip():55] save pip
+2023-03-29 19:44:58,657 DEBUG   HandlerThread:9895 [meta.py:_save_pip():69] save pip done
+2023-03-29 19:44:58,657 DEBUG   HandlerThread:9895 [meta.py:_save_conda():76] save conda
+2023-03-29 19:44:59,517 INFO    Thread-7  :9895 [dir_watcher.py:_on_file_created():217] file/dir created: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194455-84s0ff3p/files/wandb-summary.json
+2023-03-29 19:44:59,517 INFO    Thread-7  :9895 [dir_watcher.py:_on_file_created():217] file/dir created: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194455-84s0ff3p/files/requirements.txt
+2023-03-29 19:44:59,517 INFO    Thread-7  :9895 [dir_watcher.py:_on_file_created():217] file/dir created: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194455-84s0ff3p/files/conda-environment.yaml
+2023-03-29 19:45:00,488 DEBUG   HandlerThread:9895 [meta.py:_save_conda():86] save conda done
+2023-03-29 19:45:00,489 DEBUG   HandlerThread:9895 [meta.py:probe():249] probe done
+2023-03-29 19:45:00,518 INFO    Thread-7  :9895 [dir_watcher.py:_on_file_modified():230] file/dir modified: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194455-84s0ff3p/files/conda-environment.yaml
+2023-03-29 19:45:00,519 INFO    Thread-7  :9895 [dir_watcher.py:_on_file_created():217] file/dir created: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194455-84s0ff3p/files/wandb-metadata.json
+2023-03-29 19:45:00,586 DEBUG   SenderThread:9895 [sender.py:send():235] send: files
+2023-03-29 19:45:00,587 INFO    SenderThread:9895 [sender.py:_save_file():947] saving file wandb-metadata.json with policy now
+2023-03-29 19:45:00,601 DEBUG   HandlerThread:9895 [handler.py:handle_request():141] handle_request: stop_status
+2023-03-29 19:45:00,601 DEBUG   SenderThread:9895 [sender.py:send_request():249] send_request: stop_status
+2023-03-29 19:45:00,801 DEBUG   SenderThread:9895 [sender.py:send():235] send: telemetry
+2023-03-29 19:45:01,253 INFO    Thread-11 :9895 [upload_job.py:push():137] Uploaded file /tmp/tmpdzd0gzwwwandb/2f48vpnh-wandb-metadata.json
+2023-03-29 19:45:01,521 INFO    Thread-7  :9895 [dir_watcher.py:_on_file_created():217] file/dir created: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194455-84s0ff3p/files/output.log
+2023-03-29 19:45:07,518 DEBUG   SenderThread:9895 [sender.py:send():235] send: telemetry
+2023-03-29 19:45:08,137 WARNING MainThread:9895 [internal.py:wandb_internal():155] Internal process interrupt: 1
+2023-03-29 19:45:08,344 WARNING MainThread:9895 [internal.py:wandb_internal():155] Internal process interrupt: 2
+2023-03-29 19:45:08,344 ERROR   MainThread:9895 [internal.py:wandb_internal():158] Internal process interrupted.
+2023-03-29 19:45:08,519 INFO    WriterThread:9895 [datastore.py:close():281] close: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194455-84s0ff3p/run-84s0ff3p.wandb
+2023-03-29 19:45:08,519 INFO    SenderThread:9895 [sender.py:finish():1107] shutting down sender
+2023-03-29 19:45:08,519 INFO    SenderThread:9895 [dir_watcher.py:finish():283] shutting down directory watcher
+2023-03-29 19:45:08,525 INFO    SenderThread:9895 [dir_watcher.py:finish():313] scan: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194455-84s0ff3p/files
+2023-03-29 19:45:08,525 INFO    SenderThread:9895 [dir_watcher.py:finish():327] scan save: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194455-84s0ff3p/files/conda-environment.yaml conda-environment.yaml
+2023-03-29 19:45:08,526 INFO    SenderThread:9895 [dir_watcher.py:finish():327] scan save: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194455-84s0ff3p/files/config.yaml config.yaml
+2023-03-29 19:45:08,532 INFO    SenderThread:9895 [dir_watcher.py:finish():327] scan save: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194455-84s0ff3p/files/wandb-metadata.json wandb-metadata.json
+2023-03-29 19:45:08,532 INFO    SenderThread:9895 [dir_watcher.py:finish():327] scan save: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194455-84s0ff3p/files/requirements.txt requirements.txt
+2023-03-29 19:45:08,532 INFO    SenderThread:9895 [dir_watcher.py:finish():327] scan save: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194455-84s0ff3p/files/output.log output.log
+2023-03-29 19:45:08,536 INFO    SenderThread:9895 [dir_watcher.py:finish():327] scan save: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194455-84s0ff3p/files/wandb-summary.json wandb-summary.json
+2023-03-29 19:45:08,537 INFO    SenderThread:9895 [file_pusher.py:finish():145] shutting down file pusher
+2023-03-29 19:45:08,537 INFO    SenderThread:9895 [file_pusher.py:join():150] waiting for file pusher
+2023-03-29 19:45:09,126 INFO    Thread-14 :9895 [upload_job.py:push():137] Uploaded file /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194455-84s0ff3p/files/requirements.txt
+2023-03-29 19:45:09,140 INFO    Thread-13 :9895 [upload_job.py:push():137] Uploaded file /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194455-84s0ff3p/files/config.yaml
+2023-03-29 19:45:09,158 INFO    Thread-15 :9895 [upload_job.py:push():137] Uploaded file /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194455-84s0ff3p/files/wandb-summary.json
+2023-03-29 19:45:09,181 INFO    Thread-12 :9895 [upload_job.py:push():137] Uploaded file /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194455-84s0ff3p/files/conda-environment.yaml
+2023-03-29 19:45:09,852 INFO    MainThread:9895 [internal.py:handle_exit():82] Internal process exited

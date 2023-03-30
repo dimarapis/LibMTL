@@ -1,0 +1,36 @@
+Traceback (most recent call last):
+  File "examples/nyu/train_nyu.py", line 124, in <module>
+    main(params)
+  File "examples/nyu/train_nyu.py", line 116, in main
+    NYUmodel.train(nyuv2_train_loader, nyuv2_test_loader, 200)
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 207, in train
+    train_preds = self.model(train_inputs)
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/LibMTL/architecture/abstract_arch.py", line 54, in forward
+    out[task] = self.decoders[task](ss_rep)
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/nn/modules/container.py", line 119, in forward
+    input = module(input)
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/examples/nyu/aspp.py", line 68, in forward
+    res.append(conv(x))
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/nn/modules/container.py", line 119, in forward
+    input = module(input)
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/nn/modules/conv.py", line 399, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/nn/modules/conv.py", line 395, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: CUDA out of memory. Tried to allocate 122.00 MiB (GPU 0; 15.77 GiB total capacity; 4.04 GiB already allocated; 121.12 MiB free; 4.19 GiB reserved in total by PyTorch)
+========================================
+Total Params: 71888721
+Trainable Params: 71888721
+Non-trainable Params: 0
+========================================
+LOG FORMAT | segmentation_LOSS mIoU pixAcc | depth_LOSS abs_err rel_err | normal_LOSS mean median <11.25 <22.5 <30 | TIME

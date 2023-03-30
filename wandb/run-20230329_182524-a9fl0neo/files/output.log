@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "examples/nyu/train_nyu.py", line 124, in <module>
+    main(params)
+  File "examples/nyu/train_nyu.py", line 106, in main
+    NYUmodel = NYUtrainer(task_dict=task_dict,
+  File "examples/nyu/train_nyu.py", line 89, in __init__
+    super(NYUtrainer, self).__init__(task_dict=task_dict,
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 89, in __init__
+    self._prepare_model(weighting, architecture, encoder_class, decoders)
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 101, in _prepare_model
+    self.model = MTLmodel(task_name=self.task_name,
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 98, in __init__
+    super(MTLmodel, self).__init__(task_name, encoder_class, decoders, rep_grad, multi_input, device, **kwargs)
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/LibMTL/architecture/HPS.py", line 16, in __init__
+    super(HPS, self).__init__(task_name, encoder_class, decoders, rep_grad, multi_input, device, **kwargs)
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/LibMTL/architecture/abstract_arch.py", line 21, in __init__
+    super(AbsArchitecture, self).__init__()
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/LibMTL/weighting/OnlyD.py", line 15, in __init__
+    super(EW, self).__init__()
+NameError: name 'EW' is not defined

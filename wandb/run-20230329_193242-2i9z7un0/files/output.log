@@ -1,0 +1,92 @@
+========================================
+Total Params: 71888721
+Trainable Params: 71888721
+Non-trainable Params: 0
+========================================
+LOG FORMAT | segmentation_LOSS mIoU pixAcc | depth_LOSS abs_err rel_err | normal_LOSS mean median <11.25 <22.5 <30 | TIME
+Traceback (most recent call last):
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 133, in _process_data
+    data, label = loader[1].next()
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 517, in __next__
+    data = self._next_data()
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1199, in _next_data
+    return self._process_data(data)
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1225, in _process_data
+    data.reraise()
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/_utils.py", line 429, in reraise
+    raise self.exc_type(msg)
+RuntimeError: Caught RuntimeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 202, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/mine/create_dataset2.py", line 168, in __getitem__
+    image, semantic, depth, normal = RandomScaleCrop()(image, semantic, depth, normal)
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/mine/create_dataset2.py", line 32, in __call__
+    label_ = F.interpolate(label[None, None, i:i + h, j:j + w], size=(height, width), mode='nearest').squeeze(0).squeeze(0)
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/nn/functional.py", line 3535, in interpolate
+    return torch._C._nn.upsample_nearest2d(input, output_size, scale_factors)
+RuntimeError: "upsample_nearest2d_channels_last" not implemented for 'Long'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 124, in <module>
+    main(params)
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 116, in main
+    NYUmodel.train(nyuv2_train_loader, nyuv2_test_loader, 200)
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 206, in train
+    train_inputs, train_gts = self._process_data(train_loader)
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 136, in _process_data
+    data, label = loader[1].next()
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 517, in __next__
+    data = self._next_data()
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1199, in _next_data
+    return self._process_data(data)
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1225, in _process_data
+    data.reraise()
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/_utils.py", line 429, in reraise
+    raise self.exc_type(msg)
+RuntimeError: Caught RuntimeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 133, in _process_data
+    data, label = loader[1].next()
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 517, in __next__
+    data = self._next_data()
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1199, in _next_data
+    return self._process_data(data)
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1225, in _process_data
+    data.reraise()
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/_utils.py", line 429, in reraise
+    raise self.exc_type(msg)
+RuntimeError: Caught RuntimeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 202, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/mine/create_dataset2.py", line 168, in __getitem__
+    image, semantic, depth, normal = RandomScaleCrop()(image, semantic, depth, normal)
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/mine/create_dataset2.py", line 32, in __call__
+    label_ = F.interpolate(label[None, None, i:i + h, j:j + w], size=(height, width), mode='nearest').squeeze(0).squeeze(0)
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/nn/functional.py", line 3535, in interpolate
+    return torch._C._nn.upsample_nearest2d(input, output_size, scale_factors)
+RuntimeError: "upsample_nearest2d_channels_last" not implemented for 'Long'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 202, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/mine/create_dataset2.py", line 168, in __getitem__
+    image, semantic, depth, normal = RandomScaleCrop()(image, semantic, depth, normal)
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/mine/create_dataset2.py", line 32, in __call__
+    label_ = F.interpolate(label[None, None, i:i + h, j:j + w], size=(height, width), mode='nearest').squeeze(0).squeeze(0)
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/nn/functional.py", line 3535, in interpolate
+    return torch._C._nn.upsample_nearest2d(input, output_size, scale_factors)
+RuntimeError: "upsample_nearest2d" not implemented for 'Long'

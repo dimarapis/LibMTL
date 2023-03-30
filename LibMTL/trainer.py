@@ -73,12 +73,13 @@ class Trainer(nn.Module):
                           **kwargs)
 
     '''
-    def __init__(self, task_dict, weighting, architecture, encoder_class, decoders, 
+    def __init__(self, wandb_run,task_dict, weighting, architecture, encoder_class, decoders, 
                  rep_grad, multi_input, optim_param, scheduler_param, **kwargs):
         super(Trainer, self).__init__()
         
         self.device = torch.device('cuda:0')
         self.kwargs = kwargs
+        self.wandb_run = wandb_run
         self.task_dict = task_dict
         self.task_num = len(task_dict)
         self.task_name = list(task_dict.keys())
@@ -223,7 +224,7 @@ class Trainer(nn.Module):
                     self.batch_weight[:, epoch, batch_index] = w
                 self.optimizer.step()
                 
-            
+            self.wandb_run.log({"my_metric": train_losses})
             self.meter.record_time('end')
             self.meter.get_score()
             self.model.train_loss_buffer[:, epoch] = self.meter.loss_item

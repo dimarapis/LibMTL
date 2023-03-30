@@ -36,6 +36,9 @@ LibMTL/weighting/GradVac.py
 LibMTL/weighting/IMTL.py
 LibMTL/weighting/MGDA.py
 LibMTL/weighting/Nash_MTL.py
+LibMTL/weighting/OnlyD.py
+LibMTL/weighting/OnlyN.py
+LibMTL/weighting/OnlyS.py
 LibMTL/weighting/PCGrad.py
 LibMTL/weighting/RLW.py
 LibMTL/weighting/UW.py

@@ -1,0 +1,16 @@
+========================================
+Total Params: 71888721
+Trainable Params: 71888721
+Non-trainable Params: 0
+========================================
+LOG FORMAT | segmentation_LOSS mIoU pixAcc | depth_LOSS abs_err rel_err | normal_LOSS mean median <11.25 <22.5 <30 | TIME
+Traceback (most recent call last):
+  File "examples/nyu/train_nyu.py", line 124, in <module>
+    main(params)
+  File "examples/nyu/train_nyu.py", line 116, in main
+    NYUmodel.train(nyuv2_train_loader, nyuv2_test_loader, 200)
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 221, in train
+    w = self.model.backward(train_losses, **self.kwargs['weight_args'])
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/LibMTL/weighting/OnlyD.py", line 18, in backward
+    loss = torch.mul(losses, torch.from_numpy(0,1,0).to(self.device)).sum()#torch.ones_like(losses).to(self.device)).sum()
+TypeError: from_numpy() takes exactly one argument (3 given)

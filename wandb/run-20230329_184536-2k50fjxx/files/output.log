@@ -1,0 +1,33 @@
+========================================
+Total Params: 71888721
+Trainable Params: 71888721
+Non-trainable Params: 0
+========================================
+LOG FORMAT | segmentation_LOSS mIoU pixAcc | depth_LOSS abs_err rel_err | normal_LOSS mean median <11.25 <22.5 <30 | TIME
+loss: 6.303315162658691, losses: tensor([2.6265, 2.4021, 1.2747], device='cuda:0', grad_fn=<CopySlices>), weights: tensor([1., 1., 1.], device='cuda:0')
+loss: 5.77729606628418, losses: tensor([2.5322, 2.2775, 0.9677], device='cuda:0', grad_fn=<CopySlices>), weights: tensor([1., 1., 1.], device='cuda:0')
+loss: 5.728914260864258, losses: tensor([2.4375, 2.4517, 0.8397], device='cuda:0', grad_fn=<CopySlices>), weights: tensor([1., 1., 1.], device='cuda:0')
+loss: 5.809720993041992, losses: tensor([2.3115, 2.6890, 0.8092], device='cuda:0', grad_fn=<CopySlices>), weights: tensor([1., 1., 1.], device='cuda:0')
+loss: 5.366118431091309, losses: tensor([2.2008, 2.4221, 0.7432], device='cuda:0', grad_fn=<CopySlices>), weights: tensor([1., 1., 1.], device='cuda:0')
+loss: 5.28359317779541, losses: tensor([2.2484, 2.3447, 0.6906], device='cuda:0', grad_fn=<CopySlices>), weights: tensor([1., 1., 1.], device='cuda:0')
+loss: 5.250645637512207, losses: tensor([2.0935, 2.4951, 0.6621], device='cuda:0', grad_fn=<CopySlices>), weights: tensor([1., 1., 1.], device='cuda:0')
+loss: 5.211134433746338, losses: tensor([2.0749, 2.5239, 0.6123], device='cuda:0', grad_fn=<CopySlices>), weights: tensor([1., 1., 1.], device='cuda:0')
+loss: 4.770618915557861, losses: tensor([1.9695, 2.1497, 0.6515], device='cuda:0', grad_fn=<CopySlices>), weights: tensor([1., 1., 1.], device='cuda:0')
+loss: 4.791938781738281, losses: tensor([1.8836, 2.3791, 0.5293], device='cuda:0', grad_fn=<CopySlices>), weights: tensor([1., 1., 1.], device='cuda:0')
+loss: 4.933775424957275, losses: tensor([1.9753, 2.2877, 0.6709], device='cuda:0', grad_fn=<CopySlices>), weights: tensor([1., 1., 1.], device='cuda:0')
+loss: 4.962723731994629, losses: tensor([1.6898, 2.6689, 0.6040], device='cuda:0', grad_fn=<CopySlices>), weights: tensor([1., 1., 1.], device='cuda:0')
+loss: 4.4864606857299805, losses: tensor([1.9316, 2.0048, 0.5500], device='cuda:0', grad_fn=<CopySlices>), weights: tensor([1., 1., 1.], device='cuda:0')
+loss: 5.145068168640137, losses: tensor([1.9295, 2.6508, 0.5647], device='cuda:0', grad_fn=<CopySlices>), weights: tensor([1., 1., 1.], device='cuda:0')
+loss: 4.319042682647705, losses: tensor([1.8114, 1.9057, 0.6020], device='cuda:0', grad_fn=<CopySlices>), weights: tensor([1., 1., 1.], device='cuda:0')
+loss: 4.206544876098633, losses: tensor([1.6539, 2.0565, 0.4962], device='cuda:0', grad_fn=<CopySlices>), weights: tensor([1., 1., 1.], device='cuda:0')
+loss: 3.8867874145507812, losses: tensor([2.1102, 1.2820, 0.4946], device='cuda:0', grad_fn=<CopySlices>), weights: tensor([1., 1., 1.], device='cuda:0')
+loss: 4.421201705932617, losses: tensor([1.7929, 2.1046, 0.5236], device='cuda:0', grad_fn=<CopySlices>), weights: tensor([1., 1., 1.], device='cuda:0')
+loss: 4.042425632476807, losses: tensor([1.8719, 1.7255, 0.4450], device='cuda:0', grad_fn=<CopySlices>), weights: tensor([1., 1., 1.], device='cuda:0')
+loss: 3.9466018676757812, losses: tensor([1.7561, 1.7423, 0.4482], device='cuda:0', grad_fn=<CopySlices>), weights: tensor([1., 1., 1.], device='cuda:0')
+loss: 3.4378092288970947, losses: tensor([1.5042, 1.4686, 0.4650], device='cuda:0', grad_fn=<CopySlices>), weights: tensor([1., 1., 1.], device='cuda:0')
+loss: 4.622552871704102, losses: tensor([2.0381, 2.0931, 0.4914], device='cuda:0', grad_fn=<CopySlices>), weights: tensor([1., 1., 1.], device='cuda:0')
+loss: 4.019570827484131, losses: tensor([1.6390, 1.8827, 0.4979], device='cuda:0', grad_fn=<CopySlices>), weights: tensor([1., 1., 1.], device='cuda:0')
+loss: 3.94006085395813, losses: tensor([1.4417, 2.0433, 0.4551], device='cuda:0', grad_fn=<CopySlices>), weights: tensor([1., 1., 1.], device='cuda:0')
+loss: 3.591777801513672, losses: tensor([1.7959, 1.4004, 0.3955], device='cuda:0', grad_fn=<CopySlices>), weights: tensor([1., 1., 1.], device='cuda:0')
+loss: 4.467515468597412, losses: tensor([1.6118, 2.4512, 0.4046], device='cuda:0', grad_fn=<CopySlices>), weights: tensor([1., 1., 1.], device='cuda:0')
+loss: 3.918503761291504, losses: tensor([1.4221, 2.1510, 0.3454], device='cuda:0', grad_fn=<CopySlices>), weights: tensor([1., 1., 1.], device='cuda:0')

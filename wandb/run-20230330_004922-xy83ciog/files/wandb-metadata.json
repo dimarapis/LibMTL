@@ -1,0 +1,35 @@
+{
+    "os": "Linux-3.10.0-1160.88.1.el7.x86_64-x86_64-with-glibc2.17",
+    "python": "3.8.16",
+    "heartbeatAt": "2023-03-29T22:49:25.961377",
+    "startedAt": "2023-03-29T22:49:22.653845",
+    "docker": null,
+    "gpu": "Tesla V100-PCIE-16GB",
+    "gpu_count": 1,
+    "cpu_count": 24,
+    "cuda": null,
+    "args": [
+        "--weighting",
+        "OnlyN",
+        "--arch",
+        "HPS",
+        "--dataset_path",
+        "dataset/warehouseSIM",
+        "--gpu_id",
+        "0",
+        "--scheduler",
+        "step"
+    ],
+    "state": "running",
+    "program": "examples/warehouseSIM/train_warehouseSIM.py",
+    "codePath": "examples/warehouseSIM/train_warehouseSIM.py",
+    "git": {
+        "remote": "https://github.com/dimarapis/LibMTL.git",
+        "commit": "3eebfa1a252a82ecd47e4f848b67aaf76e76da58"
+    },
+    "email": "dimarapis@hotmail.com",
+    "root": "/zhome/e0/1/158047/mdpi_robotics/LibMTL",
+    "host": "n-62-20-3",
+    "username": "dimara",
+    "executable": "/zhome/e0/1/158047/miniconda3/envs/libmtl/bin/python"
+}

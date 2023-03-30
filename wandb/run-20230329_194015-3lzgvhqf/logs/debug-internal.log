@@ -1,0 +1,152 @@
+2023-03-29 19:40:17,989 INFO    MainThread:7259 [internal.py:wandb_internal():92] W&B internal server running at pid: 7259, started at: 2023-03-29 19:40:17.987919
+2023-03-29 19:40:17,992 INFO    WriterThread:7259 [datastore.py:open_for_write():77] open: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194015-3lzgvhqf/run-3lzgvhqf.wandb
+2023-03-29 19:40:18,000 DEBUG   SenderThread:7259 [sender.py:send():235] send: header
+2023-03-29 19:40:18,000 DEBUG   SenderThread:7259 [sender.py:send():235] send: run
+2023-03-29 19:40:18,282 DEBUG   HandlerThread:7259 [handler.py:handle_request():141] handle_request: check_version
+2023-03-29 19:40:18,284 INFO    SenderThread:7259 [dir_watcher.py:__init__():169] watching files in: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194015-3lzgvhqf/files
+2023-03-29 19:40:18,284 INFO    SenderThread:7259 [sender.py:_start_run_threads():812] run started: 3lzgvhqf with start time 1680111615
+2023-03-29 19:40:18,284 DEBUG   SenderThread:7259 [sender.py:send():235] send: summary
+2023-03-29 19:40:18,286 INFO    SenderThread:7259 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2023-03-29 19:40:18,286 DEBUG   SenderThread:7259 [sender.py:send_request():249] send_request: check_version
+2023-03-29 19:40:18,375 DEBUG   HandlerThread:7259 [handler.py:handle_request():141] handle_request: run_start
+2023-03-29 19:40:18,387 DEBUG   HandlerThread:7259 [meta.py:__init__():37] meta init
+2023-03-29 19:40:18,388 DEBUG   HandlerThread:7259 [meta.py:__init__():51] meta init done
+2023-03-29 19:40:18,388 DEBUG   HandlerThread:7259 [meta.py:probe():211] probe
+2023-03-29 19:40:18,396 DEBUG   HandlerThread:7259 [meta.py:_setup_git():201] setup git
+2023-03-29 19:40:18,440 DEBUG   HandlerThread:7259 [meta.py:_setup_git():208] setup git done
+2023-03-29 19:40:18,440 DEBUG   HandlerThread:7259 [meta.py:_save_pip():55] save pip
+2023-03-29 19:40:18,443 DEBUG   HandlerThread:7259 [meta.py:_save_pip():69] save pip done
+2023-03-29 19:40:18,443 DEBUG   HandlerThread:7259 [meta.py:_save_conda():76] save conda
+2023-03-29 19:40:19,292 INFO    Thread-7  :7259 [dir_watcher.py:_on_file_created():217] file/dir created: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194015-3lzgvhqf/files/requirements.txt
+2023-03-29 19:40:19,293 INFO    Thread-7  :7259 [dir_watcher.py:_on_file_created():217] file/dir created: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194015-3lzgvhqf/files/conda-environment.yaml
+2023-03-29 19:40:19,293 INFO    Thread-7  :7259 [dir_watcher.py:_on_file_created():217] file/dir created: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194015-3lzgvhqf/files/wandb-summary.json
+2023-03-29 19:40:20,275 DEBUG   HandlerThread:7259 [meta.py:_save_conda():86] save conda done
+2023-03-29 19:40:20,276 DEBUG   HandlerThread:7259 [meta.py:probe():249] probe done
+2023-03-29 19:40:20,292 INFO    Thread-7  :7259 [dir_watcher.py:_on_file_modified():230] file/dir modified: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194015-3lzgvhqf/files/conda-environment.yaml
+2023-03-29 19:40:20,293 INFO    Thread-7  :7259 [dir_watcher.py:_on_file_created():217] file/dir created: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194015-3lzgvhqf/files/wandb-metadata.json
+2023-03-29 19:40:20,368 DEBUG   SenderThread:7259 [sender.py:send():235] send: files
+2023-03-29 19:40:20,369 INFO    SenderThread:7259 [sender.py:_save_file():947] saving file wandb-metadata.json with policy now
+2023-03-29 19:40:20,382 DEBUG   HandlerThread:7259 [handler.py:handle_request():141] handle_request: stop_status
+2023-03-29 19:40:20,382 DEBUG   SenderThread:7259 [sender.py:send_request():249] send_request: stop_status
+2023-03-29 19:40:20,573 DEBUG   SenderThread:7259 [sender.py:send():235] send: telemetry
+2023-03-29 19:40:20,984 INFO    Thread-11 :7259 [upload_job.py:push():137] Uploaded file /tmp/tmpasl_u9fmwandb/33i71ids-wandb-metadata.json
+2023-03-29 19:40:21,295 INFO    Thread-7  :7259 [dir_watcher.py:_on_file_created():217] file/dir created: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194015-3lzgvhqf/files/output.log
+2023-03-29 19:40:26,175 DEBUG   SenderThread:7259 [sender.py:send():235] send: telemetry
+2023-03-29 19:40:27,323 INFO    Thread-7  :7259 [dir_watcher.py:_on_file_modified():230] file/dir modified: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194015-3lzgvhqf/files/output.log
+2023-03-29 19:40:28,446 DEBUG   SenderThread:7259 [sender.py:send():235] send: exit
+2023-03-29 19:40:28,447 INFO    SenderThread:7259 [sender.py:send_exit():371] handling exit code: 1
+2023-03-29 19:40:28,447 INFO    SenderThread:7259 [sender.py:send_exit():373] handling runtime: 10
+2023-03-29 19:40:28,447 DEBUG   HandlerThread:7259 [handler.py:handle_request():141] handle_request: poll_exit
+2023-03-29 19:40:28,450 INFO    SenderThread:7259 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2023-03-29 19:40:28,450 INFO    SenderThread:7259 [sender.py:send_exit():379] send defer
+2023-03-29 19:40:28,451 DEBUG   SenderThread:7259 [sender.py:send_request():249] send_request: poll_exit
+2023-03-29 19:40:28,452 DEBUG   HandlerThread:7259 [handler.py:handle_request():141] handle_request: defer
+2023-03-29 19:40:28,452 INFO    HandlerThread:7259 [handler.py:handle_request_defer():164] handle defer: 0
+2023-03-29 19:40:28,452 DEBUG   SenderThread:7259 [sender.py:send_request():249] send_request: defer
+2023-03-29 19:40:28,452 INFO    SenderThread:7259 [sender.py:send_request_defer():388] handle sender defer: 0
+2023-03-29 19:40:28,452 INFO    SenderThread:7259 [sender.py:transition_state():392] send defer: 1
+2023-03-29 19:40:28,453 DEBUG   HandlerThread:7259 [handler.py:handle_request():141] handle_request: defer
+2023-03-29 19:40:28,453 INFO    HandlerThread:7259 [handler.py:handle_request_defer():164] handle defer: 1
+2023-03-29 19:40:28,562 DEBUG   SenderThread:7259 [sender.py:send_request():249] send_request: defer
+2023-03-29 19:40:28,563 DEBUG   HandlerThread:7259 [handler.py:handle_request():141] handle_request: poll_exit
+2023-03-29 19:40:28,563 INFO    SenderThread:7259 [sender.py:send_request_defer():388] handle sender defer: 1
+2023-03-29 19:40:28,563 INFO    SenderThread:7259 [sender.py:transition_state():392] send defer: 2
+2023-03-29 19:40:28,564 DEBUG   SenderThread:7259 [sender.py:send_request():249] send_request: poll_exit
+2023-03-29 19:40:28,564 DEBUG   SenderThread:7259 [sender.py:send():235] send: stats
+2023-03-29 19:40:28,566 DEBUG   HandlerThread:7259 [handler.py:handle_request():141] handle_request: defer
+2023-03-29 19:40:28,566 INFO    HandlerThread:7259 [handler.py:handle_request_defer():164] handle defer: 2
+2023-03-29 19:40:28,566 DEBUG   SenderThread:7259 [sender.py:send_request():249] send_request: defer
+2023-03-29 19:40:28,566 INFO    SenderThread:7259 [sender.py:send_request_defer():388] handle sender defer: 2
+2023-03-29 19:40:28,566 INFO    SenderThread:7259 [sender.py:transition_state():392] send defer: 3
+2023-03-29 19:40:28,567 DEBUG   HandlerThread:7259 [handler.py:handle_request():141] handle_request: defer
+2023-03-29 19:40:28,567 INFO    HandlerThread:7259 [handler.py:handle_request_defer():164] handle defer: 3
+2023-03-29 19:40:28,567 DEBUG   SenderThread:7259 [sender.py:send_request():249] send_request: defer
+2023-03-29 19:40:28,567 INFO    SenderThread:7259 [sender.py:send_request_defer():388] handle sender defer: 3
+2023-03-29 19:40:28,567 INFO    SenderThread:7259 [sender.py:transition_state():392] send defer: 4
+2023-03-29 19:40:28,568 DEBUG   HandlerThread:7259 [handler.py:handle_request():141] handle_request: defer
+2023-03-29 19:40:28,568 INFO    HandlerThread:7259 [handler.py:handle_request_defer():164] handle defer: 4
+2023-03-29 19:40:28,568 DEBUG   SenderThread:7259 [sender.py:send():235] send: summary
+2023-03-29 19:40:28,571 INFO    SenderThread:7259 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2023-03-29 19:40:28,571 DEBUG   SenderThread:7259 [sender.py:send_request():249] send_request: defer
+2023-03-29 19:40:28,572 INFO    SenderThread:7259 [sender.py:send_request_defer():388] handle sender defer: 4
+2023-03-29 19:40:28,572 INFO    SenderThread:7259 [sender.py:transition_state():392] send defer: 5
+2023-03-29 19:40:28,572 DEBUG   HandlerThread:7259 [handler.py:handle_request():141] handle_request: defer
+2023-03-29 19:40:28,572 INFO    HandlerThread:7259 [handler.py:handle_request_defer():164] handle defer: 5
+2023-03-29 19:40:28,572 DEBUG   SenderThread:7259 [sender.py:send_request():249] send_request: defer
+2023-03-29 19:40:28,573 INFO    SenderThread:7259 [sender.py:send_request_defer():388] handle sender defer: 5
+2023-03-29 19:40:28,667 DEBUG   HandlerThread:7259 [handler.py:handle_request():141] handle_request: poll_exit
+2023-03-29 19:40:28,795 INFO    SenderThread:7259 [sender.py:transition_state():392] send defer: 6
+2023-03-29 19:40:28,796 DEBUG   SenderThread:7259 [sender.py:send_request():249] send_request: poll_exit
+2023-03-29 19:40:28,796 DEBUG   HandlerThread:7259 [handler.py:handle_request():141] handle_request: defer
+2023-03-29 19:40:28,797 INFO    HandlerThread:7259 [handler.py:handle_request_defer():164] handle defer: 6
+2023-03-29 19:40:28,797 DEBUG   SenderThread:7259 [sender.py:send_request():249] send_request: defer
+2023-03-29 19:40:28,797 INFO    SenderThread:7259 [sender.py:send_request_defer():388] handle sender defer: 6
+2023-03-29 19:40:28,797 INFO    SenderThread:7259 [dir_watcher.py:finish():283] shutting down directory watcher
+2023-03-29 19:40:28,898 DEBUG   HandlerThread:7259 [handler.py:handle_request():141] handle_request: poll_exit
+2023-03-29 19:40:29,329 INFO    SenderThread:7259 [dir_watcher.py:_on_file_modified():230] file/dir modified: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194015-3lzgvhqf/files/output.log
+2023-03-29 19:40:29,330 INFO    SenderThread:7259 [dir_watcher.py:_on_file_modified():230] file/dir modified: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194015-3lzgvhqf/files/wandb-summary.json
+2023-03-29 19:40:29,330 INFO    SenderThread:7259 [dir_watcher.py:_on_file_modified():230] file/dir modified: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194015-3lzgvhqf/files/config.yaml
+2023-03-29 19:40:29,331 INFO    SenderThread:7259 [dir_watcher.py:finish():313] scan: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194015-3lzgvhqf/files
+2023-03-29 19:40:29,332 INFO    SenderThread:7259 [dir_watcher.py:finish():327] scan save: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194015-3lzgvhqf/files/conda-environment.yaml conda-environment.yaml
+2023-03-29 19:40:29,332 INFO    SenderThread:7259 [dir_watcher.py:finish():327] scan save: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194015-3lzgvhqf/files/config.yaml config.yaml
+2023-03-29 19:40:29,333 INFO    SenderThread:7259 [dir_watcher.py:finish():327] scan save: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194015-3lzgvhqf/files/wandb-metadata.json wandb-metadata.json
+2023-03-29 19:40:29,333 INFO    SenderThread:7259 [dir_watcher.py:finish():327] scan save: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194015-3lzgvhqf/files/requirements.txt requirements.txt
+2023-03-29 19:40:29,339 INFO    SenderThread:7259 [dir_watcher.py:finish():327] scan save: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194015-3lzgvhqf/files/output.log output.log
+2023-03-29 19:40:29,340 INFO    SenderThread:7259 [dir_watcher.py:finish():327] scan save: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194015-3lzgvhqf/files/wandb-summary.json wandb-summary.json
+2023-03-29 19:40:29,340 INFO    SenderThread:7259 [sender.py:transition_state():392] send defer: 7
+2023-03-29 19:40:29,340 DEBUG   SenderThread:7259 [sender.py:send_request():249] send_request: poll_exit
+2023-03-29 19:40:29,356 DEBUG   HandlerThread:7259 [handler.py:handle_request():141] handle_request: defer
+2023-03-29 19:40:29,356 INFO    HandlerThread:7259 [handler.py:handle_request_defer():164] handle defer: 7
+2023-03-29 19:40:29,357 DEBUG   SenderThread:7259 [sender.py:send_request():249] send_request: defer
+2023-03-29 19:40:29,357 INFO    SenderThread:7259 [sender.py:send_request_defer():388] handle sender defer: 7
+2023-03-29 19:40:29,357 INFO    SenderThread:7259 [file_pusher.py:finish():145] shutting down file pusher
+2023-03-29 19:40:29,454 DEBUG   HandlerThread:7259 [handler.py:handle_request():141] handle_request: poll_exit
+2023-03-29 19:40:29,455 DEBUG   SenderThread:7259 [sender.py:send_request():249] send_request: poll_exit
+2023-03-29 19:40:29,560 DEBUG   HandlerThread:7259 [handler.py:handle_request():141] handle_request: poll_exit
+2023-03-29 19:40:29,561 DEBUG   SenderThread:7259 [sender.py:send_request():249] send_request: poll_exit
+2023-03-29 19:40:29,665 DEBUG   HandlerThread:7259 [handler.py:handle_request():141] handle_request: poll_exit
+2023-03-29 19:40:29,665 DEBUG   SenderThread:7259 [sender.py:send_request():249] send_request: poll_exit
+2023-03-29 19:40:29,768 DEBUG   HandlerThread:7259 [handler.py:handle_request():141] handle_request: poll_exit
+2023-03-29 19:40:29,768 DEBUG   SenderThread:7259 [sender.py:send_request():249] send_request: poll_exit
+2023-03-29 19:40:29,871 DEBUG   HandlerThread:7259 [handler.py:handle_request():141] handle_request: poll_exit
+2023-03-29 19:40:29,871 DEBUG   SenderThread:7259 [sender.py:send_request():249] send_request: poll_exit
+2023-03-29 19:40:29,944 INFO    Thread-12 :7259 [upload_job.py:push():137] Uploaded file /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194015-3lzgvhqf/files/conda-environment.yaml
+2023-03-29 19:40:29,953 INFO    Thread-15 :7259 [upload_job.py:push():137] Uploaded file /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194015-3lzgvhqf/files/output.log
+2023-03-29 19:40:29,960 INFO    Thread-16 :7259 [upload_job.py:push():137] Uploaded file /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194015-3lzgvhqf/files/wandb-summary.json
+2023-03-29 19:40:29,960 INFO    Thread-14 :7259 [upload_job.py:push():137] Uploaded file /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194015-3lzgvhqf/files/requirements.txt
+2023-03-29 19:40:29,973 INFO    Thread-13 :7259 [upload_job.py:push():137] Uploaded file /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194015-3lzgvhqf/files/config.yaml
+2023-03-29 19:40:29,974 DEBUG   HandlerThread:7259 [handler.py:handle_request():141] handle_request: poll_exit
+2023-03-29 19:40:29,974 DEBUG   SenderThread:7259 [sender.py:send_request():249] send_request: poll_exit
+2023-03-29 19:40:30,077 DEBUG   HandlerThread:7259 [handler.py:handle_request():141] handle_request: poll_exit
+2023-03-29 19:40:30,077 DEBUG   SenderThread:7259 [sender.py:send_request():249] send_request: poll_exit
+2023-03-29 19:40:30,174 INFO    Thread-6  :7259 [sender.py:transition_state():392] send defer: 8
+2023-03-29 19:40:30,175 DEBUG   HandlerThread:7259 [handler.py:handle_request():141] handle_request: defer
+2023-03-29 19:40:30,175 INFO    HandlerThread:7259 [handler.py:handle_request_defer():164] handle defer: 8
+2023-03-29 19:40:30,176 DEBUG   SenderThread:7259 [sender.py:send_request():249] send_request: defer
+2023-03-29 19:40:30,176 INFO    SenderThread:7259 [sender.py:send_request_defer():388] handle sender defer: 8
+2023-03-29 19:40:30,180 DEBUG   HandlerThread:7259 [handler.py:handle_request():141] handle_request: poll_exit
+2023-03-29 19:40:30,727 INFO    SenderThread:7259 [sender.py:transition_state():392] send defer: 9
+2023-03-29 19:40:30,727 DEBUG   SenderThread:7259 [sender.py:send_request():249] send_request: poll_exit
+2023-03-29 19:40:30,728 DEBUG   HandlerThread:7259 [handler.py:handle_request():141] handle_request: defer
+2023-03-29 19:40:30,729 INFO    HandlerThread:7259 [handler.py:handle_request_defer():164] handle defer: 9
+2023-03-29 19:40:30,729 DEBUG   SenderThread:7259 [sender.py:send_request():249] send_request: defer
+2023-03-29 19:40:30,729 INFO    SenderThread:7259 [sender.py:send_request_defer():388] handle sender defer: 9
+2023-03-29 19:40:30,729 INFO    SenderThread:7259 [sender.py:transition_state():392] send defer: 10
+2023-03-29 19:40:30,730 DEBUG   HandlerThread:7259 [handler.py:handle_request():141] handle_request: defer
+2023-03-29 19:40:30,731 INFO    HandlerThread:7259 [handler.py:handle_request_defer():164] handle defer: 10
+2023-03-29 19:40:30,731 DEBUG   SenderThread:7259 [sender.py:send():235] send: final
+2023-03-29 19:40:30,731 DEBUG   SenderThread:7259 [sender.py:send():235] send: footer
+2023-03-29 19:40:30,731 DEBUG   SenderThread:7259 [sender.py:send_request():249] send_request: defer
+2023-03-29 19:40:30,732 INFO    SenderThread:7259 [sender.py:send_request_defer():388] handle sender defer: 10
+2023-03-29 19:40:30,830 DEBUG   HandlerThread:7259 [handler.py:handle_request():141] handle_request: poll_exit
+2023-03-29 19:40:30,831 DEBUG   SenderThread:7259 [sender.py:send_request():249] send_request: poll_exit
+2023-03-29 19:40:30,831 INFO    SenderThread:7259 [file_pusher.py:join():150] waiting for file pusher
+2023-03-29 19:40:31,310 DEBUG   HandlerThread:7259 [handler.py:handle_request():141] handle_request: sampled_history
+2023-03-29 19:40:31,312 DEBUG   HandlerThread:7259 [handler.py:handle_request():141] handle_request: get_summary
+2023-03-29 19:40:31,313 DEBUG   HandlerThread:7259 [handler.py:handle_request():141] handle_request: shutdown
+2023-03-29 19:40:31,313 INFO    HandlerThread:7259 [handler.py:finish():790] shutting down handler
+2023-03-29 19:40:31,733 INFO    WriterThread:7259 [datastore.py:close():281] close: /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230329_194015-3lzgvhqf/run-3lzgvhqf.wandb
+2023-03-29 19:40:32,208 INFO    SenderThread:7259 [sender.py:finish():1107] shutting down sender
+2023-03-29 19:40:32,208 INFO    SenderThread:7259 [file_pusher.py:finish():145] shutting down file pusher
+2023-03-29 19:40:32,208 INFO    SenderThread:7259 [file_pusher.py:join():150] waiting for file pusher
+2023-03-29 19:40:32,211 INFO    MainThread:7259 [internal.py:handle_exit():82] Internal process exited

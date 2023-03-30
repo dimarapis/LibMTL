@@ -15,6 +15,8 @@ class EW(AbsWeighting):
         super(EW, self).__init__()
         
     def backward(self, losses, **kwargs):
+        
         loss = torch.mul(losses, torch.ones_like(losses).to(self.device)).sum()
+        #print(f'loss: {loss}, losses: {losses}, weights: {torch.ones_like(losses).to(self.device)}')
         loss.backward()
         return np.ones(self.task_num)

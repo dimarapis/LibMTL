@@ -1,0 +1,188 @@
+Traceback (most recent call last):
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 124, in <module>
+    main(params)
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 116, in main
+    NYUmodel.train(nyuv2_train_loader, nyuv2_test_loader, 200)
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 209, in train
+    train_losses = self._compute_loss(train_preds, train_gts)
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 162, in _compute_loss
+    train_losses[tn] = self.meter.losses[task]._update_loss(preds[task], gts[task])
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/LibMTL/loss.py", line 26, in _update_loss
+    loss = self.compute_loss(pred, gt)
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/examples/warehouseSIM/utils.py", line 91, in compute_loss
+    return self.loss_fn(pred, gt.long())
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/nn/modules/loss.py", line 1047, in forward
+    return F.cross_entropy(input, target, weight=self.weight,
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/nn/functional.py", line 2693, in cross_entropy
+    return nll_loss(log_softmax(input, 1), target, weight, None, ignore_index, None, reduction)
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/nn/functional.py", line 2390, in nll_loss
+    ret = torch._C._nn.nll_loss2d(input, target, weight, _Reduction.get_enum(reduction), ignore_index)
+RuntimeError: input and target batch or spatial sizes don't match: target [8 x 360 x 640], input [8 x 13 x 288 x 384] at /pytorch/aten/src/THCUNN/generic/SpatialClassNLLCriterion.cu:23
+========================================
+Total Params: 71888721
+Trainable Params: 71888721
+Non-trainable Params: 0
+========================================
+LOG FORMAT | segmentation_LOSS mIoU pixAcc | depth_LOSS abs_err rel_err | normal_LOSS mean median <11.25 <22.5 <30 | TIME
+Image shape: torch.Size([3, 360, 640]), min: 0.0, max: 1.0
+Image shape: torch.Size([3, 360, 640]), min: 0.0, max: 0.8313725590705872
+Semantic shape: torch.Size([360, 640]), min: 1.0, max: 20.0
+Semantic shape: torch.Size([360, 640]), min: 2.0, max: 22.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.3930000066757202, max: 2.61299991607666
+Depth shape: torch.Size([1, 360, 640]), min: 0.2619999945163727, max: 1.5299999713897705
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 1.0
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 1.0
+Image shape: torch.Size([3, 360, 640]), min: 0.0, max: 1.0
+Semantic shape: torch.Size([360, 640]), min: 1.0, max: 18.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.10400000214576721, max: 1.3309999704360962
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 1.0
+Image shape: torch.Size([3, 360, 640]), min: 0.0, max: 1.0
+Semantic shape: torch.Size([360, 640]), min: 1.0, max: 22.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.2750000059604645, max: 2.7079999446868896
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 1.0
+Image shape: torch.Size([3, 360, 640]), min: 0.0, max: 1.0
+Semantic shape: torch.Size([360, 640]), min: 4.0, max: 13.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.2919999957084656, max: 1.3070000410079956
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 1.0
+Image shape: torch.Size([3, 360, 640]), min: 0.00029080966487526894, max: 1.0
+Semantic shape: torch.Size([360, 640]), min: 3.0, max: 16.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.23866666853427887, max: 0.5073333382606506
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 1.0
+Image shape: torch.Size([3, 360, 640]), min: 6.701909296680242e-05, max: 0.9975532293319702
+Semantic shape: torch.Size([360, 640]), min: 2.0, max: 18.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.3113333284854889, max: 0.5559999942779541
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 1.0
+Image shape: torch.Size([3, 360, 640]), min: 0.0, max: 1.0
+Semantic shape: torch.Size([360, 640]), min: 2.0, max: 18.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.3733333349227905, max: 0.9708332419395447
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 1.0
+Image shape: torch.Size([3, 360, 640]), min: 0.0, max: 1.0
+Semantic shape: torch.Size([360, 640]), min: 1.0, max: 22.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.0, max: 2.5999999046325684
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 1.0
+Image shape: torch.Size([3, 360, 640]), min: 0.0, max: 1.0
+Semantic shape: torch.Size([360, 640]), min: 4.0, max: 22.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.20100000500679016, max: 1.0420000553131104
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 1.0
+Image shape: torch.Size([3, 360, 640]), min: 0.0, max: 0.9798023104667664
+Image shape: torch.Size([3, 360, 640]), min: 0.0, max: 1.0
+Semantic shape: torch.Size([360, 640]), min: 4.0, max: 22.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.2006666660308838, max: 0.6259999871253967
+Semantic shape: torch.Size([360, 640]), min: 4.0, max: 22.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.0, max: 0.9020000100135803
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 1.0
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 1.0
+Image shape: torch.Size([3, 360, 640]), min: 0.0002739420160651207, max: 0.869699239730835
+Semantic shape: torch.Size([360, 640]), min: 4.0, max: 22.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.39800000190734863, max: 0.8659999966621399
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 0.9877784848213196
+Image shape: torch.Size([3, 360, 640]), min: 0.0, max: 0.5607843399047852
+Semantic shape: torch.Size([360, 640]), min: 2.0, max: 4.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.33500000834465027, max: 0.3889999985694885
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 1.0
+Image shape: torch.Size([3, 360, 640]), min: 0.0, max: 0.7493130564689636
+Semantic shape: torch.Size([360, 640]), min: 2.0, max: 15.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.12833333015441895, max: 0.4166666567325592
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 1.0
+Image shape: torch.Size([3, 360, 640]), min: 0.05314510688185692, max: 0.840981125831604
+Semantic shape: torch.Size([360, 640]), min: 4.0, max: 4.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.2786666750907898, max: 0.3386666774749756
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 0.08855937421321869
+Image shape: torch.Size([3, 360, 640]), min: 0.0, max: 1.0
+Semantic shape: torch.Size([360, 640]), min: 2.0, max: 18.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.4300000071525574, max: 1.1740000247955322
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 1.0
+Image shape: torch.Size([3, 360, 640]), min: 0.0, max: 1.0
+Semantic shape: torch.Size([360, 640]), min: 2.0, max: 18.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.3659999966621399, max: 1.9040000438690186
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 1.0
+Image shape: torch.Size([3, 360, 640]), min: 0.0, max: 1.0
+Semantic shape: torch.Size([360, 640]), min: 1.0, max: 22.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.16500000655651093, max: 2.4560000896453857
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 1.0
+Image shape: torch.Size([3, 360, 640]), min: 0.0, max: 0.9427673816680908
+Semantic shape: torch.Size([360, 640]), min: 3.0, max: 16.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.4506666660308838, max: 0.9673333168029785
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 0.8267033100128174
+Image shape: torch.Size([3, 360, 640]), min: 0.02492867223918438, max: 0.8385903835296631
+Semantic shape: torch.Size([360, 640]), min: 2.0, max: 4.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.22166666388511658, max: 0.3816666603088379
+Normal shape: torch.Size([3, 360, 640]), min: -0.7625929713249207, max: 1.0
+Image shape: torch.Size([3, 360, 640]), min: 8.354484452866018e-05, max: 0.9997379183769226
+Semantic shape: torch.Size([360, 640]), min: 2.0, max: 11.5
+Depth shape: torch.Size([1, 360, 640]), min: 0.21066667139530182, max: 0.39266666769981384
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 0.9999972581863403
+Image shape: torch.Size([3, 360, 640]), min: 0.0, max: 1.0
+Semantic shape: torch.Size([360, 640]), min: 3.0, max: 22.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.34599998593330383, max: 2.059000015258789
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 1.0
+Image shape: torch.Size([3, 360, 640]), min: 0.0008408490684814751, max: 0.7890186905860901
+Semantic shape: torch.Size([360, 640]), min: 4.0, max: 15.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.20916664600372314, max: 0.35999998450279236
+Normal shape: torch.Size([3, 360, 640]), min: -0.9717724323272705, max: 1.0
+Image shape: torch.Size([3, 360, 640]), min: 0.0, max: 1.0
+Semantic shape: torch.Size([360, 640]), min: 4.0, max: 13.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.43299999833106995, max: 1.2339999675750732
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 0.6000000238418579
+Image shape: torch.Size([3, 360, 640]), min: 0.0, max: 0.999258279800415
+Semantic shape: torch.Size([360, 640]), min: 1.0, max: 22.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.06499999761581421, max: 1.9658331871032715
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 1.0
+Image shape: torch.Size([3, 360, 640]), min: 0.0, max: 0.47894686460494995
+Semantic shape: torch.Size([360, 640]), min: 2.0, max: 22.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.3413333594799042, max: 0.6233333349227905
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 1.0
+Image shape: torch.Size([3, 360, 640]), min: 0.0, max: 1.0
+Semantic shape: torch.Size([360, 640]), min: 1.0, max: 22.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.14499999582767487, max: 2.1599998474121094
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 1.0
+Image shape: torch.Size([3, 360, 640]), min: 0.0, max: 0.9638592004776001
+Semantic shape: torch.Size([360, 640]), min: 2.0, max: 22.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.2666666507720947, max: 1.0549999475479126
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 1.0
+Image shape: torch.Size([3, 360, 640]), min: 0.0, max: 1.0
+Semantic shape: torch.Size([360, 640]), min: 4.0, max: 13.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.4350000023841858, max: 0.8799999952316284
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 1.0
+Image shape: torch.Size([3, 360, 640]), min: 0.0035741860046982765, max: 0.8186761140823364
+Semantic shape: torch.Size([360, 640]), min: 4.0, max: 13.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.3226666748523712, max: 0.593999981880188
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 0.07085926830768585
+Image shape: torch.Size([3, 360, 640]), min: 0.13451305031776428, max: 0.9788849949836731
+Semantic shape: torch.Size([360, 640]), min: 2.0, max: 13.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.4220000207424164, max: 0.8133333325386047
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 0.9986478090286255
+Image shape: torch.Size([3, 360, 640]), min: 0.005927211605012417, max: 0.9904187917709351
+Semantic shape: torch.Size([360, 640]), min: 4.0, max: 22.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.10266666859388351, max: 0.5020000338554382
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 0.892338216304779
+Image shape: torch.Size([3, 360, 640]), min: 0.0, max: 0.9982460737228394
+Semantic shape: torch.Size([360, 640]), min: 1.0, max: 13.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.15333333611488342, max: 0.5920000076293945
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 1.0
+Image shape: torch.Size([3, 360, 640]), min: 0.0, max: 0.9980116486549377
+Semantic shape: torch.Size([360, 640]), min: 2.0, max: 18.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.40416666865348816, max: 0.7400000095367432
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 1.0
+Image shape: torch.Size([3, 360, 640]), min: 0.0, max: 1.0
+Semantic shape: torch.Size([360, 640]), min: 2.0, max: 20.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.3059999942779541, max: 1.9520000219345093
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 1.0
+Image shape: torch.Size([3, 360, 640]), min: 0.0, max: 0.7843995094299316
+Semantic shape: torch.Size([360, 640]), min: 2.0, max: 15.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.14999999105930328, max: 0.42266666889190674
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 1.0
+Image shape: torch.Size([3, 360, 640]), min: 0.0, max: 1.0
+Semantic shape: torch.Size([360, 640]), min: 1.0, max: 22.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.28700000047683716, max: 2.5269999504089355
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 1.0
+Image shape: torch.Size([3, 360, 640]), min: 0.1701129972934723, max: 0.6949021220207214
+Semantic shape: torch.Size([360, 640]), min: 4.0, max: 4.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.18933333456516266, max: 0.20133332908153534
+Normal shape: torch.Size([3, 360, 640]), min: -0.003921568859368563, max: 1.0
+Image shape: torch.Size([3, 360, 640]), min: 0.0, max: 0.8823529481887817
+Semantic shape: torch.Size([360, 640]), min: 2.0, max: 16.0
+Depth shape: torch.Size([1, 360, 640]), min: 0.3160000145435333, max: 1.2070000171661377
+Normal shape: torch.Size([3, 360, 640]), min: -1.0, max: 1.0

@@ -1,0 +1,25 @@
+2023-03-30 00:48:13,585 INFO    MainThread:19181 [wandb_setup.py:_flush():75] Loading settings from /zhome/e0/1/158047/.config/wandb/settings
+2023-03-30 00:48:13,585 INFO    MainThread:19181 [wandb_setup.py:_flush():75] Loading settings from /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/settings
+2023-03-30 00:48:13,585 INFO    MainThread:19181 [wandb_setup.py:_flush():75] Loading settings from environment variables: {}
+2023-03-30 00:48:13,585 INFO    MainThread:19181 [wandb_setup.py:_flush():75] Inferring run settings from compute environment: {'program_relpath': 'examples/warehouseSIM/train_warehouseSIM.py', 'program': 'examples/warehouseSIM/train_warehouseSIM.py'}
+2023-03-30 00:48:13,585 INFO    MainThread:19181 [wandb_init.py:_log_setup():438] Logging user logs to /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230330_004813-3gp15tls/logs/debug.log
+2023-03-30 00:48:13,586 INFO    MainThread:19181 [wandb_init.py:_log_setup():439] Logging internal logs to /zhome/e0/1/158047/mdpi_robotics/LibMTL/wandb/run-20230330_004813-3gp15tls/logs/debug-internal.log
+2023-03-30 00:48:13,586 INFO    MainThread:19181 [wandb_init.py:init():472] calling init triggers
+2023-03-30 00:48:13,586 INFO    MainThread:19181 [wandb_init.py:init():475] wandb.init called with sweep_config: {}
+config: {}
+2023-03-30 00:48:13,587 INFO    MainThread:19181 [wandb_init.py:init():525] starting backend
+2023-03-30 00:48:13,587 INFO    MainThread:19181 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-03-30 00:48:13,612 INFO    MainThread:19181 [backend.py:ensure_launched():219] starting backend process...
+2023-03-30 00:48:13,620 INFO    MainThread:19181 [backend.py:ensure_launched():224] started backend process with pid: 19197
+2023-03-30 00:48:13,623 INFO    MainThread:19181 [wandb_init.py:init():534] backend started and connected
+2023-03-30 00:48:13,633 INFO    MainThread:19181 [wandb_init.py:init():598] updated telemetry
+2023-03-30 00:48:13,690 INFO    MainThread:19181 [wandb_init.py:init():629] communicating run to backend with 30 second timeout
+2023-03-30 00:48:16,405 INFO    MainThread:19181 [wandb_run.py:_on_init():1922] communicating current version
+2023-03-30 00:48:16,482 INFO    MainThread:19181 [wandb_run.py:_on_init():1926] got version response upgrade_message: "wandb version 0.14.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-03-30 00:48:16,482 INFO    MainThread:19181 [wandb_init.py:init():660] starting run threads in backend
+2023-03-30 00:48:19,151 INFO    MainThread:19181 [wandb_run.py:_console_start():1896] atexit reg
+2023-03-30 00:48:19,153 INFO    MainThread:19181 [wandb_run.py:_redirect():1769] redirect: SettingsConsole.REDIRECT
+2023-03-30 00:48:19,154 INFO    MainThread:19181 [wandb_run.py:_redirect():1774] Redirecting console.
+2023-03-30 00:48:19,157 INFO    MainThread:19181 [wandb_run.py:_redirect():1830] Redirects installed.
+2023-03-30 00:48:19,157 INFO    MainThread:19181 [wandb_init.py:init():685] run started, returning control to user process

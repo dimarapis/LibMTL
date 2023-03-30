@@ -1,0 +1,80 @@
+========================================
+Total Params: 71888721
+Trainable Params: 71888721
+Non-trainable Params: 0
+========================================
+LOG FORMAT | segmentation_LOSS mIoU pixAcc | depth_LOSS abs_err rel_err | normal_LOSS mean median <11.25 <22.5 <30 | TIME
+Traceback (most recent call last):
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 133, in _process_data
+    data, label = loader[1].next()
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 517, in __next__
+    data = self._next_data()
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1199, in _next_data
+    return self._process_data(data)
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1225, in _process_data
+    data.reraise()
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/_utils.py", line 429, in reraise
+    raise self.exc_type(msg)
+TypeError: Caught TypeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 202, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/mine/create_dataset2.py", line 141, in __getitem__
+    semantic = torch.from_numpy(np.load(self.data_path + '/label/{:d}.npy'.format(index))).float()#.astype(np.int32)).long()
+TypeError: can't convert np.ndarray of type numpy.uint32. The only supported types are: float64, float32, float16, complex64, complex128, int64, int32, int16, int8, uint8, and bool.
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 124, in <module>
+    main(params)
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 116, in main
+    NYUmodel.train(nyuv2_train_loader, nyuv2_test_loader, 200)
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 206, in train
+    train_inputs, train_gts = self._process_data(train_loader)
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 136, in _process_data
+    data, label = loader[1].next()
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 517, in __next__
+    data = self._next_data()
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1199, in _next_data
+    return self._process_data(data)
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1225, in _process_data
+    data.reraise()
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/_utils.py", line 429, in reraise
+    raise self.exc_type(msg)
+TypeError: Caught TypeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 133, in _process_data
+    data, label = loader[1].next()
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 517, in __next__
+    data = self._next_data()
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1199, in _next_data
+    return self._process_data(data)
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1225, in _process_data
+    data.reraise()
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/_utils.py", line 429, in reraise
+    raise self.exc_type(msg)
+TypeError: Caught TypeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 202, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/mine/create_dataset2.py", line 141, in __getitem__
+    semantic = torch.from_numpy(np.load(self.data_path + '/label/{:d}.npy'.format(index))).float()#.astype(np.int32)).long()
+TypeError: can't convert np.ndarray of type numpy.uint32. The only supported types are: float64, float32, float16, complex64, complex128, int64, int32, int16, int8, uint8, and bool.
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 202, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/mine/create_dataset2.py", line 141, in __getitem__
+    semantic = torch.from_numpy(np.load(self.data_path + '/label/{:d}.npy'.format(index))).float()#.astype(np.int32)).long()
+TypeError: can't convert np.ndarray of type numpy.uint32. The only supported types are: float64, float32, float16, complex64, complex128, int64, int32, int16, int8, uint8, and bool.

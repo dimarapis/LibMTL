@@ -1,0 +1,280 @@
+========================================
+Total Params: 71888721
+Trainable Params: 71888721
+Non-trainable Params: 0
+========================================
+LOG FORMAT | segmentation_LOSS mIoU pixAcc | depth_LOSS abs_err rel_err | normal_LOSS mean median <11.25 <22.5 <30 | TIME
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max2.0577027797698975
+Normal shape: torch.Size([3, 288, 384]), min: -0.9989917009737842, max0.9933925042132119
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max12.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max4.610207557678223
+Normal shape: torch.Size([3, 288, 384]), min: -0.9995509883986025, max0.9976160627363783
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max12.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max6.099909782409668
+Normal shape: torch.Size([3, 288, 384]), min: -0.9999846216542477, max0.9999231153652806
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max6.621067047119141
+Normal shape: torch.Size([3, 288, 384]), min: -0.99922378013409, max0.99477018506596
+Image shape: torch.Size([3, 288, 384]), min: 0.0047132245243509405, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max12.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max3.4763381481170654
+Normal shape: torch.Size([3, 288, 384]), min: -0.9990450423504602, max0.9962407200902991
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max12.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max6.061966896057129
+Normal shape: torch.Size([3, 288, 384]), min: -0.9999231153652808, max0.9999231153652808
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max5.748992443084717
+Normal shape: torch.Size([3, 288, 384]), min: -0.9999846216542477, max0.9999846216542477
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max4.533279895782471
+Normal shape: torch.Size([3, 288, 384]), min: -0.9995677927418317, max0.999719792830698
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max0.98339481242411
+Semantic shape: torch.Size([288, 384]), min: -1.0, max12.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max2.837674379348755
+Normal shape: torch.Size([3, 288, 384]), min: -0.9996032574768103, max0.9991508891620676
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max12.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max2.480311632156372
+Normal shape: torch.Size([3, 288, 384]), min: -0.999434814041967, max0.9996309351709946
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max3.214010715484619
+Normal shape: torch.Size([3, 288, 384]), min: -0.999827024567831, max0.9991287984698694
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max1.8789664506912231
+Normal shape: torch.Size([3, 288, 384]), min: -0.999676499639045, max0.9969631042000299
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max3.9033172130584717
+Normal shape: torch.Size([3, 288, 384]), min: -0.9999846216542477, max0.9998001368274054
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max8.30318832397461
+Normal shape: torch.Size([3, 288, 384]), min: -0.9992988970648518, max0.9989997978794024
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max3.673278331756592
+Normal shape: torch.Size([3, 288, 384]), min: -0.9999231153652808, max0.9999846216542477
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max12.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max3.199052333831787
+Normal shape: torch.Size([3, 288, 384]), min: -0.9986959197816968, max0.9987980032981332
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max2.9409677982330322
+Normal shape: torch.Size([3, 288, 384]), min: -0.9999846216542477, max0.9999846216542477
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max12.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max5.014890670776367
+Normal shape: torch.Size([3, 288, 384]), min: -0.9998133065983128, max0.999121047524906
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max0.8691945070711211
+Semantic shape: torch.Size([288, 384]), min: -1.0, max12.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max4.029175281524658
+Normal shape: torch.Size([3, 288, 384]), min: -0.9999682939291228, max0.9991292410656948
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max0.996078431372549
+Semantic shape: torch.Size([288, 384]), min: -1.0, max12.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max5.715261459350586
+Normal shape: torch.Size([3, 288, 384]), min: -0.9999846216542477, max0.9998001368274052
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max9.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max4.294276237487793
+Normal shape: torch.Size([3, 288, 384]), min: -0.9997121847219295, max0.998873575739476
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max4.766633033752441
+Normal shape: torch.Size([3, 288, 384]), min: -0.9989248735740578, max0.9996380030995519
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max12.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max4.337928771972656
+Normal shape: torch.Size([3, 288, 384]), min: -0.9999846216542477, max0.9997869847669943
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max12.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max5.988483428955078
+Normal shape: torch.Size([3, 288, 384]), min: -0.9999846216542477, max0.9999846216542477
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max0.9095487293815828
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max4.690470218658447
+Normal shape: torch.Size([3, 288, 384]), min: -0.9999182358083882, max0.9947169703288693
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max4.090398788452148
+Normal shape: torch.Size([3, 288, 384]), min: -0.9999846216542477, max0.9999846216542477
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max12.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max3.5773651599884033
+Normal shape: torch.Size([3, 288, 384]), min: -0.9999846216542477, max0.9999827831102298
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max3.034088611602783
+Normal shape: torch.Size([3, 288, 384]), min: -0.9989288096754692, max0.9960555922032833
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max1.9657611846923828
+Normal shape: torch.Size([3, 288, 384]), min: -0.999901432449903, max0.9994478500452078
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max12.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max7.4095540046691895
+Normal shape: torch.Size([3, 288, 384]), min: -0.9999846216542477, max0.9999846216542477
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max12.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max2.158325433731079
+Normal shape: torch.Size([3, 288, 384]), min: -0.9996817560919729, max0.9991853432580958
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max0.9917319229799796
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max6.709009647369385
+Normal shape: torch.Size([3, 288, 384]), min: -0.9998639879768025, max0.997692495064912
+loss: 6.303315162658691, losses: tensor([2.6265, 2.4021, 1.2747], device='cuda:0', grad_fn=<CopySlices>), weights: tensor([1., 1., 1.], device='cuda:0')
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max0.9986788729374447
+Semantic shape: torch.Size([288, 384]), min: -1.0, max12.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max4.296885013580322
+Normal shape: torch.Size([3, 288, 384]), min: -0.9996687592681759, max0.9999803995875681
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max4.586085796356201
+Normal shape: torch.Size([3, 288, 384]), min: -0.9998061548214051, max0.9997291866938537
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max5.784928321838379
+Normal shape: torch.Size([3, 288, 384]), min: -0.9999846216542477, max0.9999846216542477
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max12.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max4.34627103805542
+Normal shape: torch.Size([3, 288, 384]), min: -0.9996539163123161, max0.9988054643555755
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max1.815853476524353
+Normal shape: torch.Size([3, 288, 384]), min: -0.9990224008138884, max0.9987526378627309
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max0.9790093812472452
+Semantic shape: torch.Size([288, 384]), min: -1.0, max12.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max2.353747844696045
+Normal shape: torch.Size([3, 288, 384]), min: -0.9999846216542477, max0.9932246580997622
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max12.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max3.2674882411956787
+Normal shape: torch.Size([3, 288, 384]), min: -0.9998482091551198, max0.996342100547359
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max0.9997267199562752
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max2.370577573776245
+Normal shape: torch.Size([3, 288, 384]), min: -0.9999724777274314, max0.9999846216542478
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max0.996078431372549
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max3.3485827445983887
+Normal shape: torch.Size([3, 288, 384]), min: -0.9999846216542477, max0.9999846216542477
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max0.986349661815946
+Semantic shape: torch.Size([288, 384]), min: -1.0, max12.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max2.8348002433776855
+Normal shape: torch.Size([3, 288, 384]), min: -0.9998947156710055, max0.9996089998399347
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max4.015996932983398
+Normal shape: torch.Size([3, 288, 384]), min: -0.9999846216542477, max0.9999231153652808
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max0.8551423473293033
+Semantic shape: torch.Size([288, 384]), min: -1.0, max12.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max2.576327323913574
+Normal shape: torch.Size([3, 288, 384]), min: -0.9995075856005682, max0.9996699649261911
+loss: 5.77729606628418, losses: tensor([2.5322, 2.2775, 0.9677], device='cuda:0', grad_fn=<CopySlices>), weights: tensor([1., 1., 1.], device='cuda:0')
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max12.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max3.700556516647339
+Normal shape: torch.Size([3, 288, 384]), min: -0.9988344759227549, max0.9999846216542477
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max1.7473653554916382
+Normal shape: torch.Size([3, 288, 384]), min: -0.9997058637040086, max0.9987609386744928
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max6.175046920776367
+Normal shape: torch.Size([3, 288, 384]), min: -0.9999826067149133, max0.9999305042222401
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max5.182092189788818
+Normal shape: torch.Size([3, 288, 384]), min: -0.9999639118425051, max0.9996816387282966
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max4.744558334350586
+Normal shape: torch.Size([3, 288, 384]), min: -0.9998006240481785, max0.999982133895214
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max6.527544975280762
+Normal shape: torch.Size([3, 288, 384]), min: -0.9997366938070488, max0.9991018835665804
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max0.9654363534880933
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max2.641976833343506
+Normal shape: torch.Size([3, 288, 384]), min: -0.9972290480140822, max0.9710725683010794
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max1.6567343473434448
+Normal shape: torch.Size([3, 288, 384]), min: -0.9999496696425401, max0.9962391193990856
+loss: 5.728907585144043, losses: tensor([2.4375, 2.4517, 0.8397], device='cuda:0', grad_fn=<CopySlices>), weights: tensor([1., 1., 1.], device='cuda:0')
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max12.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max3.4847090244293213
+Normal shape: torch.Size([3, 288, 384]), min: -0.9998573718309738, max0.9989746894867736
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max6.311105728149414
+Normal shape: torch.Size([3, 288, 384]), min: -0.9999846216542477, max0.9998616204241628
+Image shape: torch.Size([3, 288, 384]), min: 2.996804657033133e-05, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max12.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max3.6181559562683105
+Normal shape: torch.Size([3, 288, 384]), min: -0.9999211680119326, max0.9989568398641683
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max0.9837459023601798
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max2.2063183784484863
+Normal shape: torch.Size([3, 288, 384]), min: -0.9995430115547689, max0.9972949529730815
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max12.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max6.079771518707275
+Normal shape: torch.Size([3, 288, 384]), min: -0.9998647884547203, max0.999847636793651
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max0.996078431372549
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max5.541019916534424
+Normal shape: torch.Size([3, 288, 384]), min: -0.9999057961285922, max0.9980421793961409
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max6.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max7.195097923278809
+Normal shape: torch.Size([3, 288, 384]), min: -0.9999846216542477, max0.9998182989340055
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max9.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max8.308578491210938
+Normal shape: torch.Size([3, 288, 384]), min: -0.9999846216542477, max0.9997831183401674
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max0.8465622815387377
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max1.22576105594635
+Normal shape: torch.Size([3, 288, 384]), min: -0.9998547337892991, max0.9970993425970345
+loss: 5.80972957611084, losses: tensor([2.3115, 2.6890, 0.8092], device='cuda:0', grad_fn=<CopySlices>), weights: tensor([1., 1., 1.], device='cuda:0')
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max7.836737632751465
+Normal shape: torch.Size([3, 288, 384]), min: -0.9999846216542477, max0.9999843775630551
+Image shape: torch.Size([3, 288, 384]), min: 0.0, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max12.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max7.356070518493652
+Normal shape: torch.Size([3, 288, 384]), min: -0.9999516254515434, max0.9986890842710817
+Image shape: torch.Size([3, 288, 384]), min: 0.00784313725490196, max1.0
+Semantic shape: torch.Size([288, 384]), min: -1.0, max11.0
+Depth shape: torch.Size([1, 288, 384]), min: 0.0, max3.296902894973755
+Normal shape: torch.Size([3, 288, 384]), min: -0.9999846216542477, max0.9999838716180789
+Traceback (most recent call last):
+  File "examples/nyu/train_nyu.py", line 124, in <module>
+    main(params)
+  File "examples/nyu/train_nyu.py", line 116, in main
+    NYUmodel.train(nyuv2_train_loader, nyuv2_test_loader, 200)
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 221, in train
+    w = self.model.backward(train_losses, **self.kwargs['weight_args'])
+  File "/zhome/e0/1/158047/mdpi_robotics/LibMTL/LibMTL/weighting/EW.py", line 21, in backward
+    loss.backward()
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/tensor.py", line 245, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/zhome/e0/1/158047/.local/lib/python3.8/site-packages/torch/autograd/__init__.py", line 145, in backward
+    Variable._execution_engine.run_backward(
+KeyboardInterrupt

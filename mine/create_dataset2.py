@@ -100,7 +100,7 @@ class DataTransform(object):
                 data_dict[task] = data_dict[task].squeeze(0)
         return data_dict
 
-class SimWarehouse(data.Dataset):
+class warehouseSIM(data.Dataset):
     """
     NYUv2 dataset, 3 tasks + 1 generated useless task
     Included tasks:
@@ -138,14 +138,14 @@ class SimWarehouse(data.Dataset):
     def __getitem__(self, index):
         # load data from the pre-processed npy files
         image = torch.from_numpy(np.moveaxis(np.load(self.data_path + '/image/{:d}.npy'.format(index)), -1, 0)).float()
-        semantic = torch.from_numpy(np.load(self.data_path + '/label/{:d}.npy'.format(index)).astype(np.int32)).long()
+        semantic = torch.from_numpy(np.load(self.data_path + '/label/{:d}.npy'.format(index)).astype(np.int16)).float()#.astype(np.int32)).long()
         depth = torch.from_numpy(np.load(self.data_path + '/depth/{:d}.npy'.format(index))).float()  / 1000.
         normal = torch.from_numpy(np.moveaxis(np.load(self.data_path + '/normal/{:d}.npy'.format(index)), -1, 0)).float() /255.
         noise = self.noise[index].float()
         #Enormal = transforms.Resize((256,256))(normal)
 
         # Reshape the data, remove 4th channel
-        image = image[:3, :, :]
+        image = image[:3, :, :] / 255.0
         # Add depth channel
         depth = depth.unsqueeze(0)
         #semantic_resized = semantic.unsqueeze(0)
@@ -153,20 +153,41 @@ class SimWarehouse(data.Dataset):
         #print(semantic.unsqueeze(0).shape)
         #normal = transforms.ToTensor()(normal)
 
-        semantic_resized = transforms.Resize((360,640))(semantic.unsqueeze(0)).squeeze(0)
+        semantic = transforms.Resize((360,640))(semantic.unsqueeze(0)).squeeze(0)
         #semantic_resized = #torch.nn.functional.interpolate(semantic, size=(360,640), mode='interpolate', align_corners=True)
         #print(image.shape, semantic_resized.shape, depth.shape, normal.shape, noise.shape)
         
         normal = 2. * normal - 1.
-        data_dict = {'im': image, 'seg': semantic_resized, 'depth': depth, 'normal': normal, 'noise': noise}
+        
+
+        
         #print(normal.max(), normal.min())
 
         # apply data augmentation if required
         if self.augmentation:
-            data_dict = DataTransform(crop_size=[288, 384], scales=[1.0, 1.2, 1.5])(data_dict)
-
-        im = 2. * data_dict.pop('im') - 1.  # normalised to [-1, 1]
-        return im, data_dict
+            image, semantic, depth, normal = RandomScaleCrop()(image, semantic, depth, normal)
+            if torch.rand(1) < 0.5:
+                image = torch.flip(image, dims=[2])
+                semantic = torch.flip(semantic, dims=[1])
+                depth = torch.flip(depth, dims=[2])
+                normal = torch.flip(normal, dims=[2])
+                normal[0, :, :] = - normal[0, :, :]
+                
+        
+        data_dict = {'im': image, 'seg': semantic, 'depth': depth, 'normal': normal, 'noise': noise}
+        #im = 2. * data_dict.pop('im') - 1.  # normalised to [-1, 1]
+                
+        #print(f'Image shape: {image.shape}, min: {torch.min(image)}, max: {torch.max(image)}')
+        #print(f'Semantic shape: {semantic.shape}, min: {torch.min(semantic)}, max: {torch.max(semantic)}')
+        #print(f'Depth shape: {depth.shape}, min: {torch.min(depth)}, max: {torch.max(depth)}')
+        #print(f'Normal shape: {normal.shape}, min: {torch.min(normal)}, max: {torch.max(normal)}') 
+        
+        #if self.augmentation:
+        #    data_dict = DataTransform(crop_size=[288, 384], scales=[1.0, 1.2, 1.5])(data_dict)
+    
+        #return image, data_dict
+        return image.float(), {'segmentation': semantic.float(), 'depth': depth.float(), 'normal': normal.float()}
+    
 
     def __len__(self):
         return self.data_len
@@ -221,6 +242,13 @@ class NYUv2(data.Dataset):
                 depth = torch.flip(depth, dims=[2])
                 normal = torch.flip(normal, dims=[2])
                 normal[0, :, :] = - normal[0, :, :]
+                
+                
+        #print(f'Image shape: {image.shape}, min: {torch.min(image)}, max{torch.max(image)}')
+        #print(f'Semantic shape: {semantic.shape}, min: {torch.min(semantic)}, max{torch.max(semantic)}')
+        #print(f'Depth shape: {depth.shape}, min: {torch.min(depth)}, max{torch.max(depth)}')
+        #print(f'Normal shape: {normal.shape}, min: {torch.min(normal)}, max{torch.max(normal)}') 
+        
 
         return image.float(), {'segmentation': semantic.float(), 'depth': depth.float(), 'normal': normal.float()}
 
