@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 128, in <module>
+    main(params)
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 43, in main
+    nyuv2_train_set = warehouseSIM(root=params.dataset_path, train=True, augmentation=True)
+  File "/home/dim/mdpi_robotics/LibMTL/mine/create_dataset2.py", line 123, in __init__
+    self.params = params.resolution
+AttributeError: 'NoneType' object has no attribute 'resolution'

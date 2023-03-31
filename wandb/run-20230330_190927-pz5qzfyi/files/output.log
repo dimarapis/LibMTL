@@ -1,0 +1,45 @@
+========================================
+Total Params: 71891291
+Trainable Params: 71891291
+Non-trainable Params: 0
+========================================
+LOG FORMAT | segmentation_LOSS mIoU pixAcc | depth_LOSS abs_err rel_err | normal_LOSS mean median <11.25 <22.5 <30 | TIME
+Epoch 0/199
+self_multiinpout False
+753
+Epoch: 0000 | TRAIN: 3.0449 0.0066 0.0741 | 0.7070 0.7070 1.4912 | 1.0451 93.3717 91.8299 0.0033 0.0162 0.0327 | Time: 1.7930 |
+
+Epoch: 0000 | TRAIN: 3.0449 0.0066 0.0741 | 0.7070 0.7070 1.4912 | 1.0451 93.3717 91.8299 0.0033 0.0162 0.0327 | Time: 1.7930 | task: segmentation, computed_value: 0.0, row 1: [-1 -1],            row 2: [0. 0.],            row 3: [0.0021998  0.00398082]
+task: depth, computed_value: 0.0, row 1: [1 1],            row 2: [0. 0.],            row 3: [0.93211629 1.03535569]
+task: normal, computed_value: 0.0, row 1: [ 1  1 -1 -1 -1],            row 2: [0. 0. 0. 0. 0.],            row 3: [6.71010056e+01 6.39070015e+01 6.07555663e-03 2.83992250e-02
+ 6.03950727e-02]
+TEST: 3.1446 0.0022 0.0040 | 0.9321 0.9321 1.0354 | 0.6436 67.1010 63.9070 0.0061 0.0284 0.0604 | Time: 76.8666
+Epoch 1/199
+self_multiinpout False
+753
+  0%|                                                                                                                                     | 0/753 [00:00<?, ?it/s]
+
+Epoch: 0001 | TRAIN: 2.9308 0.0260 0.1968 | 0.7243 0.7243 15.1098 | 0.8405 79.7601 78.8986 0.0056 0.0253 0.0499 | Time: 1.9052 | task: segmentation, computed_value: 41.08706294802887, row 1: [-1 -1],            row 2: [-0.03134525 -0.2703973 ],            row 3: [0.0021998  0.00398082]
+task: depth, computed_value: 0.04382780332432879, row 1: [1 1],            row 2: [0.03376994 0.0532445 ],            row 3: [0.93211629 1.03535569]
+task: normal, computed_value: 1.8778292627039357, row 1: [ 1  1 -1 -1 -1],            row 2: [ 2.12041130e+01  2.75840645e+01 -8.18400988e-03 -7.91407324e-02
+ -2.72246188e-01],            row 3: [6.71010056e+01 6.39070015e+01 6.07555663e-03 2.83992250e-02
+ 6.03950727e-02]
+TEST: 3.1009 0.0335 0.2744 | 0.8983 0.8983 0.9821 | 0.3570 45.8969 36.3229 0.0143 0.1075 0.3326 | Time: 79.7157
+Epoch 2/199
+self_multiinpout False
+753
+
+  0%|                                                                                                                                     | 0/753 [00:01<?, ?it/s]
+Epoch: 0002 | TRAIN: 2.6998 0.0403 0.4967 | 0.8824 0.8824 1.3234 | 1.1327 99.1581 96.8216 0.0006 0.0028 0.0057 | Time: 1.8064 |
+Traceback (most recent call last):
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 126, in <module>
+    main(params)
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 118, in main
+    NYUmodel.train(nyuv2_train_loader, nyuv2_test_loader, 200)
+  File "/home/dim/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 259, in train
+    self.test(test_dataloaders, epoch, mode='test')
+  File "/home/dim/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 289, in test
+    test_losses = self._compute_loss(test_preds, test_gts)
+  File "/home/dim/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 163, in _compute_loss
+    train_losses = torch.zeros(self.task_num).to(self.device)
+KeyboardInterrupt

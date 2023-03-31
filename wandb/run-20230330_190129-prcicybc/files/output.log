@@ -1,0 +1,21 @@
+========================================
+Total Params: 71891291
+Trainable Params: 71891291
+Non-trainable Params: 0
+========================================
+LOG FORMAT | segmentation_LOSS mIoU pixAcc | depth_LOSS abs_err rel_err | normal_LOSS mean median <11.25 <22.5 <30 | TIME
+Epoch 0/199
+self_multiinpout False
+753
+[3.0449121  0.70698082 1.04510117]
+  0%|                                                                                                                                     | 0/753 [00:01<?, ?it/s]
+Traceback (most recent call last):
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 126, in <module>
+    main(params)
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 118, in main
+    NYUmodel.train(nyuv2_train_loader, nyuv2_test_loader, 200)
+  File "/home/dim/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 244, in train
+    train_loss_dict = {f"train_{str(k)[:3]}": v for k, v in self.meter.loss_item}
+  File "/home/dim/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 244, in <dictcomp>
+    train_loss_dict = {f"train_{str(k)[:3]}": v for k, v in self.meter.loss_item}
+TypeError: cannot unpack non-iterable numpy.float64 object

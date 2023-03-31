@@ -2,6 +2,10 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
+from tqdm import tqdm
+
+import time
+
 
 from LibMTL._record import _PerformanceMeter
 from LibMTL.utils import count_parameters
@@ -77,7 +81,7 @@ class Trainer(nn.Module):
                  rep_grad, multi_input, optim_param, scheduler_param, **kwargs):
         super(Trainer, self).__init__()
         
-        self.device = torch.device('cuda:0')
+        self.device = torch.device('cpu')#('cuda:0')
         self.kwargs = kwargs
         self.wandb_run = wandb_run
         self.task_dict = task_dict
@@ -199,10 +203,16 @@ class Trainer(nn.Module):
         self.model.train_loss_buffer = np.zeros([self.task_num, epochs])
         self.model.epochs = epochs
         for epoch in range(epochs):
+
+            print('Epoch {}/{}'.format(epoch, epochs - 1))
+            print('self_multiinpout {}'.format(self.multi_input))
             self.model.epoch = epoch
             self.model.train()
             self.meter.record_time('begin')
-            for batch_index in range(train_batch):
+            print(train_batch)
+            for _, batch_index in enumerate(tqdm(range(train_batch))):
+                start = time.time()
+
                 if not self.multi_input:
                     train_inputs, train_gts = self._process_data(train_loader)
                     train_preds = self.model(train_inputs)
@@ -223,12 +233,38 @@ class Trainer(nn.Module):
                 if w is not None:
                     self.batch_weight[:, epoch, batch_index] = w
                 self.optimizer.step()
+                end = time.time()
+                print(f'batch took {end - start} seconds')
+                #print(train_losses)
+                #train_loss_dict = {task: float(loss) for task, loss in zip(self.task_name, train_losses)}
                 
-            self.wandb_run.log({"my_metric": train_losses})
+                #loss_dict = {f"train_{k}": v for k, v in loss_dict.items()
+                #print(loss_dict)
+                 
+                #self.wandb_run.log({"train_loss": loss_dict})
+                
             self.meter.record_time('end')
             self.meter.get_score()
-            self.model.train_loss_buffer[:, epoch] = self.meter.loss_item
+            self.model.train_loss_buffer[:, epoch] = self.meter.loss_item        
             self.meter.display(epoch=epoch, mode='train')
+            
+                        
+            train_loss_dict = {"seg":self.meter.loss_item[0], "dep":self.meter.loss_item[1], "nor":self.meter.loss_item[2]}
+            train_metrics_dict = {f"train_{str(k)[:3]}": v for k, v in self.meter.results.items()}
+            for k in train_metrics_dict.keys():
+                if k == "train_seg":
+                    train_metrics_seg_dict = {'seg_mIoU': train_metrics_dict[k][0],'seg_mIoU': train_metrics_dict[k][1]}
+                elif k == "train_dep":
+                    train_metrics_dep_dict = {'dep_aE': train_metrics_dict[k][0],'dep_rE': train_metrics_dict[k][1]}
+                else:
+                    train_metrics_nor_dict = {'nor_mE': train_metrics_dict[k][0],'nor_mdnE': train_metrics_dict[k][1],
+                        'nor_<12,5': train_metrics_dict[k][2],'nor_<22,5': train_metrics_dict[k][3],'nor_<30': train_metrics_dict[k][4]}
+                    
+            self.wandb_run.log({"train_losses": train_loss_dict, "train_seg_metrics": train_metrics_seg_dict,
+                                "train_dep_metrics": train_metrics_dep_dict, "train_nor_metrics": train_metrics_nor_dict},
+                               step=epoch) 
+
+            
             self.meter.reinit()
             
             if val_dataloaders is not None:
@@ -278,6 +314,23 @@ class Trainer(nn.Module):
         self.meter.record_time('end')
         self.meter.get_score()
         self.meter.display(epoch=epoch, mode=mode)
+        
+        
+        test_loss_dict = {"seg":self.meter.loss_item[0], "dep":self.meter.loss_item[1], "nor":self.meter.loss_item[2]}
+        test_metrics_dict = {f"test_{str(k)[:3]}": v for k, v in self.meter.results.items()}
+        for k in test_metrics_dict.keys():
+            if k == "train_seg":
+                test_metrics_seg_dict = {'seg_mIoU': test_metrics_dict[k][0],'seg_mIoU': test_metrics_dict[k][1]}
+            elif k == "train_dep":
+                test_metrics_dep_dict = {'dep_aE': test_metrics_dict[k][0],'dep_rE': test_metrics_dict[k][1]}
+            else:
+                test_metrics_nor_dict = {'nor_mE': test_metrics_dict[k][0],'nor_mdnE': test_metrics_dict[k][1],
+                    'nor_<12,5': test_metrics_dict[k][2],'nor_<22,5': test_metrics_dict[k][3],'nor_<30': test_metrics_dict[k][4]}
+                
+        self.wandb_run.log({"test_losses": test_loss_dict, "test_seg_metrics": test_metrics_seg_dict,
+                            "test_dep_metrics": test_metrics_dep_dict, "test_nor_metrics": test_metrics_nor_dict},
+                            step=epoch) 
+        
         improvement = self.meter.improvement
         self.meter.reinit()
         if return_improvement:

@@ -1,0 +1,37 @@
+2023-03-31 11:04:13,152 INFO    MainThread:41588 [wandb_setup.py:_flush():76] Configure stats pid to 41588
+2023-03-31 11:04:13,152 INFO    MainThread:41588 [wandb_setup.py:_flush():76] Loading settings from /home/dim/.config/wandb/settings
+2023-03-31 11:04:13,152 INFO    MainThread:41588 [wandb_setup.py:_flush():76] Loading settings from /home/dim/mdpi_robotics/LibMTL/wandb/settings
+2023-03-31 11:04:13,152 INFO    MainThread:41588 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-03-31 11:04:13,153 INFO    MainThread:41588 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-03-31 11:04:13,153 INFO    MainThread:41588 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'examples/warehouseSIM/train_warehouseSIM.py', 'program': 'examples/warehouseSIM/train_warehouseSIM.py'}
+2023-03-31 11:04:13,153 INFO    MainThread:41588 [wandb_init.py:_log_setup():506] Logging user logs to /home/dim/mdpi_robotics/LibMTL/wandb/run-20230331_110413-kkzxpm9q/logs/debug.log
+2023-03-31 11:04:13,153 INFO    MainThread:41588 [wandb_init.py:_log_setup():507] Logging internal logs to /home/dim/mdpi_robotics/LibMTL/wandb/run-20230331_110413-kkzxpm9q/logs/debug-internal.log
+2023-03-31 11:04:13,153 INFO    MainThread:41588 [wandb_init.py:init():546] calling init triggers
+2023-03-31 11:04:13,153 INFO    MainThread:41588 [wandb_init.py:init():552] wandb.init called with sweep_config: {}
+config: {}
+2023-03-31 11:04:13,153 INFO    MainThread:41588 [wandb_init.py:init():602] starting backend
+2023-03-31 11:04:13,154 INFO    MainThread:41588 [wandb_init.py:init():606] setting up manager
+2023-03-31 11:04:13,159 INFO    MainThread:41588 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-03-31 11:04:13,164 INFO    MainThread:41588 [wandb_init.py:init():613] backend started and connected
+2023-03-31 11:04:13,170 INFO    MainThread:41588 [wandb_init.py:init():701] updated telemetry
+2023-03-31 11:04:13,184 INFO    MainThread:41588 [wandb_init.py:init():741] communicating run to backend with 60.0 second timeout
+2023-03-31 11:04:13,578 INFO    MainThread:41588 [wandb_run.py:_on_init():2133] communicating current version
+2023-03-31 11:04:13,661 INFO    MainThread:41588 [wandb_run.py:_on_init():2142] got version response 
+2023-03-31 11:04:13,661 INFO    MainThread:41588 [wandb_init.py:init():789] starting run threads in backend
+2023-03-31 11:04:15,579 WARNING MainThread:41588 [wandb_init.py:init():1165] interrupted
+Traceback (most recent call last):
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 1144, in init
+    run = wi.init()
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 801, in init
+    run_start_result = run_start_handle.wait(timeout=30)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/wandb/sdk/lib/mailbox.py", line 283, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/wandb/sdk/lib/mailbox.py", line 130, in _get_and_clear
+    if self._wait(timeout=timeout):
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/wandb/sdk/lib/mailbox.py", line 126, in _wait
+    return self._event.wait(timeout=timeout)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/threading.py", line 558, in wait
+    signaled = self._cond.wait(timeout)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/threading.py", line 306, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt

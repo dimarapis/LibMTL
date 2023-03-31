@@ -1,0 +1,394 @@
+2023-03-30 18:55:30,062 INFO    StreamThr :15118 [internal.py:wandb_internal():87] W&B internal server running at pid: 15118, started at: 2023-03-30 18:55:30.062186
+2023-03-30 18:55:30,064 DEBUG   HandlerThread:15118 [handler.py:handle_request():144] handle_request: status
+2023-03-30 18:55:30,066 INFO    WriterThread:15118 [datastore.py:open_for_write():85] open: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_185530-l2hpuqux/run-l2hpuqux.wandb
+2023-03-30 18:55:30,066 DEBUG   SenderThread:15118 [sender.py:send():336] send: header
+2023-03-30 18:55:30,072 DEBUG   SenderThread:15118 [sender.py:send():336] send: run
+2023-03-30 18:55:30,682 INFO    SenderThread:15118 [dir_watcher.py:__init__():219] watching files in: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_185530-l2hpuqux/files
+2023-03-30 18:55:30,682 INFO    SenderThread:15118 [sender.py:_start_run_threads():1078] run started: l2hpuqux with start time 1680195330.063075
+2023-03-30 18:55:30,682 DEBUG   SenderThread:15118 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 18:55:30,682 INFO    SenderThread:15118 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 18:55:30,684 DEBUG   HandlerThread:15118 [handler.py:handle_request():144] handle_request: check_version
+2023-03-30 18:55:30,684 DEBUG   SenderThread:15118 [sender.py:send_request():363] send_request: check_version
+2023-03-30 18:55:30,915 DEBUG   HandlerThread:15118 [handler.py:handle_request():144] handle_request: run_start
+2023-03-30 18:55:30,923 DEBUG   HandlerThread:15118 [system_info.py:__init__():31] System info init
+2023-03-30 18:55:30,923 DEBUG   HandlerThread:15118 [system_info.py:__init__():46] System info init done
+2023-03-30 18:55:30,923 INFO    HandlerThread:15118 [system_monitor.py:start():183] Starting system monitor
+2023-03-30 18:55:30,923 INFO    SystemMonitor:15118 [system_monitor.py:_start():147] Starting system asset monitoring threads
+2023-03-30 18:55:30,924 INFO    HandlerThread:15118 [system_monitor.py:probe():204] Collecting system info
+2023-03-30 18:55:30,925 INFO    SystemMonitor:15118 [interfaces.py:start():187] Started cpu monitoring
+2023-03-30 18:55:30,928 INFO    SystemMonitor:15118 [interfaces.py:start():187] Started disk monitoring
+2023-03-30 18:55:30,930 INFO    SystemMonitor:15118 [interfaces.py:start():187] Started gpu monitoring
+2023-03-30 18:55:30,932 INFO    SystemMonitor:15118 [interfaces.py:start():187] Started memory monitoring
+2023-03-30 18:55:30,932 INFO    SystemMonitor:15118 [interfaces.py:start():187] Started network monitoring
+2023-03-30 18:55:30,943 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:55:30,967 DEBUG   HandlerThread:15118 [system_info.py:probe():195] Probing system
+2023-03-30 18:55:30,978 DEBUG   HandlerThread:15118 [system_info.py:_probe_git():180] Probing git
+2023-03-30 18:55:31,006 DEBUG   HandlerThread:15118 [system_info.py:_probe_git():188] Probing git done
+2023-03-30 18:55:31,006 DEBUG   HandlerThread:15118 [system_info.py:probe():240] Probing system done
+2023-03-30 18:55:31,007 DEBUG   HandlerThread:15118 [system_monitor.py:probe():213] {'os': 'Linux-5.4.0-146-generic-x86_64-with-glibc2.17', 'python': '3.8.16', 'heartbeatAt': '2023-03-30T16:55:30.967571', 'startedAt': '2023-03-30T16:55:30.056924', 'docker': None, 'cuda': None, 'args': ('--weighting', 'EW', '--arch', 'HPS', '--dataset_path', 'dataset/warehouseSIM', '--gpu_id', '0', '--scheduler', 'step'), 'state': 'running', 'program': 'examples/warehouseSIM/train_warehouseSIM.py', 'codePath': 'examples/warehouseSIM/train_warehouseSIM.py', 'git': {'remote': 'https://github.com/dimarapis/LibMTL.git', 'commit': '40cf8af4eeade7645dd5d7de21c9de87a0c1f0c6'}, 'email': 'dimarapis@hotmail.com', 'root': '/home/dim/mdpi_robotics/LibMTL', 'host': 'dim-dtu', 'username': 'dim', 'executable': '/home/dim/anaconda3/envs/libmtl/bin/python', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2162.6228125, 'min': 800.0, 'max': 5300.0}, 'cpu_freq_per_core': [{'current': 800.01, 'min': 800.0, 'max': 5300.0}, {'current': 800.049, 'min': 800.0, 'max': 5300.0}, {'current': 799.981, 'min': 800.0, 'max': 5300.0}, {'current': 800.116, 'min': 800.0, 'max': 5300.0}, {'current': 800.005, 'min': 800.0, 'max': 5300.0}, {'current': 800.195, 'min': 800.0, 'max': 5300.0}, {'current': 800.145, 'min': 800.0, 'max': 5300.0}, {'current': 800.034, 'min': 800.0, 'max': 5300.0}, {'current': 800.248, 'min': 800.0, 'max': 5300.0}, {'current': 800.067, 'min': 800.0, 'max': 5300.0}, {'current': 800.002, 'min': 800.0, 'max': 5300.0}, {'current': 800.025, 'min': 800.0, 'max': 5300.0}, {'current': 800.045, 'min': 800.0, 'max': 5300.0}, {'current': 800.551, 'min': 800.0, 'max': 5300.0}, {'current': 800.095, 'min': 800.0, 'max': 5300.0}, {'current': 800.216, 'min': 800.0, 'max': 5300.0}], 'disk': {'total': 857.1477890014648, 'used': 804.4344596862793}, 'gpu': 'NVIDIA GeForce RTX 2070 Super with Max-Q Design', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2070 Super with Max-Q Design', 'memory_total': 8370061312}], 'memory': {'total': 31.174640655517578}}
+2023-03-30 18:55:31,007 INFO    HandlerThread:15118 [system_monitor.py:probe():214] Finished collecting system info
+2023-03-30 18:55:31,007 INFO    HandlerThread:15118 [system_monitor.py:probe():217] Publishing system info
+2023-03-30 18:55:31,007 DEBUG   HandlerThread:15118 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-03-30 18:55:31,009 DEBUG   HandlerThread:15118 [system_info.py:_save_pip():67] Saving pip packages done
+2023-03-30 18:55:31,009 DEBUG   HandlerThread:15118 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-03-30 18:55:31,683 INFO    Thread-13 :15118 [dir_watcher.py:_on_file_created():278] file/dir created: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_185530-l2hpuqux/files/wandb-summary.json
+2023-03-30 18:55:31,683 INFO    Thread-13 :15118 [dir_watcher.py:_on_file_created():278] file/dir created: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_185530-l2hpuqux/files/conda-environment.yaml
+2023-03-30 18:55:31,683 INFO    Thread-13 :15118 [dir_watcher.py:_on_file_created():278] file/dir created: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_185530-l2hpuqux/files/requirements.txt
+2023-03-30 18:55:31,986 DEBUG   HandlerThread:15118 [system_info.py:_save_conda():86] Saving conda packages done
+2023-03-30 18:55:31,987 INFO    HandlerThread:15118 [system_monitor.py:probe():219] Finished publishing system info
+2023-03-30 18:55:31,988 DEBUG   SenderThread:15118 [sender.py:send():336] send: files
+2023-03-30 18:55:31,988 INFO    SenderThread:15118 [sender.py:_save_file():1332] saving file wandb-metadata.json with policy now
+2023-03-30 18:55:31,993 DEBUG   HandlerThread:15118 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-30 18:55:31,993 DEBUG   SenderThread:15118 [sender.py:send_request():363] send_request: stop_status
+2023-03-30 18:55:32,314 DEBUG   SenderThread:15118 [sender.py:send():336] send: telemetry
+2023-03-30 18:55:32,682 INFO    Thread-13 :15118 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_185530-l2hpuqux/files/conda-environment.yaml
+2023-03-30 18:55:32,682 INFO    Thread-13 :15118 [dir_watcher.py:_on_file_created():278] file/dir created: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_185530-l2hpuqux/files/wandb-metadata.json
+2023-03-30 18:55:32,726 INFO    wandb-upload_0:15118 [upload_job.py:push():138] Uploaded file /tmp/tmp12zav2utwandb/m9mpbazg-wandb-metadata.json
+2023-03-30 18:55:32,945 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:55:34,950 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:55:35,315 DEBUG   HandlerThread:15118 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 18:55:36,683 INFO    Thread-13 :15118 [dir_watcher.py:_on_file_created():278] file/dir created: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_185530-l2hpuqux/files/output.log
+2023-03-30 18:55:36,955 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:55:37,435 DEBUG   HandlerThread:15118 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 18:55:38,684 INFO    Thread-13 :15118 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_185530-l2hpuqux/files/output.log
+2023-03-30 18:55:38,974 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:55:40,438 DEBUG   HandlerThread:15118 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 18:55:40,684 INFO    Thread-13 :15118 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_185530-l2hpuqux/files/output.log
+2023-03-30 18:55:40,975 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:55:42,977 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:55:44,979 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:55:45,439 DEBUG   HandlerThread:15118 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 18:55:46,981 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:55:46,992 DEBUG   HandlerThread:15118 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-30 18:55:46,993 DEBUG   SenderThread:15118 [sender.py:send_request():363] send_request: stop_status
+2023-03-30 18:55:48,986 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:55:50,223 INFO    SenderThread:15118 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f8de2294190>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dim/.local/lib/python3.8/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f8de2294190>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 243, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "/home/dim/.local/lib/python3.8/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/dim/.local/lib/python3.8/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/dim/.local/lib/python3.8/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/dim/.local/lib/python3.8/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/dim/.local/lib/python3.8/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f8de2294190>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2023-03-30 18:55:50,988 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:55:51,993 DEBUG   HandlerThread:15118 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 18:55:52,995 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:55:54,997 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:55:56,994 DEBUG   HandlerThread:15118 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 18:55:56,999 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:55:59,003 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:56:01,041 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:56:01,994 DEBUG   HandlerThread:15118 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 18:56:03,043 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:56:05,045 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:56:06,995 DEBUG   HandlerThread:15118 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 18:56:07,050 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:56:09,053 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:56:11,058 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:56:11,996 DEBUG   HandlerThread:15118 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 18:56:13,065 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:56:15,067 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:56:16,996 DEBUG   HandlerThread:15118 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 18:56:17,070 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:56:19,072 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:56:21,077 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:56:22,456 DEBUG   HandlerThread:15118 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-30 18:56:22,947 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:22,947 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:22,947 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:22,947 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:23,078 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:56:24,948 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:24,948 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:24,948 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:24,948 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:25,080 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:56:26,949 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:26,950 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:26,950 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:26,951 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:27,083 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:56:27,117 WARNING StreamThr :15118 [internal.py:is_dead():415] Internal process exiting, parent pid 15078 disappeared
+2023-03-30 18:56:27,118 ERROR   StreamThr :15118 [internal.py:wandb_internal():153] Internal process shutdown.
+2023-03-30 18:56:27,457 INFO    HandlerThread:15118 [handler.py:finish():842] shutting down handler
+2023-03-30 18:56:27,458 INFO    WriterThread:15118 [datastore.py:close():298] close: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_185530-l2hpuqux/run-l2hpuqux.wandb
+2023-03-30 18:56:28,952 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:28,953 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:28,954 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:28,954 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:29,089 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:56:30,933 DEBUG   SystemMonitor:15118 [system_monitor.py:_start():161] Starting system metrics aggregation loop
+2023-03-30 18:56:30,954 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:30,954 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:30,955 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:30,955 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:31,093 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:56:32,954 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:32,954 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:32,955 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:32,955 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:33,096 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:56:34,955 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:34,955 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:34,955 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:34,956 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:35,103 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:56:36,956 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:36,956 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:36,956 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:36,956 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:37,110 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:56:38,957 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:38,959 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:38,959 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:38,959 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:39,116 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:56:40,959 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:40,961 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:40,961 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:40,962 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:41,120 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:56:42,961 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:42,961 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:42,962 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:42,962 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:43,122 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:56:44,961 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:44,962 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:44,963 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:44,963 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:45,125 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:56:46,962 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:46,962 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:46,963 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:46,963 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:47,127 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:56:48,962 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:48,963 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:48,963 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:48,963 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:49,136 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:56:50,963 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:50,963 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:50,964 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:50,964 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:51,138 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:56:52,963 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:52,964 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:52,964 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:52,964 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:53,141 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:56:54,964 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:54,966 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:54,967 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:54,967 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:55,148 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:56:56,966 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:56,967 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:56,967 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:56,967 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:57,154 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:56:58,967 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:58,967 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:58,968 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:58,968 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:56:59,156 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:57:00,968 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:00,968 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:00,968 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:00,968 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:01,159 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:57:01,367 INFO    SenderThread:15118 [sender.py:finish():1504] shutting down sender
+2023-03-30 18:57:02,968 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:02,969 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:02,969 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:02,969 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:03,161 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:57:03,809 INFO    SenderThread:15118 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-03-30 18:57:04,696 INFO    SenderThread:15118 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_185530-l2hpuqux/files/output.log
+2023-03-30 18:57:04,696 INFO    SenderThread:15118 [dir_watcher.py:finish():395] scan: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_185530-l2hpuqux/files
+2023-03-30 18:57:04,696 INFO    SenderThread:15118 [dir_watcher.py:finish():409] scan save: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_185530-l2hpuqux/files/wandb-metadata.json wandb-metadata.json
+2023-03-30 18:57:04,697 INFO    SenderThread:15118 [dir_watcher.py:finish():409] scan save: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_185530-l2hpuqux/files/config.yaml config.yaml
+2023-03-30 18:57:04,697 INFO    SenderThread:15118 [dir_watcher.py:finish():409] scan save: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_185530-l2hpuqux/files/conda-environment.yaml conda-environment.yaml
+2023-03-30 18:57:04,700 INFO    SenderThread:15118 [dir_watcher.py:finish():409] scan save: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_185530-l2hpuqux/files/wandb-summary.json wandb-summary.json
+2023-03-30 18:57:04,700 INFO    SenderThread:15118 [dir_watcher.py:finish():409] scan save: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_185530-l2hpuqux/files/requirements.txt requirements.txt
+2023-03-30 18:57:04,700 INFO    SenderThread:15118 [dir_watcher.py:finish():409] scan save: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_185530-l2hpuqux/files/output.log output.log
+2023-03-30 18:57:04,700 INFO    SenderThread:15118 [file_pusher.py:finish():164] shutting down file pusher
+2023-03-30 18:57:04,700 INFO    SenderThread:15118 [file_pusher.py:join():169] waiting for file pusher
+2023-03-30 18:57:04,969 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:04,969 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:04,969 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:04,969 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:05,207 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:57:06,969 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:06,970 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:06,970 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:06,970 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:07,212 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:57:08,970 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:08,970 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:08,970 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:08,970 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:09,217 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:57:09,290 INFO    wandb-upload_2:15118 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f8de2113f40>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dim/.local/lib/python3.8/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f8de2113f40>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 243, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "/home/dim/.local/lib/python3.8/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/dim/.local/lib/python3.8/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/dim/.local/lib/python3.8/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/dim/.local/lib/python3.8/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/dim/.local/lib/python3.8/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f8de2113f40>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2023-03-30 18:57:10,970 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:10,971 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:10,971 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:10,971 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:11,221 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:57:12,971 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:12,971 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:12,972 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:12,972 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:13,224 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:57:14,972 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:14,973 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:14,973 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:14,974 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:15,231 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:57:16,974 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:16,974 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:16,974 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:16,974 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:17,234 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:57:18,974 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:18,975 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:18,975 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:18,975 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:19,237 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:57:20,975 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:20,976 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:20,977 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:20,978 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:21,242 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:57:22,274 INFO    wandb-upload_3:15118 [upload_job.py:push():138] Uploaded file /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_185530-l2hpuqux/files/requirements.txt
+2023-03-30 18:57:22,977 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:22,977 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:22,978 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:22,978 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:23,245 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:57:24,456 INFO    wandb-upload_2:15118 [upload_job.py:push():138] Uploaded file /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_185530-l2hpuqux/files/wandb-summary.json
+2023-03-30 18:57:24,977 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:24,978 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:24,978 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:24,978 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:25,247 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 18:57:26,268 INFO    wandb-upload_0:15118 [upload_job.py:push():138] Uploaded file /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_185530-l2hpuqux/files/config.yaml
+2023-03-30 18:57:26,689 INFO    wandb-upload_4:15118 [upload_job.py:push():138] Uploaded file /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_185530-l2hpuqux/files/output.log
+2023-03-30 18:57:26,729 INFO    wandb-upload_1:15118 [upload_job.py:push():138] Uploaded file /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_185530-l2hpuqux/files/conda-environment.yaml
+2023-03-30 18:57:26,978 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:26,978 ERROR   cpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:26,979 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:26,979 ERROR   memory    :15118 [interfaces.py:monitor():141] Failed to sample metric: process no longer exists (pid=15078)
+2023-03-30 18:57:27,250 ERROR   gpu       :15118 [interfaces.py:monitor():141] Failed to sample metric: Not Supported

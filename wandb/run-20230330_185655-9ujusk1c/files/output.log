@@ -1,0 +1,26 @@
+========================================
+Total Params: 71891291
+Trainable Params: 71891291
+Non-trainable Params: 0
+========================================
+LOG FORMAT | segmentation_LOSS mIoU pixAcc | depth_LOSS abs_err rel_err | normal_LOSS mean median <11.25 <22.5 <30 | TIME
+Epoch 0/199
+self_multiinpout False
+753
+  0%|                                                                                                                                           | 0/753 [00:01<?, ?it/s]
+{'segmentation': [0.00656227208673954, 0.07414713501930237], 'depth': [0.70698082447052, 1.491173267364502], 'normal': [93.37166, 91.82988, 0.0033268229166666667, 0.016206597222222223, 0.03268229166666667]}
+{'segmentation': 3.044912099838257, 'depth': 0.70698082447052, 'normal': 1.0451011657714844}
+{'train_seg': [0.00656227208673954, 0.07414713501930237], 'train_dep': [0.70698082447052, 1.491173267364502], 'train_nor': [93.37166, 91.82988, 0.0033268229166666667, 0.016206597222222223, 0.03268229166666667]}
+Epoch: 0000 | TRAIN: 3.0449 0.0066 0.0741 | 0.7070 0.7070 1.4912 | 1.0451 93.3717 91.8299 0.0033 0.0162 0.0327 | Time: 1.7262 |
+Traceback (most recent call last):
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 126, in <module>
+    main(params)
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 118, in main
+    NYUmodel.train(nyuv2_train_loader, nyuv2_test_loader, 200)
+  File "/home/dim/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 256, in train
+    self.test(test_dataloaders, epoch, mode='test')
+  File "/home/dim/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 286, in test
+    test_losses = self._compute_loss(test_preds, test_gts)
+  File "/home/dim/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 163, in _compute_loss
+    train_losses = torch.zeros(self.task_num).to(self.device)
+KeyboardInterrupt

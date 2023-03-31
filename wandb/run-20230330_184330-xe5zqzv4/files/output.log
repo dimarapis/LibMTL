@@ -1,0 +1,21 @@
+========================================
+Total Params: 71891291
+Trainable Params: 71891291
+Non-trainable Params: 0
+========================================
+LOG FORMAT | segmentation_LOSS mIoU pixAcc | depth_LOSS abs_err rel_err | normal_LOSS mean median <11.25 <22.5 <30 | TIME
+Epoch 0/199
+self_multiinpout False
+753
+{'segmentation': [0.00656227208673954, 0.07414713501930237], 'depth': [0.70698082447052, 1.491173267364502], 'normal': [93.37166, 91.82988, 0.0033268229166666667, 0.016206597222222223, 0.03268229166666667]}
+  0%|                                                                                                                                           | 0/753 [00:01<?, ?it/s]
+Traceback (most recent call last):
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 126, in <module>
+    main(params)
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 118, in main
+    NYUmodel.train(nyuv2_train_loader, nyuv2_test_loader, 200)
+  File "/home/dim/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 243, in train
+    train_metrics = {task: float(loss) for task, loss in zip(self.task_name, self.meter.results)}
+  File "/home/dim/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 243, in <dictcomp>
+    train_metrics = {task: float(loss) for task, loss in zip(self.task_name, self.meter.results)}
+ValueError: could not convert string to float: 'segmentation'

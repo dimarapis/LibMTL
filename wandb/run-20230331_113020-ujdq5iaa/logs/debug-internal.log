@@ -1,0 +1,75 @@
+2023-03-31 11:30:20,725 INFO    StreamThr :49269 [internal.py:wandb_internal():87] W&B internal server running at pid: 49269, started at: 2023-03-31 11:30:20.724586
+2023-03-31 11:30:20,726 DEBUG   HandlerThread:49269 [handler.py:handle_request():144] handle_request: status
+2023-03-31 11:30:20,729 INFO    WriterThread:49269 [datastore.py:open_for_write():85] open: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230331_113020-ujdq5iaa/run-ujdq5iaa.wandb
+2023-03-31 11:30:20,730 DEBUG   SenderThread:49269 [sender.py:send():336] send: header
+2023-03-31 11:30:20,740 DEBUG   SenderThread:49269 [sender.py:send():336] send: run
+2023-03-31 11:30:21,253 INFO    SenderThread:49269 [dir_watcher.py:__init__():219] watching files in: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230331_113020-ujdq5iaa/files
+2023-03-31 11:30:21,253 INFO    SenderThread:49269 [sender.py:_start_run_threads():1078] run started: ujdq5iaa with start time 1680255020.725176
+2023-03-31 11:30:21,254 DEBUG   SenderThread:49269 [sender.py:send_request():363] send_request: summary_record
+2023-03-31 11:30:21,254 INFO    SenderThread:49269 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-31 11:30:21,259 DEBUG   HandlerThread:49269 [handler.py:handle_request():144] handle_request: check_version
+2023-03-31 11:30:21,260 DEBUG   SenderThread:49269 [sender.py:send_request():363] send_request: check_version
+2023-03-31 11:30:21,341 DEBUG   HandlerThread:49269 [handler.py:handle_request():144] handle_request: run_start
+2023-03-31 11:30:21,344 DEBUG   HandlerThread:49269 [system_info.py:__init__():31] System info init
+2023-03-31 11:30:21,344 DEBUG   HandlerThread:49269 [system_info.py:__init__():46] System info init done
+2023-03-31 11:30:21,345 INFO    HandlerThread:49269 [system_monitor.py:start():183] Starting system monitor
+2023-03-31 11:30:21,345 INFO    SystemMonitor:49269 [system_monitor.py:_start():147] Starting system asset monitoring threads
+2023-03-31 11:30:21,345 INFO    SystemMonitor:49269 [interfaces.py:start():187] Started cpu monitoring
+2023-03-31 11:30:21,346 INFO    SystemMonitor:49269 [interfaces.py:start():187] Started disk monitoring
+2023-03-31 11:30:21,346 INFO    HandlerThread:49269 [system_monitor.py:probe():204] Collecting system info
+2023-03-31 11:30:21,347 INFO    SystemMonitor:49269 [interfaces.py:start():187] Started gpu monitoring
+2023-03-31 11:30:21,348 INFO    SystemMonitor:49269 [interfaces.py:start():187] Started memory monitoring
+2023-03-31 11:30:21,348 INFO    SystemMonitor:49269 [interfaces.py:start():187] Started network monitoring
+2023-03-31 11:30:21,356 ERROR   gpu       :49269 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-31 11:30:21,372 DEBUG   HandlerThread:49269 [system_info.py:probe():195] Probing system
+2023-03-31 11:30:21,375 DEBUG   HandlerThread:49269 [system_info.py:_probe_git():180] Probing git
+2023-03-31 11:30:21,383 DEBUG   HandlerThread:49269 [system_info.py:_probe_git():188] Probing git done
+2023-03-31 11:30:21,383 DEBUG   HandlerThread:49269 [system_info.py:probe():240] Probing system done
+2023-03-31 11:30:21,383 DEBUG   HandlerThread:49269 [system_monitor.py:probe():213] {'os': 'Linux-5.4.0-146-generic-x86_64-with-glibc2.17', 'python': '3.8.16', 'heartbeatAt': '2023-03-31T09:30:21.372358', 'startedAt': '2023-03-31T09:30:20.714653', 'docker': None, 'cuda': None, 'args': ('--weighting', 'EW', '--arch', 'HPS', '--dataset_path', 'dataset/warehouseSIM', '--gpu_id', '0', '--scheduler', 'step'), 'state': 'running', 'program': 'examples/warehouseSIM/train_warehouseSIM.py', 'codePath': 'examples/warehouseSIM/train_warehouseSIM.py', 'git': {'remote': 'https://github.com/dimarapis/LibMTL.git', 'commit': '40cf8af4eeade7645dd5d7de21c9de87a0c1f0c6'}, 'email': 'dimarapis@hotmail.com', 'root': '/home/dim/mdpi_robotics/LibMTL', 'host': 'dim-dtu', 'username': 'dim', 'executable': '/home/dim/anaconda3/envs/libmtl/bin/python', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2550.649625, 'min': 800.0, 'max': 5300.0}, 'cpu_freq_per_core': [{'current': 2177.881, 'min': 800.0, 'max': 5300.0}, {'current': 2711.935, 'min': 800.0, 'max': 5300.0}, {'current': 2716.585, 'min': 800.0, 'max': 5300.0}, {'current': 2695.176, 'min': 800.0, 'max': 5300.0}, {'current': 2409.878, 'min': 800.0, 'max': 5300.0}, {'current': 2208.919, 'min': 800.0, 'max': 5300.0}, {'current': 2691.233, 'min': 800.0, 'max': 5300.0}, {'current': 2373.765, 'min': 800.0, 'max': 5300.0}, {'current': 2806.164, 'min': 800.0, 'max': 5300.0}, {'current': 2443.578, 'min': 800.0, 'max': 5300.0}, {'current': 3455.365, 'min': 800.0, 'max': 5300.0}, {'current': 2290.553, 'min': 800.0, 'max': 5300.0}, {'current': 2749.801, 'min': 800.0, 'max': 5300.0}, {'current': 2544.466, 'min': 800.0, 'max': 5300.0}, {'current': 2701.745, 'min': 800.0, 'max': 5300.0}, {'current': 1833.35, 'min': 800.0, 'max': 5300.0}], 'disk': {'total': 857.1477890014648, 'used': 804.4731903076172}, 'gpu': 'NVIDIA GeForce RTX 2070 Super with Max-Q Design', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2070 Super with Max-Q Design', 'memory_total': 8370061312}], 'memory': {'total': 31.174644470214844}}
+2023-03-31 11:30:21,384 INFO    HandlerThread:49269 [system_monitor.py:probe():214] Finished collecting system info
+2023-03-31 11:30:21,384 INFO    HandlerThread:49269 [system_monitor.py:probe():217] Publishing system info
+2023-03-31 11:30:21,384 DEBUG   HandlerThread:49269 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-03-31 11:30:21,384 DEBUG   HandlerThread:49269 [system_info.py:_save_pip():67] Saving pip packages done
+2023-03-31 11:30:21,384 DEBUG   HandlerThread:49269 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-03-31 11:30:22,254 INFO    Thread-13 :49269 [dir_watcher.py:_on_file_created():278] file/dir created: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230331_113020-ujdq5iaa/files/requirements.txt
+2023-03-31 11:30:22,254 INFO    Thread-13 :49269 [dir_watcher.py:_on_file_created():278] file/dir created: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230331_113020-ujdq5iaa/files/conda-environment.yaml
+2023-03-31 11:30:22,254 INFO    Thread-13 :49269 [dir_watcher.py:_on_file_created():278] file/dir created: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230331_113020-ujdq5iaa/files/wandb-summary.json
+2023-03-31 11:30:22,733 DEBUG   HandlerThread:49269 [system_info.py:_save_conda():86] Saving conda packages done
+2023-03-31 11:30:22,734 INFO    HandlerThread:49269 [system_monitor.py:probe():219] Finished publishing system info
+2023-03-31 11:30:22,736 DEBUG   SenderThread:49269 [sender.py:send():336] send: files
+2023-03-31 11:30:22,736 INFO    SenderThread:49269 [sender.py:_save_file():1332] saving file wandb-metadata.json with policy now
+2023-03-31 11:30:22,742 DEBUG   HandlerThread:49269 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-31 11:30:22,743 DEBUG   SenderThread:49269 [sender.py:send_request():363] send_request: stop_status
+2023-03-31 11:30:22,949 DEBUG   SenderThread:49269 [sender.py:send():336] send: telemetry
+2023-03-31 11:30:23,253 INFO    Thread-13 :49269 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230331_113020-ujdq5iaa/files/conda-environment.yaml
+2023-03-31 11:30:23,253 INFO    Thread-13 :49269 [dir_watcher.py:_on_file_created():278] file/dir created: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230331_113020-ujdq5iaa/files/wandb-metadata.json
+2023-03-31 11:30:23,359 ERROR   gpu       :49269 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-31 11:30:23,433 INFO    wandb-upload_0:49269 [upload_job.py:push():138] Uploaded file /tmp/tmpl0mzgztowandb/258bq7pa-wandb-metadata.json
+2023-03-31 11:30:25,254 INFO    Thread-13 :49269 [dir_watcher.py:_on_file_created():278] file/dir created: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230331_113020-ujdq5iaa/files/output.log
+2023-03-31 11:30:25,363 ERROR   gpu       :49269 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-31 11:30:25,834 DEBUG   HandlerThread:49269 [handler.py:handle_request():144] handle_request: status_report
+2023-03-31 11:30:27,254 INFO    Thread-13 :49269 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230331_113020-ujdq5iaa/files/output.log
+2023-03-31 11:30:27,366 ERROR   gpu       :49269 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-31 11:30:29,368 ERROR   gpu       :49269 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-31 11:30:30,835 DEBUG   HandlerThread:49269 [handler.py:handle_request():144] handle_request: status_report
+2023-03-31 11:30:31,373 ERROR   gpu       :49269 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-31 11:30:33,256 INFO    Thread-13 :49269 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230331_113020-ujdq5iaa/files/output.log
+2023-03-31 11:30:33,377 ERROR   gpu       :49269 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-31 11:30:35,384 ERROR   gpu       :49269 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-31 11:30:36,574 DEBUG   HandlerThread:49269 [handler.py:handle_request():144] handle_request: status_report
+2023-03-31 11:30:37,258 INFO    Thread-13 :49269 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230331_113020-ujdq5iaa/files/output.log
+2023-03-31 11:30:37,389 ERROR   gpu       :49269 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-31 11:30:37,742 DEBUG   HandlerThread:49269 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-31 11:30:37,742 DEBUG   SenderThread:49269 [sender.py:send_request():363] send_request: stop_status
+2023-03-31 11:30:39,260 INFO    Thread-13 :49269 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230331_113020-ujdq5iaa/files/output.log
+2023-03-31 11:30:39,396 ERROR   gpu       :49269 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-31 11:30:41,401 ERROR   gpu       :49269 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-31 11:30:41,944 DEBUG   HandlerThread:49269 [handler.py:handle_request():144] handle_request: status_report
+2023-03-31 11:30:43,404 ERROR   gpu       :49269 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-31 11:30:45,409 ERROR   gpu       :49269 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-31 11:30:46,944 DEBUG   HandlerThread:49269 [handler.py:handle_request():144] handle_request: status_report
+2023-03-31 11:30:47,413 ERROR   gpu       :49269 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-31 11:30:49,418 ERROR   gpu       :49269 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-31 11:30:51,465 ERROR   gpu       :49269 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-31 11:30:51,949 DEBUG   HandlerThread:49269 [handler.py:handle_request():144] handle_request: status_report
+2023-03-31 11:30:52,266 INFO    Thread-13 :49269 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230331_113020-ujdq5iaa/files/config.yaml

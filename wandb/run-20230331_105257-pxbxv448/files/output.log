@@ -1,0 +1,35 @@
+========================================
+Total Params: 71891291
+Trainable Params: 71891291
+Non-trainable Params: 0
+========================================
+LOG FORMAT | segmentation_LOSS mIoU pixAcc | depth_LOSS abs_err rel_err | normal_LOSS mean median <11.25 <22.5 <30 | TIME
+Epoch 0/199
+self_multiinpout False
+753
+torch.Size([3, 288, 512]) torch.Size([288, 512]) torch.Size([1, 288, 512]) torch.Size([3, 288, 512]) torch.Size([1, 288, 384])
+torch.Size([3, 288, 512]) torch.Size([288, 512]) torch.Size([1, 288, 512]) torch.Size([3, 288, 512]) torch.Size([1, 288, 384])
+torch.Size([2, 23, 36, 64])
+torch.Size([2, 1, 36, 64])
+torch.Size([2, 3, 36, 64])
+batch took 1.1716182231903076 seconds
+torch.Size([3, 288, 512]) torch.Size([288, 512]) torch.Size([1, 288, 512]) torch.Size([3, 288, 512]) torch.Size([1, 288, 384])
+torch.Size([3, 288, 512]) torch.Size([288, 512]) torch.Size([1, 288, 512]) torch.Size([3, 288, 512]) torch.Size([1, 288, 384])
+torch.Size([2, 23, 36, 64])
+torch.Size([2, 1, 36, 64])
+torch.Size([2, 3, 36, 64])
+  0%|                                               | 1/753 [00:01<18:09,  1.45s/it]
+Traceback (most recent call last):
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 127, in <module>
+    main(params)
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 119, in main
+    NYUmodel.train(nyuv2_train_loader, nyuv2_test_loader, 200)
+  File "/home/dim/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 232, in train
+    w = self.model.backward(train_losses, **self.kwargs['weight_args'])
+  File "/home/dim/mdpi_robotics/LibMTL/LibMTL/weighting/EW.py", line 21, in backward
+    loss.backward()
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/tensor.py", line 245, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/autograd/__init__.py", line 145, in backward
+    Variable._execution_engine.run_backward(
+RuntimeError: CUDA out of memory. Tried to allocate 162.00 MiB (GPU 0; 7.80 GiB total capacity; 2.50 GiB already allocated; 198.94 MiB free; 2.68 GiB reserved in total by PyTorch)

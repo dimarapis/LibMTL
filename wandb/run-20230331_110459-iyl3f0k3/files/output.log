@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 127, in <module>
+    main(params)
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 108, in main
+    NYUmodel = NYUtrainer(wandb_run = wandb.run,
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 89, in __init__
+    super(NYUtrainer, self).__init__(wandb_run = wandb_run,
+  File "/home/dim/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 84, in __init__
+    self.device = torch.device('cpy')#('cuda:0')
+RuntimeError: Expected one of cpu, cuda, xpu, mkldnn, opengl, opencl, ideep, hip, msnpu, xla, vulkan device type at start of device string: cpy

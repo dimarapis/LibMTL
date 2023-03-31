@@ -1,0 +1,1 @@
+{"train_loss": {"segmentation": 3.044912099838257, "depth": 0.70698082447052, "normal": 1.0451011657714844}, "_timestamp": 1680195424.0873318, "_runtime": 8.176395654678345, "_step": 0, "_wandb": {"runtime": 16}}

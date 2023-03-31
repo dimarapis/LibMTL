@@ -1,0 +1,34 @@
+========================================
+Total Params: 71891291
+Trainable Params: 71891291
+Non-trainable Params: 0
+========================================
+LOG FORMAT | segmentation_LOSS mIoU pixAcc | depth_LOSS abs_err rel_err | normal_LOSS mean median <11.25 <22.5 <30 | TIME
+Epoch 0/199
+self_multiinpout False
+753
+Epoch: 0000 | TRAIN: 3.0537 0.0051 0.0729 | 0.7143 0.7143 1.4579 | 1.0341 92.6399 90.6065 0.0031 0.0156 0.0326 | Time: 0.4378 |
+Epoch: 0000 | TRAIN: 3.0537 0.0051 0.0729 | 0.7143 0.7143 1.4579 | 1.0341 92.6399 90.6065 0.0031 0.0156 0.0326 | Time: 0.4378 | base_results: {'segmentation': [0.0014793475857004523, 0.0026964133139699697], 'depth': [0.9287202544473072, 1.0314924302828554], 'normal': [71.967285, 65.57823, 0.005306905675268163, 0.026628212924465374, 0.05530535023254137]}
+new_results: {'segmentation': [0.0014793475857004523, 0.0026964133139699697], 'depth': [0.9287202544473072, 1.0314924302828554], 'normal': [71.967285, 65.57823, 0.005306905675268163, 0.026628212924465374, 0.05530535023254137]}
+task: segmentation, computed_value: 0.0, row 1: [-1 -1],            row 2: [0. 0.],            row 3: [0.00147935 0.00269641]
+task: depth, computed_value: 0.0, row 1: [1 1],            row 2: [0. 0.],            row 3: [0.92872025 1.03149243]
+task: normal, computed_value: 0.0, row 1: [ 1  1 -1 -1 -1],            row 2: [0. 0. 0. 0. 0.],            row 3: [7.19672852e+01 6.55782318e+01 5.30690568e-03 2.66282129e-02
+ 5.53053502e-02]
+TEST: 3.1469 0.0015 0.0027 | 0.9287 0.9287 1.0315 | 0.7194 71.9673 65.5782 0.0053 0.0266 0.0553 | Time: 22.5280
+Epoch 1/199
+self_multiinpout False
+753
+  0%|                                                                                                         | 0/753 [00:00<?, ?it/s]
+Epoch: 0001 | TRAIN: 3.0044 0.0209 0.1401 | 0.6726 0.6726 16.0199 | 1.1192 97.8321 97.7884 0.0007 0.0031 0.0065 | Time: 0.3863 |
+Traceback (most recent call last):
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 126, in <module>
+    main(params)
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 118, in main
+    NYUmodel.train(nyuv2_train_loader, nyuv2_test_loader, 200)
+  File "/home/dim/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 267, in train
+    self.test(test_dataloaders, epoch, mode='test')
+  File "/home/dim/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 297, in test
+    test_losses = self._compute_loss(test_preds, test_gts)
+  File "/home/dim/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 163, in _compute_loss
+    train_losses = torch.zeros(self.task_num).to(self.device)
+KeyboardInterrupt

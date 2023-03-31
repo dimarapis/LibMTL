@@ -1,0 +1,22 @@
+========================================
+Total Params: 71891291
+Trainable Params: 71891291
+Non-trainable Params: 0
+========================================
+LOG FORMAT | segmentation_LOSS mIoU pixAcc | depth_LOSS abs_err rel_err | normal_LOSS mean median <11.25 <22.5 <30 | TIME
+Epoch 0/199
+self_multiinpout False
+753
+torch.Size([3, 288, 512]) torch.Size([288, 512]) torch.Size([1, 288, 512]) torch.Size([3, 288, 512]) torch.Size([1, 288, 384])
+torch.Size([3, 288, 512]) torch.Size([288, 512]) torch.Size([1, 288, 512]) torch.Size([3, 288, 512]) torch.Size([1, 288, 384])
+  0%|                                                       | 0/753 [00:13<?, ?it/s]
+Traceback (most recent call last):
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 126, in <module>
+    main(params)
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 118, in main
+    NYUmodel.train(nyuv2_train_loader, nyuv2_test_loader, 200)
+  File "/home/dim/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 220, in train
+    train_losses = self._compute_loss(train_preds, train_gts)
+  File "/home/dim/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 165, in _compute_loss
+    train_losses = torch.zeros(self.task_num).to(self.device)
+KeyboardInterrupt

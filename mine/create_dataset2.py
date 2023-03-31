@@ -110,7 +110,7 @@ class warehouseSIM(data.Dataset):
         4. Noise prediction [to test auxiliary learning, purely conflict gradients]
     """
     
-    def __init__(self, root, train=True, augmentation=False):
+    def __init__(self, root, train=True, augmentation=False, params=None):
         
         seed = 0
         np.random.seed(seed)
@@ -120,7 +120,10 @@ class warehouseSIM(data.Dataset):
         # When running on the CuDNN backend, two further options must be set
         torch.backends.cudnn.deterministic = True
         torch.backends.cudnn.benchmark = False
-
+        self.params = params.resolution
+        sizes = {'mini': (180,320), 'std': (300,534), 'full': (360,640)}
+        self.resolution = sizes[params.resolution]
+        
         self.train = train
         self.root = os.path.expanduser(root)
         self.augmentation = augmentation
@@ -154,14 +157,22 @@ class warehouseSIM(data.Dataset):
         #normal = transforms.ToTensor()(normal)
 
         semantic = transforms.Resize((360,640))(semantic.unsqueeze(0)).squeeze(0)
+
+        
         #semantic_resized = #torch.nn.functional.interpolate(semantic, size=(360,640), mode='interpolate', align_corners=True)
         #print(image.shape, semantic_resized.shape, depth.shape, normal.shape, noise.shape)
         
         normal = 2. * normal - 1.
         
+        if self.params == 'std':
+            pass
+        else:
+            image = transforms.Resize(self.resolution)(image)
+            semantic = transforms.Resize(self.resolution)(semantic.unsqueeze(0)).squeeze(0)
+            depth = transforms.Resize(self.resolution)(depth)
+            normal = transforms.Resize(self.resolution)(normal)
 
-        
-        #print(normal.max(), normal.min())
+        print(image.shape, semantic.shape, depth.shape, normal.shape, noise.shape)
 
         # apply data augmentation if required
         if self.augmentation:

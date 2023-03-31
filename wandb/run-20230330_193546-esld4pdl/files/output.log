@@ -1,0 +1,67 @@
+========================================
+Total Params: 71891291
+Trainable Params: 71891291
+Non-trainable Params: 0
+========================================
+LOG FORMAT | segmentation_LOSS mIoU pixAcc | depth_LOSS abs_err rel_err | normal_LOSS mean median <11.25 <22.5 <30 | TIME
+Epoch 0/199
+self_multiinpout False
+753
+torch.Size([3, 360, 640]) torch.Size([360, 640]) torch.Size([1, 360, 640]) torch.Size([3, 360, 640]) torch.Size([1, 288, 384])
+torch.Size([3, 360, 640]) torch.Size([360, 640]) torch.Size([1, 360, 640]) torch.Size([3, 360, 640]) torch.Size([1, 288, 384])
+  0%|                                                  | 0/753 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/dim/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 136, in _process_data
+    data, label = loader[1].next()
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 517, in __next__
+    data = self._next_data()
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 557, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/dim/mdpi_robotics/LibMTL/mine/create_dataset2.py", line 168, in __getitem__
+    semantic = transforms.Resize((180,320))(semantic)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torchvision/transforms/transforms.py", line 273, in forward
+    return F.resize(img, self.size, self.interpolation)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torchvision/transforms/functional.py", line 377, in resize
+    return F_t.resize(img, size=size, interpolation=interpolation.value)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torchvision/transforms/functional_tensor.py", line 515, in resize
+    img = interpolate(img, size=[size_h, size_w], mode=interpolation, align_corners=align_corners)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/nn/functional.py", line 3475, in interpolate
+    raise ValueError(
+ValueError: size shape must match input shape. Input is 1D, size is 2
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 126, in <module>
+    main(params)
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 118, in main
+    NYUmodel.train(nyuv2_train_loader, nyuv2_test_loader, 200)
+  File "/home/dim/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 212, in train
+    train_inputs, train_gts = self._process_data(train_loader)
+  File "/home/dim/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 139, in _process_data
+    data, label = loader[1].next()
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 517, in __next__
+    data = self._next_data()
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 557, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/dim/mdpi_robotics/LibMTL/mine/create_dataset2.py", line 168, in __getitem__
+    semantic = transforms.Resize((180,320))(semantic)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torchvision/transforms/transforms.py", line 273, in forward
+    return F.resize(img, self.size, self.interpolation)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torchvision/transforms/functional.py", line 377, in resize
+    return F_t.resize(img, size=size, interpolation=interpolation.value)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torchvision/transforms/functional_tensor.py", line 515, in resize
+    img = interpolate(img, size=[size_h, size_w], mode=interpolation, align_corners=align_corners)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/nn/functional.py", line 3475, in interpolate
+    raise ValueError(
+ValueError: size shape must match input shape. Input is 1D, size is 2

@@ -1,0 +1,43 @@
+========================================
+Total Params: 71891291
+Trainable Params: 71891291
+Non-trainable Params: 0
+========================================
+LOG FORMAT | segmentation_LOSS mIoU pixAcc | depth_LOSS abs_err rel_err | normal_LOSS mean median <11.25 <22.5 <30 | TIME
+Epoch 0/199
+self_multiinpout False
+  0%|                                                      | 0/1507 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 126, in <module>
+    main(params)
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 118, in main
+    NYUmodel.train(nyuv2_train_loader, nyuv2_test_loader, 200)
+  File "/home/dim/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 212, in train
+    train_preds = self.model(train_inputs)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/dim/mdpi_robotics/LibMTL/LibMTL/architecture/abstract_arch.py", line 54, in forward
+    out[task] = self.decoders[task](ss_rep)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/nn/modules/container.py", line 119, in forward
+    input = module(input)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/dim/mdpi_robotics/LibMTL/examples/warehouseSIM/aspp.py", line 68, in forward
+    res.append(conv(x))
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/dim/mdpi_robotics/LibMTL/examples/warehouseSIM/aspp.py", line 37, in forward
+    x = super(ASPPPooling, self).forward(x)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/nn/modules/container.py", line 119, in forward
+    input = module(input)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/nn/modules/batchnorm.py", line 135, in forward
+    return F.batch_norm(
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/nn/functional.py", line 2147, in batch_norm
+    _verify_batch_size(input.size())
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/nn/functional.py", line 2114, in _verify_batch_size
+    raise ValueError("Expected more than 1 value per channel when training, got input size {}".format(size))
+ValueError: Expected more than 1 value per channel when training, got input size torch.Size([1, 256, 1, 1])

@@ -1,0 +1,134 @@
+========================================
+Total Params: 71891291
+Trainable Params: 71891291
+Non-trainable Params: 0
+========================================
+LOG FORMAT | segmentation_LOSS mIoU pixAcc | depth_LOSS abs_err rel_err | normal_LOSS mean median <11.25 <22.5 <30 | TIME
+Epoch 0/199
+self_multiinpout False
+753
+tensor([3.0449, 0.7070, 1.0451], device='cuda:0', grad_fn=<CopySlices>)
+{'segmentation': 3.044912099838257, 'depth': 0.70698082447052, 'normal': 1.0451011657714844}
+  0%|                                                                                                                                           | 0/753 [00:00<?, ?it/s]
+tensor([2.9071, 0.7235, 1.1450], device='cuda:0', grad_fn=<CopySlices>)
+
+  0%|▎                                                                                                                                  | 2/753 [00:03<19:33,  1.56s/it]
+tensor([2.6504, 0.8828, 1.1662], device='cuda:0', grad_fn=<CopySlices>)
+
+  0%|▌                                                                                                                                  | 3/753 [00:04<19:24,  1.55s/it]
+tensor([2.6797, 1.0207, 0.9607], device='cuda:0', grad_fn=<CopySlices>)
+{'segmentation': 2.6796536445617676, 'depth': 1.020677089691162, 'normal': 0.9607124328613281}
+tensor([2.4259, 0.6500, 0.9554], device='cuda:0', grad_fn=<CopySlices>)
+
+  1%|▋                                                                                                                                  | 4/753 [00:06<19:21,  1.55s/it]
+tensor([2.3167, 0.8019, 0.8114], device='cuda:0', grad_fn=<CopySlices>)
+
+  1%|█                                                                                                                                  | 6/753 [00:09<19:41,  1.58s/it]
+tensor([2.0939, 0.6828, 0.7378], device='cuda:0', grad_fn=<CopySlices>)
+
+  1%|█▏                                                                                                                                 | 7/753 [00:11<20:06,  1.62s/it]
+tensor([2.3982, 0.6858, 0.5734], device='cuda:0', grad_fn=<CopySlices>)
+
+  1%|█▍                                                                                                                                 | 8/753 [00:12<20:00,  1.61s/it]
+tensor([1.8212, 0.9053, 0.6802], device='cuda:0', grad_fn=<CopySlices>)
+{'segmentation': 1.8211983442306519, 'depth': 0.9052640795707703, 'normal': 0.680178701877594}
+tensor([2.7874, 0.7292, 0.8895], device='cuda:0', grad_fn=<CopySlices>)
+
+  1%|█▋                                                                                                                                | 10/753 [00:15<20:07,  1.62s/it]
+tensor([1.5563, 1.0331, 0.8998], device='cuda:0', grad_fn=<CopySlices>)
+
+  1%|█▉                                                                                                                                | 11/753 [00:17<20:03,  1.62s/it]
+tensor([1.6890, 0.7926, 0.5415], device='cuda:0', grad_fn=<CopySlices>)
+
+  2%|██                                                                                                                                | 12/753 [00:19<20:05,  1.63s/it]
+tensor([1.8258, 0.9445, 0.6381], device='cuda:0', grad_fn=<CopySlices>)
+
+  2%|██▏                                                                                                                               | 13/753 [00:20<19:56,  1.62s/it]
+tensor([1.4413, 0.9266, 0.3743], device='cuda:0', grad_fn=<CopySlices>)
+
+  2%|██▍                                                                                                                               | 14/753 [00:22<20:22,  1.65s/it]
+tensor([2.6521, 0.4872, 0.8052], device='cuda:0', grad_fn=<CopySlices>)
+{'segmentation': 2.652081251144409, 'depth': 0.4872203469276428, 'normal': 0.8051701784133911}
+tensor([1.2883, 1.0104, 1.2249], device='cuda:0', grad_fn=<CopySlices>)
+
+  2%|██▊                                                                                                                               | 16/753 [00:25<20:21,  1.66s/it]
+tensor([1.8514, 0.6051, 1.0741], device='cuda:0', grad_fn=<CopySlices>)
+{'segmentation': 1.8514453172683716, 'depth': 0.6050978302955627, 'normal': 1.0740902423858643}
+tensor([1.4950, 0.4967, 0.5905], device='cuda:0', grad_fn=<CopySlices>)
+
+  2%|███                                                                                                                               | 18/753 [00:29<20:16,  1.65s/it]
+tensor([1.2303, 0.5093, 1.1816], device='cuda:0', grad_fn=<CopySlices>)
+{'segmentation': 1.2303295135498047, 'depth': 0.5092689394950867, 'normal': 1.1815762519836426}
+tensor([1.2675, 0.8894, 0.2702], device='cuda:0', grad_fn=<CopySlices>)
+{'segmentation': 1.2674856185913086, 'depth': 0.8893795013427734, 'normal': 0.2702406048774719}
+tensor([2.0292, 0.3729, 0.6722], device='cuda:0', grad_fn=<CopySlices>)
+{'segmentation': 2.0291950702667236, 'depth': 0.3728625178337097, 'normal': 0.6721525192260742}
+tensor([2.8631, 0.4294, 1.3884], device='cuda:0', grad_fn=<CopySlices>)
+{'segmentation': 2.8631038665771484, 'depth': 0.42938849329948425, 'normal': 1.3884176015853882}
+tensor([1.7262, 0.9140, 0.8933], device='cuda:0', grad_fn=<CopySlices>)
+
+  3%|███▉                                                                                                                              | 23/753 [00:37<20:10,  1.66s/it]
+tensor([1.6535, 0.7378, 0.6333], device='cuda:0', grad_fn=<CopySlices>)
+
+  3%|████▏                                                                                                                             | 24/753 [00:39<20:04,  1.65s/it]
+tensor([1.6820, 0.4786, 0.5835], device='cuda:0', grad_fn=<CopySlices>)
+
+  3%|████▎                                                                                                                             | 25/753 [00:40<19:51,  1.64s/it]
+tensor([2.0005, 0.2772, 0.6855], device='cuda:0', grad_fn=<CopySlices>)
+
+  3%|████▍                                                                                                                             | 26/753 [00:42<20:02,  1.65s/it]
+tensor([1.5202, 0.2987, 0.4092], device='cuda:0', grad_fn=<CopySlices>)
+{'segmentation': 1.5202298164367676, 'depth': 0.2986643314361572, 'normal': 0.40917646884918213}
+tensor([2.1338, 0.3887, 1.1111], device='cuda:0', grad_fn=<CopySlices>)
+
+  4%|████▋                                                                                                                             | 27/753 [00:44<20:07,  1.66s/it]
+tensor([1.2787, 0.5327, 0.4171], device='cuda:0', grad_fn=<CopySlices>)
+
+  4%|████▊                                                                                                                             | 28/753 [00:45<20:18,  1.68s/it]
+tensor([1.7742, 0.2499, 0.6061], device='cuda:0', grad_fn=<CopySlices>)
+
+  4%|█████▏                                                                                                                            | 30/753 [00:49<20:06,  1.67s/it]
+tensor([1.9189, 0.8070, 0.5894], device='cuda:0', grad_fn=<CopySlices>)
+
+  4%|█████▎                                                                                                                            | 31/753 [00:50<20:09,  1.68s/it]
+tensor([1.2638, 0.3745, 1.0378], device='cuda:0', grad_fn=<CopySlices>)
+
+
+  4%|█████▋                                                                                                                            | 33/753 [00:54<20:08,  1.68s/it]
+tensor([2.3209, 0.3438, 0.4852], device='cuda:0', grad_fn=<CopySlices>)
+{'segmentation': 2.3208518028259277, 'depth': 0.3437681198120117, 'normal': 0.4851527810096741}
+tensor([1.4002, 0.2930, 0.6286], device='cuda:0', grad_fn=<CopySlices>)
+
+  5%|█████▊                                                                                                                            | 34/753 [00:55<20:06,  1.68s/it]
+tensor([1.2503, 0.3614, 0.5172], device='cuda:0', grad_fn=<CopySlices>)
+{'segmentation': 1.2502851486206055, 'depth': 0.3614262640476227, 'normal': 0.5172222852706909}
+tensor([1.4733, 0.3417, 0.4568], device='cuda:0', grad_fn=<CopySlices>)
+{'segmentation': 1.4733113050460815, 'depth': 0.3417091369628906, 'normal': 0.456779420375824}
+tensor([0.9404, 0.3202, 1.0502], device='cuda:0', grad_fn=<CopySlices>)
+{'segmentation': 0.9404435753822327, 'depth': 0.32021111249923706, 'normal': 1.0502384901046753}
+tensor([1.3904, 0.2196, 0.3981], device='cuda:0', grad_fn=<CopySlices>)
+{'segmentation': 1.3904057741165161, 'depth': 0.219621479511261, 'normal': 0.398124098777771}
+tensor([1.6961, 0.2012, 0.6718], device='cuda:0', grad_fn=<CopySlices>)
+{'segmentation': 1.6960524320602417, 'depth': 0.20120587944984436, 'normal': 0.6717846393585205}
+tensor([2.4986, 0.2454, 1.0970], device='cuda:0', grad_fn=<CopySlices>)
+{'segmentation': 2.4986178874969482, 'depth': 0.24541427195072174, 'normal': 1.0970369577407837}
+tensor([1.7070, 0.1962, 1.2467], device='cuda:0', grad_fn=<CopySlices>)
+{'segmentation': 1.706984043121338, 'depth': 0.1961609125137329, 'normal': 1.246709942817688}
+tensor([1.0174, 0.2073, 0.4488], device='cuda:0', grad_fn=<CopySlices>)
+{'segmentation': 1.0173603296279907, 'depth': 0.2073451727628708, 'normal': 0.4488348960876465}
+tensor([1.3102, 0.1975, 0.6148], device='cuda:0', grad_fn=<CopySlices>)
+{'segmentation': 1.3101704120635986, 'depth': 0.1974688023328781, 'normal': 0.6148415803909302}
+tensor([0.9635, 0.3776, 0.9580], device='cuda:0', grad_fn=<CopySlices>)
+  6%|███████▌                                                                                                                          | 44/753 [01:13<19:43,  1.67s/it]
+Traceback (most recent call last):
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 126, in <module>
+    main(params)
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 118, in main
+    NYUmodel.train(nyuv2_train_loader, nyuv2_test_loader, 200)
+  File "/home/dim/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 226, in train
+    self.optimizer.zero_grad()
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/optim/optimizer.py", line 206, in zero_grad
+    with torch.autograd.profiler.record_function(self._zero_grad_profile_name):
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/autograd/profiler.py", line 613, in __init__
+    self.handle: torch.Tensor = torch.zeros(1)
+KeyboardInterrupt

@@ -1,0 +1,150 @@
+2023-03-30 13:26:07,233 INFO    StreamThr :35319 [internal.py:wandb_internal():87] W&B internal server running at pid: 35319, started at: 2023-03-30 13:26:07.233068
+2023-03-30 13:26:07,234 DEBUG   HandlerThread:35319 [handler.py:handle_request():144] handle_request: status
+2023-03-30 13:26:07,239 INFO    WriterThread:35319 [datastore.py:open_for_write():85] open: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_132607-yhpyoex2/run-yhpyoex2.wandb
+2023-03-30 13:26:07,240 DEBUG   SenderThread:35319 [sender.py:send():336] send: header
+2023-03-30 13:26:07,250 DEBUG   SenderThread:35319 [sender.py:send():336] send: run
+2023-03-30 13:26:07,642 INFO    SenderThread:35319 [dir_watcher.py:__init__():219] watching files in: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_132607-yhpyoex2/files
+2023-03-30 13:26:07,642 INFO    SenderThread:35319 [sender.py:_start_run_threads():1078] run started: yhpyoex2 with start time 1680175567.234988
+2023-03-30 13:26:07,642 DEBUG   SenderThread:35319 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 13:26:07,642 INFO    SenderThread:35319 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 13:26:07,644 DEBUG   HandlerThread:35319 [handler.py:handle_request():144] handle_request: check_version
+2023-03-30 13:26:07,644 DEBUG   SenderThread:35319 [sender.py:send_request():363] send_request: check_version
+2023-03-30 13:26:07,735 DEBUG   HandlerThread:35319 [handler.py:handle_request():144] handle_request: run_start
+2023-03-30 13:26:07,744 DEBUG   HandlerThread:35319 [system_info.py:__init__():31] System info init
+2023-03-30 13:26:07,744 DEBUG   HandlerThread:35319 [system_info.py:__init__():46] System info init done
+2023-03-30 13:26:07,745 INFO    HandlerThread:35319 [system_monitor.py:start():183] Starting system monitor
+2023-03-30 13:26:07,745 INFO    SystemMonitor:35319 [system_monitor.py:_start():147] Starting system asset monitoring threads
+2023-03-30 13:26:07,746 INFO    HandlerThread:35319 [system_monitor.py:probe():204] Collecting system info
+2023-03-30 13:26:07,747 INFO    SystemMonitor:35319 [interfaces.py:start():187] Started cpu monitoring
+2023-03-30 13:26:07,750 INFO    SystemMonitor:35319 [interfaces.py:start():187] Started disk monitoring
+2023-03-30 13:26:07,753 INFO    SystemMonitor:35319 [interfaces.py:start():187] Started gpu monitoring
+2023-03-30 13:26:07,755 INFO    SystemMonitor:35319 [interfaces.py:start():187] Started memory monitoring
+2023-03-30 13:26:07,757 INFO    SystemMonitor:35319 [interfaces.py:start():187] Started network monitoring
+2023-03-30 13:26:07,762 ERROR   gpu       :35319 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 13:26:07,793 DEBUG   HandlerThread:35319 [system_info.py:probe():195] Probing system
+2023-03-30 13:26:07,803 DEBUG   HandlerThread:35319 [system_info.py:_probe_git():180] Probing git
+2023-03-30 13:26:07,821 DEBUG   HandlerThread:35319 [system_info.py:_probe_git():188] Probing git done
+2023-03-30 13:26:07,821 DEBUG   HandlerThread:35319 [system_info.py:probe():240] Probing system done
+2023-03-30 13:26:07,821 DEBUG   HandlerThread:35319 [system_monitor.py:probe():213] {'os': 'Linux-5.4.0-146-generic-x86_64-with-glibc2.17', 'python': '3.8.16', 'heartbeatAt': '2023-03-30T11:26:07.793789', 'startedAt': '2023-03-30T11:26:07.225172', 'docker': None, 'cuda': None, 'args': ('--weighting', 'EW', '--arch', 'HPS', '--dataset_path', 'dataset/warehouseSIM', '--gpu_id', '0', '--scheduler', 'step'), 'state': 'running', 'program': 'examples/warehouseSIM/train_warehouseSIM.py', 'codePath': 'examples/warehouseSIM/train_warehouseSIM.py', 'git': {'remote': 'https://github.com/dimarapis/LibMTL.git', 'commit': '40cf8af4eeade7645dd5d7de21c9de87a0c1f0c6'}, 'email': 'dimarapis@hotmail.com', 'root': '/home/dim/mdpi_robotics/LibMTL', 'host': 'dim-dtu', 'username': 'dim', 'executable': '/home/dim/anaconda3/envs/libmtl/bin/python', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 1165.1686249999998, 'min': 800.0, 'max': 5300.0}, 'cpu_freq_per_core': [{'current': 800.032, 'min': 800.0, 'max': 5300.0}, {'current': 800.061, 'min': 800.0, 'max': 5300.0}, {'current': 799.96, 'min': 800.0, 'max': 5300.0}, {'current': 800.04, 'min': 800.0, 'max': 5300.0}, {'current': 800.031, 'min': 800.0, 'max': 5300.0}, {'current': 800.059, 'min': 800.0, 'max': 5300.0}, {'current': 800.046, 'min': 800.0, 'max': 5300.0}, {'current': 799.929, 'min': 800.0, 'max': 5300.0}, {'current': 800.044, 'min': 800.0, 'max': 5300.0}, {'current': 800.082, 'min': 800.0, 'max': 5300.0}, {'current': 800.0, 'min': 800.0, 'max': 5300.0}, {'current': 800.103, 'min': 800.0, 'max': 5300.0}, {'current': 800.051, 'min': 800.0, 'max': 5300.0}, {'current': 800.078, 'min': 800.0, 'max': 5300.0}, {'current': 800.061, 'min': 800.0, 'max': 5300.0}, {'current': 800.085, 'min': 800.0, 'max': 5300.0}], 'disk': {'total': 857.1477890014648, 'used': 806.5755004882812}, 'gpu': 'NVIDIA GeForce RTX 2070 Super with Max-Q Design', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2070 Super with Max-Q Design', 'memory_total': 8370061312}], 'memory': {'total': 31.174644470214844}}
+2023-03-30 13:26:07,821 INFO    HandlerThread:35319 [system_monitor.py:probe():214] Finished collecting system info
+2023-03-30 13:26:07,821 INFO    HandlerThread:35319 [system_monitor.py:probe():217] Publishing system info
+2023-03-30 13:26:07,821 DEBUG   HandlerThread:35319 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-03-30 13:26:07,822 DEBUG   HandlerThread:35319 [system_info.py:_save_pip():67] Saving pip packages done
+2023-03-30 13:26:07,822 DEBUG   HandlerThread:35319 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-03-30 13:26:08,644 INFO    Thread-13 :35319 [dir_watcher.py:_on_file_created():278] file/dir created: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_132607-yhpyoex2/files/requirements.txt
+2023-03-30 13:26:08,644 INFO    Thread-13 :35319 [dir_watcher.py:_on_file_created():278] file/dir created: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_132607-yhpyoex2/files/conda-environment.yaml
+2023-03-30 13:26:08,644 INFO    Thread-13 :35319 [dir_watcher.py:_on_file_created():278] file/dir created: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_132607-yhpyoex2/files/wandb-summary.json
+2023-03-30 13:26:08,978 DEBUG   HandlerThread:35319 [system_info.py:_save_conda():86] Saving conda packages done
+2023-03-30 13:26:08,979 INFO    HandlerThread:35319 [system_monitor.py:probe():219] Finished publishing system info
+2023-03-30 13:26:08,981 DEBUG   SenderThread:35319 [sender.py:send():336] send: files
+2023-03-30 13:26:08,981 INFO    SenderThread:35319 [sender.py:_save_file():1332] saving file wandb-metadata.json with policy now
+2023-03-30 13:26:08,987 DEBUG   HandlerThread:35319 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-30 13:26:08,988 DEBUG   SenderThread:35319 [sender.py:send_request():363] send_request: stop_status
+2023-03-30 13:26:09,210 DEBUG   SenderThread:35319 [sender.py:send():336] send: telemetry
+2023-03-30 13:26:09,625 INFO    wandb-upload_0:35319 [upload_job.py:push():138] Uploaded file /tmp/tmpmll0ovtvwandb/mvmafs75-wandb-metadata.json
+2023-03-30 13:26:09,643 INFO    Thread-13 :35319 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_132607-yhpyoex2/files/conda-environment.yaml
+2023-03-30 13:26:09,643 INFO    Thread-13 :35319 [dir_watcher.py:_on_file_created():278] file/dir created: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_132607-yhpyoex2/files/wandb-metadata.json
+2023-03-30 13:26:09,765 ERROR   gpu       :35319 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 13:26:11,767 ERROR   gpu       :35319 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 13:26:13,211 DEBUG   HandlerThread:35319 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 13:26:13,644 INFO    Thread-13 :35319 [dir_watcher.py:_on_file_created():278] file/dir created: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_132607-yhpyoex2/files/output.log
+2023-03-30 13:26:13,770 ERROR   gpu       :35319 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 13:26:15,645 INFO    Thread-13 :35319 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_132607-yhpyoex2/files/output.log
+2023-03-30 13:26:15,773 ERROR   gpu       :35319 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 13:26:17,776 ERROR   gpu       :35319 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 13:26:18,633 DEBUG   HandlerThread:35319 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 13:26:19,779 ERROR   gpu       :35319 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 13:26:20,751 DEBUG   SenderThread:35319 [sender.py:send():336] send: exit
+2023-03-30 13:26:20,751 INFO    SenderThread:35319 [sender.py:send_exit():559] handling exit code: 255
+2023-03-30 13:26:20,751 INFO    SenderThread:35319 [sender.py:send_exit():561] handling runtime: 13
+2023-03-30 13:26:20,753 INFO    SenderThread:35319 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 13:26:20,754 INFO    SenderThread:35319 [sender.py:send_exit():567] send defer
+2023-03-30 13:26:20,754 DEBUG   HandlerThread:35319 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 13:26:20,754 INFO    HandlerThread:35319 [handler.py:handle_request_defer():170] handle defer: 0
+2023-03-30 13:26:20,754 DEBUG   SenderThread:35319 [sender.py:send_request():363] send_request: defer
+2023-03-30 13:26:20,754 INFO    SenderThread:35319 [sender.py:send_request_defer():583] handle sender defer: 0
+2023-03-30 13:26:20,754 INFO    SenderThread:35319 [sender.py:transition_state():587] send defer: 1
+2023-03-30 13:26:20,754 DEBUG   HandlerThread:35319 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 13:26:20,755 INFO    HandlerThread:35319 [handler.py:handle_request_defer():170] handle defer: 1
+2023-03-30 13:26:20,755 DEBUG   SenderThread:35319 [sender.py:send_request():363] send_request: defer
+2023-03-30 13:26:20,755 INFO    SenderThread:35319 [sender.py:send_request_defer():583] handle sender defer: 1
+2023-03-30 13:26:20,755 INFO    SenderThread:35319 [sender.py:transition_state():587] send defer: 2
+2023-03-30 13:26:20,755 DEBUG   HandlerThread:35319 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 13:26:20,755 INFO    HandlerThread:35319 [handler.py:handle_request_defer():170] handle defer: 2
+2023-03-30 13:26:20,755 INFO    HandlerThread:35319 [system_monitor.py:finish():193] Stopping system monitor
+2023-03-30 13:26:20,756 DEBUG   SystemMonitor:35319 [system_monitor.py:_start():161] Starting system metrics aggregation loop
+2023-03-30 13:26:20,757 DEBUG   SystemMonitor:35319 [system_monitor.py:_start():168] Finished system metrics aggregation loop
+2023-03-30 13:26:20,757 DEBUG   SystemMonitor:35319 [system_monitor.py:_start():172] Publishing last batch of metrics
+2023-03-30 13:26:20,757 INFO    HandlerThread:35319 [interfaces.py:finish():199] Joined cpu monitor
+2023-03-30 13:26:20,759 INFO    HandlerThread:35319 [interfaces.py:finish():199] Joined disk monitor
+2023-03-30 13:26:20,810 INFO    HandlerThread:35319 [interfaces.py:finish():199] Joined gpu monitor
+2023-03-30 13:26:20,810 INFO    HandlerThread:35319 [interfaces.py:finish():199] Joined memory monitor
+2023-03-30 13:26:20,810 INFO    HandlerThread:35319 [interfaces.py:finish():199] Joined network monitor
+2023-03-30 13:26:20,810 DEBUG   SenderThread:35319 [sender.py:send_request():363] send_request: defer
+2023-03-30 13:26:20,810 INFO    SenderThread:35319 [sender.py:send_request_defer():583] handle sender defer: 2
+2023-03-30 13:26:20,810 INFO    SenderThread:35319 [sender.py:transition_state():587] send defer: 3
+2023-03-30 13:26:20,811 DEBUG   SenderThread:35319 [sender.py:send():336] send: stats
+2023-03-30 13:26:20,811 DEBUG   HandlerThread:35319 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 13:26:20,811 INFO    HandlerThread:35319 [handler.py:handle_request_defer():170] handle defer: 3
+2023-03-30 13:26:20,811 DEBUG   SenderThread:35319 [sender.py:send_request():363] send_request: defer
+2023-03-30 13:26:20,811 INFO    SenderThread:35319 [sender.py:send_request_defer():583] handle sender defer: 3
+2023-03-30 13:26:20,811 INFO    SenderThread:35319 [sender.py:transition_state():587] send defer: 4
+2023-03-30 13:26:20,811 DEBUG   HandlerThread:35319 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 13:26:20,811 INFO    HandlerThread:35319 [handler.py:handle_request_defer():170] handle defer: 4
+2023-03-30 13:26:20,812 DEBUG   SenderThread:35319 [sender.py:send_request():363] send_request: defer
+2023-03-30 13:26:20,812 INFO    SenderThread:35319 [sender.py:send_request_defer():583] handle sender defer: 4
+2023-03-30 13:26:20,812 INFO    SenderThread:35319 [sender.py:transition_state():587] send defer: 5
+2023-03-30 13:26:20,812 DEBUG   HandlerThread:35319 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 13:26:20,812 INFO    HandlerThread:35319 [handler.py:handle_request_defer():170] handle defer: 5
+2023-03-30 13:26:20,812 DEBUG   SenderThread:35319 [sender.py:send():336] send: summary
+2023-03-30 13:26:20,812 INFO    SenderThread:35319 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 13:26:20,812 DEBUG   SenderThread:35319 [sender.py:send_request():363] send_request: defer
+2023-03-30 13:26:20,813 INFO    SenderThread:35319 [sender.py:send_request_defer():583] handle sender defer: 5
+2023-03-30 13:26:20,813 INFO    SenderThread:35319 [sender.py:transition_state():587] send defer: 6
+2023-03-30 13:26:20,813 DEBUG   HandlerThread:35319 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 13:26:20,813 INFO    HandlerThread:35319 [handler.py:handle_request_defer():170] handle defer: 6
+2023-03-30 13:26:20,813 DEBUG   SenderThread:35319 [sender.py:send_request():363] send_request: defer
+2023-03-30 13:26:20,813 INFO    SenderThread:35319 [sender.py:send_request_defer():583] handle sender defer: 6
+2023-03-30 13:26:20,816 DEBUG   HandlerThread:35319 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 13:26:21,041 INFO    SenderThread:35319 [sender.py:transition_state():587] send defer: 7
+2023-03-30 13:26:21,042 DEBUG   HandlerThread:35319 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 13:26:21,042 INFO    HandlerThread:35319 [handler.py:handle_request_defer():170] handle defer: 7
+2023-03-30 13:26:21,042 DEBUG   SenderThread:35319 [sender.py:send_request():363] send_request: defer
+2023-03-30 13:26:21,043 INFO    SenderThread:35319 [sender.py:send_request_defer():583] handle sender defer: 7
+2023-03-30 13:26:21,646 INFO    Thread-13 :35319 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_132607-yhpyoex2/files/wandb-summary.json
+2023-03-30 13:26:21,647 INFO    Thread-13 :35319 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_132607-yhpyoex2/files/config.yaml
+2023-03-30 13:26:21,751 DEBUG   HandlerThread:35319 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-30 13:26:22,756 INFO    SenderThread:35319 [sender.py:transition_state():587] send defer: 8
+2023-03-30 13:26:22,756 DEBUG   SenderThread:35319 [sender.py:send_request():363] send_request: poll_exit
+2023-03-30 13:26:22,757 DEBUG   HandlerThread:35319 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 13:26:22,757 INFO    HandlerThread:35319 [handler.py:handle_request_defer():170] handle defer: 8
+2023-03-30 13:26:22,757 DEBUG   SenderThread:35319 [sender.py:send_request():363] send_request: defer
+2023-03-30 13:26:22,757 INFO    SenderThread:35319 [sender.py:send_request_defer():583] handle sender defer: 8
+2023-03-30 13:26:22,777 INFO    SenderThread:35319 [sender.py:transition_state():587] send defer: 9
+2023-03-30 13:26:22,778 DEBUG   HandlerThread:35319 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 13:26:22,778 INFO    HandlerThread:35319 [handler.py:handle_request_defer():170] handle defer: 9
+2023-03-30 13:26:22,779 DEBUG   SenderThread:35319 [sender.py:send():336] send: artifact
+2023-03-30 13:26:23,648 INFO    Thread-13 :35319 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_132607-yhpyoex2/files/output.log
+2023-03-30 13:26:24,148 INFO    wandb-upload_0:35319 [upload_job.py:push():93] Skipped uploading /home/dim/.local/share/wandb/artifacts/staging/tmpa2d0ilro
+2023-03-30 13:26:24,252 WARNING StreamThr :35319 [internal.py:is_dead():415] Internal process exiting, parent pid 35255 disappeared
+2023-03-30 13:26:24,252 ERROR   StreamThr :35319 [internal.py:wandb_internal():153] Internal process shutdown.
+2023-03-30 13:26:24,580 INFO    wandb-upload_1:35319 [upload_job.py:push():96] Uploaded file /home/dim/.local/share/wandb/artifacts/staging/tmpbebkbs2t
+2023-03-30 13:26:24,778 INFO    HandlerThread:35319 [handler.py:finish():842] shutting down handler
+2023-03-30 13:26:24,779 INFO    WriterThread:35319 [datastore.py:close():298] close: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_132607-yhpyoex2/run-yhpyoex2.wandb
+2023-03-30 13:26:26,341 INFO    SenderThread:35319 [sender.py:send_artifact():1428] sent artifact job-https___github.com_dimarapis_LibMTL.git_examples_warehouseSIM_train_warehouseSIM.py - {'id': 'QXJ0aWZhY3Q6NDEwMDI1ODE3', 'digest': '7c267089cb28289640d1d07b64d98079', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjU5NTMwMTgz', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDA5OTk2MTI1', 'versionIndex': 0}}, 'version': 'latest'}
+2023-03-30 13:26:26,341 INFO    SenderThread:35319 [sender.py:finish():1504] shutting down sender
+2023-03-30 13:26:26,341 INFO    SenderThread:35319 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-03-30 13:26:26,649 INFO    SenderThread:35319 [dir_watcher.py:finish():395] scan: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_132607-yhpyoex2/files
+2023-03-30 13:26:26,649 INFO    SenderThread:35319 [dir_watcher.py:finish():409] scan save: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_132607-yhpyoex2/files/wandb-metadata.json wandb-metadata.json
+2023-03-30 13:26:26,650 INFO    SenderThread:35319 [dir_watcher.py:finish():409] scan save: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_132607-yhpyoex2/files/config.yaml config.yaml
+2023-03-30 13:26:26,650 INFO    SenderThread:35319 [dir_watcher.py:finish():409] scan save: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_132607-yhpyoex2/files/conda-environment.yaml conda-environment.yaml
+2023-03-30 13:26:26,650 INFO    SenderThread:35319 [dir_watcher.py:finish():409] scan save: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_132607-yhpyoex2/files/wandb-summary.json wandb-summary.json
+2023-03-30 13:26:26,650 INFO    SenderThread:35319 [dir_watcher.py:finish():409] scan save: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_132607-yhpyoex2/files/requirements.txt requirements.txt
+2023-03-30 13:26:26,654 INFO    SenderThread:35319 [dir_watcher.py:finish():409] scan save: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_132607-yhpyoex2/files/output.log output.log
+2023-03-30 13:26:26,655 INFO    SenderThread:35319 [file_pusher.py:finish():164] shutting down file pusher
+2023-03-30 13:26:26,655 INFO    SenderThread:35319 [file_pusher.py:join():169] waiting for file pusher
+2023-03-30 13:26:27,279 INFO    wandb-upload_1:35319 [upload_job.py:push():138] Uploaded file /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_132607-yhpyoex2/files/conda-environment.yaml
+2023-03-30 13:26:27,281 INFO    wandb-upload_2:35319 [upload_job.py:push():138] Uploaded file /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_132607-yhpyoex2/files/wandb-summary.json
+2023-03-30 13:26:27,283 INFO    wandb-upload_3:35319 [upload_job.py:push():138] Uploaded file /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_132607-yhpyoex2/files/requirements.txt
+2023-03-30 13:26:27,294 INFO    wandb-upload_4:35319 [upload_job.py:push():138] Uploaded file /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_132607-yhpyoex2/files/output.log
+2023-03-30 13:26:27,486 INFO    wandb-upload_0:35319 [upload_job.py:push():138] Uploaded file /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_132607-yhpyoex2/files/config.yaml

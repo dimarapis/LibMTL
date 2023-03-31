@@ -1,0 +1,1246 @@
+2023-03-30 20:13:58,114 INFO    StreamThr :8218 [internal.py:wandb_internal():87] W&B internal server running at pid: 8218, started at: 2023-03-30 20:13:58.114474
+2023-03-30 20:13:58,115 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status
+2023-03-30 20:13:58,118 INFO    WriterThread:8218 [datastore.py:open_for_write():85] open: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/run-6pxnt93z.wandb
+2023-03-30 20:13:58,118 DEBUG   SenderThread:8218 [sender.py:send():336] send: header
+2023-03-30 20:13:58,124 DEBUG   SenderThread:8218 [sender.py:send():336] send: run
+2023-03-30 20:13:59,336 INFO    SenderThread:8218 [dir_watcher.py:__init__():219] watching files in: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files
+2023-03-30 20:13:59,336 INFO    SenderThread:8218 [sender.py:_start_run_threads():1078] run started: 6pxnt93z with start time 1680200038.115363
+2023-03-30 20:13:59,336 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:13:59,336 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:13:59,337 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: check_version
+2023-03-30 20:13:59,337 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: check_version
+2023-03-30 20:13:59,805 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: run_start
+2023-03-30 20:13:59,807 DEBUG   HandlerThread:8218 [system_info.py:__init__():31] System info init
+2023-03-30 20:13:59,807 DEBUG   HandlerThread:8218 [system_info.py:__init__():46] System info init done
+2023-03-30 20:13:59,807 INFO    HandlerThread:8218 [system_monitor.py:start():183] Starting system monitor
+2023-03-30 20:13:59,807 INFO    SystemMonitor:8218 [system_monitor.py:_start():147] Starting system asset monitoring threads
+2023-03-30 20:13:59,807 INFO    HandlerThread:8218 [system_monitor.py:probe():204] Collecting system info
+2023-03-30 20:13:59,807 INFO    SystemMonitor:8218 [interfaces.py:start():187] Started cpu monitoring
+2023-03-30 20:13:59,808 INFO    SystemMonitor:8218 [interfaces.py:start():187] Started disk monitoring
+2023-03-30 20:13:59,808 INFO    SystemMonitor:8218 [interfaces.py:start():187] Started gpu monitoring
+2023-03-30 20:13:59,809 INFO    SystemMonitor:8218 [interfaces.py:start():187] Started memory monitoring
+2023-03-30 20:13:59,809 INFO    SystemMonitor:8218 [interfaces.py:start():187] Started network monitoring
+2023-03-30 20:13:59,816 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:13:59,831 DEBUG   HandlerThread:8218 [system_info.py:probe():195] Probing system
+2023-03-30 20:13:59,833 DEBUG   HandlerThread:8218 [system_info.py:_probe_git():180] Probing git
+2023-03-30 20:13:59,839 DEBUG   HandlerThread:8218 [system_info.py:_probe_git():188] Probing git done
+2023-03-30 20:13:59,839 DEBUG   HandlerThread:8218 [system_info.py:probe():240] Probing system done
+2023-03-30 20:13:59,839 DEBUG   HandlerThread:8218 [system_monitor.py:probe():213] {'os': 'Linux-5.4.0-146-generic-x86_64-with-glibc2.17', 'python': '3.8.16', 'heartbeatAt': '2023-03-30T18:13:59.831430', 'startedAt': '2023-03-30T18:13:58.107340', 'docker': None, 'cuda': None, 'args': ('--weighting', 'EW', '--arch', 'HPS', '--dataset_path', 'dataset/warehouseSIM', '--gpu_id', '0', '--scheduler', 'step'), 'state': 'running', 'program': 'examples/warehouseSIM/train_warehouseSIM.py', 'codePath': 'examples/warehouseSIM/train_warehouseSIM.py', 'git': {'remote': 'https://github.com/dimarapis/LibMTL.git', 'commit': '40cf8af4eeade7645dd5d7de21c9de87a0c1f0c6'}, 'email': 'dimarapis@hotmail.com', 'root': '/home/dim/mdpi_robotics/LibMTL', 'host': 'dim-dtu', 'username': 'dim', 'executable': '/home/dim/anaconda3/envs/libmtl/bin/python', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 4001.6573125, 'min': 800.0, 'max': 5300.0}, 'cpu_freq_per_core': [{'current': 4595.002, 'min': 800.0, 'max': 5300.0}, {'current': 3585.538, 'min': 800.0, 'max': 5300.0}, {'current': 3327.138, 'min': 800.0, 'max': 5300.0}, {'current': 2920.561, 'min': 800.0, 'max': 5300.0}, {'current': 4634.769, 'min': 800.0, 'max': 5300.0}, {'current': 4788.709, 'min': 800.0, 'max': 5300.0}, {'current': 4745.479, 'min': 800.0, 'max': 5300.0}, {'current': 4733.471, 'min': 800.0, 'max': 5300.0}, {'current': 4648.631, 'min': 800.0, 'max': 5300.0}, {'current': 4478.465, 'min': 800.0, 'max': 5300.0}, {'current': 3872.263, 'min': 800.0, 'max': 5300.0}, {'current': 3826.221, 'min': 800.0, 'max': 5300.0}, {'current': 4755.071, 'min': 800.0, 'max': 5300.0}, {'current': 4645.077, 'min': 800.0, 'max': 5300.0}, {'current': 1117.756, 'min': 800.0, 'max': 5300.0}, {'current': 3352.366, 'min': 800.0, 'max': 5300.0}], 'disk': {'total': 857.1477890014648, 'used': 804.3041496276855}, 'gpu': 'NVIDIA GeForce RTX 2070 Super with Max-Q Design', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2070 Super with Max-Q Design', 'memory_total': 8370061312}], 'memory': {'total': 31.174644470214844}}
+2023-03-30 20:13:59,839 INFO    HandlerThread:8218 [system_monitor.py:probe():214] Finished collecting system info
+2023-03-30 20:13:59,839 INFO    HandlerThread:8218 [system_monitor.py:probe():217] Publishing system info
+2023-03-30 20:13:59,839 DEBUG   HandlerThread:8218 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-03-30 20:13:59,839 DEBUG   HandlerThread:8218 [system_info.py:_save_pip():67] Saving pip packages done
+2023-03-30 20:13:59,839 DEBUG   HandlerThread:8218 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-03-30 20:14:00,337 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_created():278] file/dir created: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/conda-environment.yaml
+2023-03-30 20:14:00,338 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_created():278] file/dir created: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/requirements.txt
+2023-03-30 20:14:00,338 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_created():278] file/dir created: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json
+2023-03-30 20:14:00,985 DEBUG   HandlerThread:8218 [system_info.py:_save_conda():86] Saving conda packages done
+2023-03-30 20:14:00,985 INFO    HandlerThread:8218 [system_monitor.py:probe():219] Finished publishing system info
+2023-03-30 20:14:00,987 DEBUG   SenderThread:8218 [sender.py:send():336] send: files
+2023-03-30 20:14:00,987 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-metadata.json with policy now
+2023-03-30 20:14:00,991 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-30 20:14:00,991 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: stop_status
+2023-03-30 20:14:01,338 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/conda-environment.yaml
+2023-03-30 20:14:01,339 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_created():278] file/dir created: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-metadata.json
+2023-03-30 20:14:01,430 DEBUG   SenderThread:8218 [sender.py:send():336] send: telemetry
+2023-03-30 20:14:01,818 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:14:02,275 INFO    wandb-upload_0:8218 [upload_job.py:push():138] Uploaded file /tmp/tmperkmfyiiwandb/wy9gyx8s-wandb-metadata.json
+2023-03-30 20:14:03,430 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:14:03,820 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:14:05,339 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_created():278] file/dir created: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:14:05,744 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:14:05,822 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:14:07,340 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:14:07,824 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:14:08,745 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:14:09,859 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:14:11,862 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:14:13,746 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:14:13,864 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:14:15,866 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:14:15,991 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-30 20:14:15,991 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: stop_status
+2023-03-30 20:14:17,871 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:14:19,498 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:14:19,877 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:14:21,883 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:14:23,890 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:14:24,499 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:14:25,892 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:14:27,895 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:14:28,200 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:14:28,591 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:14:28,593 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:14:28,593 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:14:28,594 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:14:29,344 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:14:29,345 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json
+2023-03-30 20:14:29,597 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:14:29,934 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:14:30,345 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/config.yaml
+2023-03-30 20:14:30,991 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-30 20:14:30,991 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: stop_status
+2023-03-30 20:14:31,942 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:14:33,952 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:14:35,382 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:14:35,956 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:14:37,966 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:14:39,971 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:14:40,383 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:14:41,975 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:14:43,977 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:14:45,384 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:14:45,979 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:14:45,991 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-30 20:14:45,992 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: stop_status
+2023-03-30 20:14:47,984 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:14:49,890 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:14:49,989 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:14:50,291 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:14:50,294 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:14:50,294 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:14:50,296 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:14:50,349 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json
+2023-03-30 20:14:51,296 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:14:51,991 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:14:52,349 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:14:53,993 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:14:55,997 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:14:56,297 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:14:58,003 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:14:59,809 DEBUG   SystemMonitor:8218 [system_monitor.py:_start():161] Starting system metrics aggregation loop
+2023-03-30 20:14:59,810 DEBUG   SenderThread:8218 [sender.py:send():336] send: stats
+2023-03-30 20:15:00,038 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:15:00,991 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-30 20:15:00,992 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: stop_status
+2023-03-30 20:15:02,043 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:15:04,049 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:15:04,337 INFO    SenderThread:8218 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f43bf857c70>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dim/.local/lib/python3.8/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f43bf857c70>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 243, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "/home/dim/.local/lib/python3.8/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/dim/.local/lib/python3.8/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/dim/.local/lib/python3.8/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/dim/.local/lib/python3.8/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/dim/.local/lib/python3.8/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f43bf857c70>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2023-03-30 20:15:05,992 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:15:06,056 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:15:08,063 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:15:10,065 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:15:10,992 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:15:11,888 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:15:12,066 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:15:12,290 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:15:14,071 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:15:15,993 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:15:16,076 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:15:18,078 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:15:20,080 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:15:20,994 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:15:22,085 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:15:24,090 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:15:25,995 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:15:26,098 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:15:28,104 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:15:30,135 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:15:30,995 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:15:32,140 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:15:34,097 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:15:34,142 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:15:34,503 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:15:35,996 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:15:36,152 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:15:38,156 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:15:40,169 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:15:40,996 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:15:42,174 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:15:44,177 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:15:45,997 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:15:46,188 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:15:48,192 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:15:50,197 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:15:50,998 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:15:52,199 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:15:54,201 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:15:55,998 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:15:56,203 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:15:56,545 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:15:56,956 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:15:58,208 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:16:00,234 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:16:00,999 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:16:02,239 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:16:04,245 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:16:06,000 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:16:06,250 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:16:08,261 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:16:10,267 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:16:11,000 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:16:12,269 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:16:14,271 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:16:16,001 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:16:16,276 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:16:18,280 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:16:19,331 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:16:19,769 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:16:20,290 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:16:21,001 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:16:22,293 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:16:24,298 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:16:26,002 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:16:26,303 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:16:28,310 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:16:30,351 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:16:31,003 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:16:32,353 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:16:34,356 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:16:36,003 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:16:36,362 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:16:38,368 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:16:40,370 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:16:41,004 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:16:42,372 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:16:43,931 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:16:44,362 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:16:44,374 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:16:46,005 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:16:46,379 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:16:48,386 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:16:50,394 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:16:51,005 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:16:52,399 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:16:54,408 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:16:56,006 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:16:56,415 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:16:58,424 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:17:00,454 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:17:01,007 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:17:02,457 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:17:04,462 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:17:06,007 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:17:06,468 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:17:08,067 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:17:08,472 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:17:08,518 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:17:10,482 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:17:11,008 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:17:12,487 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:17:14,493 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:17:16,009 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:17:16,501 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:17:18,507 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:17:20,509 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:17:21,009 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:17:22,511 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:17:24,513 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:17:26,010 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:17:26,518 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:17:28,526 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:17:29,119 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:17:29,119 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:17:29,120 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:17:29,120 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:17:29,120 DEBUG   SenderThread:8218 [sender.py:send():336] send: stats
+2023-03-30 20:17:29,121 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:17:29,121 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:17:29,121 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:17:29,122 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:17:29,122 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:17:29,122 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:17:29,123 DEBUG   SenderThread:8218 [sender.py:send():336] send: stats
+2023-03-30 20:17:29,123 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:17:29,124 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:17:29,124 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:17:29,124 DEBUG   SenderThread:8218 [sender.py:send():336] send: stats
+2023-03-30 20:17:29,125 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:17:29,125 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:17:29,125 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:17:29,125 DEBUG   SenderThread:8218 [sender.py:send():336] send: stats
+2023-03-30 20:17:29,126 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:17:29,126 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:17:29,127 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:17:29,383 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json
+2023-03-30 20:17:29,813 DEBUG   SenderThread:8218 [sender.py:send():336] send: stats
+2023-03-30 20:17:30,564 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:17:31,011 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:17:32,384 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:17:32,566 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:17:34,028 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:17:34,460 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:17:34,469 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:17:34,470 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:17:34,470 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:17:34,470 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:17:34,568 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:17:35,384 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json
+2023-03-30 20:17:36,011 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:17:36,385 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:17:36,572 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:17:38,577 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:17:39,471 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:17:40,579 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:17:41,012 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:17:42,581 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:17:44,472 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:17:44,586 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:17:46,012 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:17:46,593 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:17:48,601 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:17:49,472 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:17:50,608 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:17:51,013 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:17:52,618 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:17:54,473 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:17:54,623 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:17:56,014 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:17:56,634 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:17:58,544 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:17:58,637 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:17:59,001 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:17:59,002 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:17:59,003 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:17:59,003 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:17:59,389 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json
+2023-03-30 20:17:59,813 DEBUG   SenderThread:8218 [sender.py:send():336] send: stats
+2023-03-30 20:17:59,814 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:18:00,390 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:18:00,682 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:18:01,015 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:18:02,695 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:18:04,700 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:18:04,814 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:18:06,015 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:18:06,706 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:18:08,713 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:18:09,815 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:18:10,721 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:18:11,016 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:18:12,729 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:18:14,735 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:18:14,816 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:18:16,017 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:18:16,742 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:18:18,747 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:18:19,816 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:18:20,759 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:18:21,017 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:18:22,764 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:18:24,770 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:18:24,817 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:18:26,018 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:18:26,182 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:18:26,640 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:18:26,641 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:18:26,641 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:18:26,642 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:18:26,778 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:18:27,396 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json
+2023-03-30 20:18:28,396 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:18:28,783 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:18:29,814 DEBUG   SenderThread:8218 [sender.py:send():336] send: stats
+2023-03-30 20:18:30,815 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:18:30,837 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:18:31,018 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:18:32,840 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:18:34,845 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:18:35,815 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:18:36,019 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:18:36,853 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:18:38,859 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:18:40,816 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:18:40,868 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:18:41,020 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:18:42,873 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:18:44,879 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:18:45,816 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:18:46,020 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:18:46,891 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:18:48,897 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:18:50,817 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:18:50,902 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:18:51,021 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:18:52,907 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:18:53,064 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:18:53,508 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:18:53,509 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:18:53,510 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:18:53,510 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:18:54,402 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:18:54,403 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json
+2023-03-30 20:18:54,913 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:18:56,022 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:18:56,403 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:18:56,510 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:18:56,920 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:18:58,929 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:18:59,815 DEBUG   SenderThread:8218 [sender.py:send():336] send: stats
+2023-03-30 20:19:00,961 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:19:01,022 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:19:01,815 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:19:02,966 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:19:04,977 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:19:06,023 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:19:06,816 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:19:06,981 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:19:08,990 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:19:10,999 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:19:11,023 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:19:11,816 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:19:13,005 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:19:15,011 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:19:16,024 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:19:16,817 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:19:17,018 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:19:19,029 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:19:19,793 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:19:20,202 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:19:20,204 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:19:20,204 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:19:20,205 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:19:20,408 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json
+2023-03-30 20:19:21,025 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:19:21,031 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:19:22,205 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:19:22,409 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:19:23,036 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:19:25,043 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:19:26,026 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:19:27,048 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:19:27,206 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:19:29,058 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:19:29,815 DEBUG   SenderThread:8218 [sender.py:send():336] send: stats
+2023-03-30 20:19:31,026 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:19:31,090 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:19:32,816 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:19:33,092 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:19:35,097 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:19:36,027 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:19:37,105 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:19:37,816 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:19:39,110 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:19:41,028 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:19:41,119 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:19:42,817 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:19:43,122 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:19:43,266 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:19:43,693 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:19:43,695 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:19:43,695 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:19:43,696 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:19:44,414 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json
+2023-03-30 20:19:45,128 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:19:46,028 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:19:46,415 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:19:47,130 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:19:48,696 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:19:49,131 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:19:51,029 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:19:51,135 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:19:53,142 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:19:53,697 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:19:55,150 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:19:56,030 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:19:57,157 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:19:58,697 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:19:59,165 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:19:59,816 DEBUG   SenderThread:8218 [sender.py:send():336] send: stats
+2023-03-30 20:20:01,031 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:20:01,216 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:20:03,221 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:20:03,816 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:20:05,229 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:20:06,031 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:20:07,235 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:20:08,301 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:20:08,735 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:20:08,737 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:20:08,738 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:20:08,738 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:20:09,240 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:20:09,420 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json
+2023-03-30 20:20:09,738 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:20:10,420 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:20:11,032 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:20:11,250 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:20:13,254 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:20:14,739 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:20:15,264 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:20:16,032 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:20:17,272 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:20:19,276 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:20:19,739 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:20:21,033 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:20:21,278 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:20:23,280 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:20:24,740 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:20:25,282 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:20:26,034 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:20:27,288 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:20:29,295 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:20:29,741 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:20:29,816 DEBUG   SenderThread:8218 [sender.py:send():336] send: stats
+2023-03-30 20:20:31,034 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:20:31,332 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:20:33,081 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:20:33,334 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:20:33,508 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:20:33,517 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:20:33,517 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:20:33,518 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:20:34,425 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:20:34,425 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json
+2023-03-30 20:20:35,336 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:20:35,518 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:20:36,035 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:20:36,426 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:20:37,343 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:20:39,348 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:20:40,519 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:20:41,036 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:20:41,354 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:20:43,362 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:20:45,366 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:20:45,520 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:20:46,036 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:20:47,374 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:20:49,379 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:20:50,520 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:20:51,037 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:20:51,387 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:20:53,390 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:20:55,397 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:20:55,521 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:20:56,038 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:20:57,399 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:20:59,401 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:20:59,617 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:20:59,817 DEBUG   SenderThread:8218 [sender.py:send():336] send: stats
+2023-03-30 20:21:00,041 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:21:00,042 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:21:00,043 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:21:00,043 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:21:00,431 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json
+2023-03-30 20:21:01,039 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:21:01,043 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:21:01,445 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:21:02,432 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:21:03,448 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:21:05,456 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:21:06,039 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:21:06,044 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:21:07,461 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:21:09,470 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:21:11,040 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:21:11,044 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:21:11,477 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:21:13,490 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:21:15,496 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:21:16,040 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:21:16,045 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:21:17,502 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:21:19,506 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:21:21,041 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:21:21,045 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:21:21,516 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:21:23,524 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:21:24,621 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:21:25,057 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:21:25,059 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:21:25,059 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:21:25,060 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:21:25,437 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json
+2023-03-30 20:21:25,529 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:21:26,042 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:21:26,060 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:21:26,438 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:21:27,536 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:21:29,542 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:21:29,817 DEBUG   SenderThread:8218 [sender.py:send():336] send: stats
+2023-03-30 20:21:31,042 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:21:31,595 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:21:31,818 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:21:33,600 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:21:35,606 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:21:36,043 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:21:36,818 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:21:37,614 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:21:39,621 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:21:41,044 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:21:41,631 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:21:41,819 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:21:43,636 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:21:45,638 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:21:46,044 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:21:46,819 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:21:47,639 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:21:49,641 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:21:49,785 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:21:50,238 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:21:50,240 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:21:50,240 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:21:50,241 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:21:50,443 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json
+2023-03-30 20:21:51,045 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:21:51,643 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:21:52,241 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:21:52,443 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:21:53,648 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:21:55,653 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:21:56,045 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:21:57,242 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:21:57,664 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:21:59,670 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:21:59,818 DEBUG   SenderThread:8218 [sender.py:send():336] send: stats
+2023-03-30 20:22:01,046 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:22:01,729 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:22:02,819 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:22:03,732 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:22:05,736 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:22:06,047 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:22:07,741 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:22:07,820 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:22:09,749 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:22:11,048 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:22:11,760 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:22:12,821 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:22:13,765 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:22:15,707 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:22:15,770 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:22:16,049 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:22:16,134 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:22:16,136 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:22:16,137 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:22:16,137 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:22:16,449 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json
+2023-03-30 20:22:17,777 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:22:18,137 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:22:18,449 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:22:19,783 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:22:21,049 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:22:21,794 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:22:23,138 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:22:23,801 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:22:25,809 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:22:26,050 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:22:27,815 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:22:28,139 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:22:29,818 DEBUG   SenderThread:8218 [sender.py:send():336] send: stats
+2023-03-30 20:22:29,823 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:22:31,051 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:22:31,876 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:22:33,819 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:22:33,882 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:22:35,887 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:22:36,051 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:22:37,896 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:22:38,820 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:22:39,898 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:22:41,052 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:22:41,377 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:22:41,793 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:22:41,794 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:22:41,794 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:22:41,794 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:22:41,908 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:22:42,455 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:22:42,455 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json
+2023-03-30 20:22:43,914 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:22:44,455 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:22:44,795 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:22:45,919 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:22:46,052 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:22:47,931 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:22:49,795 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:22:49,936 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:22:51,054 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:22:51,943 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:22:53,947 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:22:54,796 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:22:55,953 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:22:56,054 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:22:57,954 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:22:59,797 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:22:59,819 DEBUG   SenderThread:8218 [sender.py:send():336] send: stats
+2023-03-30 20:22:59,956 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:23:01,055 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:23:02,004 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:23:04,005 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:23:04,819 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:23:06,007 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:23:06,037 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:23:06,056 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:23:06,483 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:23:06,483 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:23:06,484 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:23:06,484 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:23:07,460 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json
+2023-03-30 20:23:08,019 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:23:08,460 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:23:10,025 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:23:10,484 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:23:11,056 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:23:12,031 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:23:14,033 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:23:15,485 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:23:16,035 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:23:16,057 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:23:18,039 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:23:20,047 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:23:20,486 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:23:21,058 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:23:22,051 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:23:24,054 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:23:25,486 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:23:26,056 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:23:26,059 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:23:28,059 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:23:29,819 DEBUG   SenderThread:8218 [sender.py:send():336] send: stats
+2023-03-30 20:23:30,064 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:23:30,820 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:23:31,059 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:23:31,546 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:23:31,970 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:23:31,972 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:23:31,973 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:23:31,973 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:23:32,113 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:23:32,466 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json
+2023-03-30 20:23:34,115 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:23:34,467 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:23:35,974 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:23:36,060 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:23:36,124 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:23:38,130 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:23:40,137 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:23:40,974 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:23:41,061 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:23:42,148 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:23:44,155 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:23:45,975 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:23:46,061 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:23:46,160 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:23:48,166 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:23:50,173 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:23:50,976 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:23:51,062 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:23:52,179 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:23:54,186 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:23:55,645 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:23:56,063 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:23:56,072 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:23:56,082 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:23:56,083 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:23:56,083 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:23:56,083 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:23:56,191 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:23:56,472 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json
+2023-03-30 20:23:58,199 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:23:58,472 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:23:59,820 DEBUG   SenderThread:8218 [sender.py:send():336] send: stats
+2023-03-30 20:24:00,204 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:24:01,063 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:24:01,820 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:24:02,238 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:24:04,244 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:24:06,064 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:24:06,248 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:24:06,821 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:24:08,257 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:24:10,262 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:24:11,065 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:24:11,822 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:24:12,264 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:24:14,266 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:24:16,065 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:24:16,271 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:24:16,822 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:24:18,274 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:24:20,110 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:24:20,280 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:24:20,569 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:24:20,571 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:24:20,572 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:24:20,572 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:24:21,066 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:24:21,477 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json
+2023-03-30 20:24:22,287 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:24:22,478 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:24:22,572 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:24:24,293 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:24:26,066 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:24:26,301 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:24:27,573 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:24:28,308 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:24:29,820 DEBUG   SenderThread:8218 [sender.py:send():336] send: stats
+2023-03-30 20:24:30,318 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:24:31,067 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:24:32,365 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:24:32,821 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:24:34,371 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:24:36,068 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:24:36,378 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:24:37,822 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:24:38,389 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:24:40,394 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:24:41,068 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:24:42,398 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:24:42,822 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:24:44,400 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:24:45,470 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:24:45,932 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:24:45,943 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:24:45,944 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:24:45,944 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:24:46,069 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:24:46,402 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:24:46,483 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:24:46,483 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json
+2023-03-30 20:24:47,945 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:24:48,405 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:24:48,483 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:24:50,409 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:24:51,070 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:24:52,414 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:24:52,945 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:24:54,421 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:24:56,071 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:24:56,427 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:24:57,946 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:24:58,433 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:24:59,822 DEBUG   SenderThread:8218 [sender.py:send():336] send: stats
+2023-03-30 20:25:00,436 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:25:01,072 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:25:02,476 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:25:03,824 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:25:04,480 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:25:06,072 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:25:06,483 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:25:08,486 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:25:08,824 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:25:10,494 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:25:11,073 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:25:11,689 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:25:12,118 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:25:12,121 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:25:12,121 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:25:12,121 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:25:12,489 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json
+2023-03-30 20:25:12,499 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:25:14,122 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:25:14,490 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:25:14,503 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:25:16,074 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:25:16,508 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:25:18,515 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:25:19,123 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:25:20,520 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:25:21,074 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:25:22,529 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:25:24,123 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:25:24,534 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:25:26,075 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:25:26,543 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:25:28,550 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:25:29,124 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:25:29,822 DEBUG   SenderThread:8218 [sender.py:send():336] send: stats
+2023-03-30 20:25:30,554 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:25:31,076 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:25:32,589 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:25:34,594 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:25:34,823 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:25:36,076 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:25:36,465 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:25:36,599 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:25:36,890 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:25:36,890 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:25:36,890 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:25:36,891 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:25:37,495 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json
+2023-03-30 20:25:38,495 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:25:38,605 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:25:39,891 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:25:40,614 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:25:41,077 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:25:42,620 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:25:44,629 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:25:44,892 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:25:46,078 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:25:46,634 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:25:48,642 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:25:49,892 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:25:50,650 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:25:51,078 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:25:52,661 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:25:54,668 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:25:54,893 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:25:56,079 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:25:56,676 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:25:58,682 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:25:59,823 DEBUG   SenderThread:8218 [sender.py:send():336] send: stats
+2023-03-30 20:26:00,688 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:26:00,823 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:26:00,973 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:26:01,080 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:26:01,421 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:26:01,429 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:26:01,430 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:26:01,430 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:26:01,500 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json
+2023-03-30 20:26:02,501 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:26:02,733 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:26:04,740 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:26:06,081 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:26:06,431 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:26:06,750 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:26:08,755 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:26:10,761 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:26:11,081 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:26:11,431 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:26:12,767 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:26:14,778 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:26:16,082 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:26:16,432 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:26:16,782 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:26:18,788 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:26:20,795 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:26:21,082 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:26:21,433 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:26:22,800 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:26:24,806 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:26:25,182 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:26:25,596 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:26:25,597 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:26:25,597 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:26:25,598 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:26:26,083 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:26:26,506 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:26:26,506 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json
+2023-03-30 20:26:26,598 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:26:26,812 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:26:28,816 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:26:29,823 DEBUG   SenderThread:8218 [sender.py:send():336] send: stats
+2023-03-30 20:26:30,818 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:26:31,084 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:26:31,824 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:26:32,855 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:26:34,860 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:26:36,084 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:26:36,825 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:26:41,085 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:26:41,825 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:26:43,240 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:26:45,242 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:26:46,086 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:26:46,826 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:26:47,246 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:26:49,253 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:26:51,086 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:26:51,258 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:26:51,827 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:26:53,260 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:26:55,264 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:26:56,087 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:26:56,827 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:26:56,872 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:26:57,268 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:26:57,322 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:26:57,325 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:26:57,325 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:26:57,326 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:26:57,513 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json
+2023-03-30 20:26:58,513 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:26:59,270 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:26:59,824 DEBUG   SenderThread:8218 [sender.py:send():336] send: stats
+2023-03-30 20:27:01,087 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:27:01,272 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:27:02,825 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:27:03,274 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:27:05,276 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:27:06,088 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:27:07,282 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:27:07,825 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:27:09,321 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:27:11,089 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:27:11,322 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:27:12,826 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:27:13,329 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:27:15,333 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:27:16,089 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:27:17,340 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:27:17,827 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:27:19,348 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:27:21,090 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:27:21,354 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:27:21,681 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:27:22,135 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:27:22,137 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:27:22,137 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:27:22,137 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:27:22,518 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:27:22,519 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json
+2023-03-30 20:27:23,138 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:27:23,360 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:27:24,519 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:27:25,366 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:27:26,091 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:27:27,371 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:27:28,138 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:27:29,376 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:27:29,825 DEBUG   SenderThread:8218 [sender.py:send():336] send: stats
+2023-03-30 20:27:31,092 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:27:31,382 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:27:33,392 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:27:33,825 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:27:35,398 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:27:36,092 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:27:37,403 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:27:38,826 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:27:39,451 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:27:41,093 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:27:41,457 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:27:43,459 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:27:43,827 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:27:45,461 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:27:46,094 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:27:46,938 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:27:47,365 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 20:27:47,366 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:27:47,366 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:27:47,366 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:27:47,463 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:27:47,524 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json
+2023-03-30 20:27:48,525 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:27:49,367 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:27:49,470 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:27:51,094 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:27:51,472 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:27:53,477 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:27:54,367 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:27:55,485 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:27:56,095 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:27:57,489 ERROR   gpu       :8218 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 20:27:58,378 DEBUG   SenderThread:8218 [sender.py:send():336] send: exit
+2023-03-30 20:27:58,378 INFO    SenderThread:8218 [sender.py:send_exit():559] handling exit code: 255
+2023-03-30 20:27:58,378 INFO    SenderThread:8218 [sender.py:send_exit():561] handling runtime: 838
+2023-03-30 20:27:58,378 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:27:58,379 INFO    SenderThread:8218 [sender.py:send_exit():567] send defer
+2023-03-30 20:27:58,379 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 20:27:58,379 INFO    HandlerThread:8218 [handler.py:handle_request_defer():170] handle defer: 0
+2023-03-30 20:27:58,379 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: defer
+2023-03-30 20:27:58,379 INFO    SenderThread:8218 [sender.py:send_request_defer():583] handle sender defer: 0
+2023-03-30 20:27:58,379 INFO    SenderThread:8218 [sender.py:transition_state():587] send defer: 1
+2023-03-30 20:27:58,379 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 20:27:58,379 INFO    HandlerThread:8218 [handler.py:handle_request_defer():170] handle defer: 1
+2023-03-30 20:27:58,379 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: defer
+2023-03-30 20:27:58,379 INFO    SenderThread:8218 [sender.py:send_request_defer():583] handle sender defer: 1
+2023-03-30 20:27:58,379 INFO    SenderThread:8218 [sender.py:transition_state():587] send defer: 2
+2023-03-30 20:27:58,379 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 20:27:58,380 INFO    HandlerThread:8218 [handler.py:handle_request_defer():170] handle defer: 2
+2023-03-30 20:27:58,380 INFO    HandlerThread:8218 [system_monitor.py:finish():193] Stopping system monitor
+2023-03-30 20:27:58,380 DEBUG   SystemMonitor:8218 [system_monitor.py:_start():168] Finished system metrics aggregation loop
+2023-03-30 20:27:58,380 DEBUG   SystemMonitor:8218 [system_monitor.py:_start():172] Publishing last batch of metrics
+2023-03-30 20:27:58,381 INFO    HandlerThread:8218 [interfaces.py:finish():199] Joined cpu monitor
+2023-03-30 20:27:58,381 INFO    HandlerThread:8218 [interfaces.py:finish():199] Joined disk monitor
+2023-03-30 20:27:58,410 INFO    HandlerThread:8218 [interfaces.py:finish():199] Joined gpu monitor
+2023-03-30 20:27:58,410 INFO    HandlerThread:8218 [interfaces.py:finish():199] Joined memory monitor
+2023-03-30 20:27:58,410 INFO    HandlerThread:8218 [interfaces.py:finish():199] Joined network monitor
+2023-03-30 20:27:58,411 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: defer
+2023-03-30 20:27:58,411 INFO    SenderThread:8218 [sender.py:send_request_defer():583] handle sender defer: 2
+2023-03-30 20:27:58,411 INFO    SenderThread:8218 [sender.py:transition_state():587] send defer: 3
+2023-03-30 20:27:58,411 DEBUG   SenderThread:8218 [sender.py:send():336] send: stats
+2023-03-30 20:27:58,411 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 20:27:58,411 INFO    HandlerThread:8218 [handler.py:handle_request_defer():170] handle defer: 3
+2023-03-30 20:27:58,412 DEBUG   SenderThread:8218 [sender.py:send():336] send: history
+2023-03-30 20:27:58,412 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 20:27:58,412 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:27:58,412 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: defer
+2023-03-30 20:27:58,412 INFO    SenderThread:8218 [sender.py:send_request_defer():583] handle sender defer: 3
+2023-03-30 20:27:58,412 INFO    SenderThread:8218 [sender.py:transition_state():587] send defer: 4
+2023-03-30 20:27:58,413 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 20:27:58,413 INFO    HandlerThread:8218 [handler.py:handle_request_defer():170] handle defer: 4
+2023-03-30 20:27:58,413 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: defer
+2023-03-30 20:27:58,413 INFO    SenderThread:8218 [sender.py:send_request_defer():583] handle sender defer: 4
+2023-03-30 20:27:58,413 INFO    SenderThread:8218 [sender.py:transition_state():587] send defer: 5
+2023-03-30 20:27:58,413 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 20:27:58,413 INFO    HandlerThread:8218 [handler.py:handle_request_defer():170] handle defer: 5
+2023-03-30 20:27:58,413 DEBUG   SenderThread:8218 [sender.py:send():336] send: summary
+2023-03-30 20:27:58,413 INFO    SenderThread:8218 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 20:27:58,414 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: defer
+2023-03-30 20:27:58,414 INFO    SenderThread:8218 [sender.py:send_request_defer():583] handle sender defer: 5
+2023-03-30 20:27:58,414 INFO    SenderThread:8218 [sender.py:transition_state():587] send defer: 6
+2023-03-30 20:27:58,414 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 20:27:58,414 INFO    HandlerThread:8218 [handler.py:handle_request_defer():170] handle defer: 6
+2023-03-30 20:27:58,414 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: defer
+2023-03-30 20:27:58,414 INFO    SenderThread:8218 [sender.py:send_request_defer():583] handle sender defer: 6
+2023-03-30 20:27:58,414 INFO    SenderThread:8218 [sender.py:transition_state():587] send defer: 7
+2023-03-30 20:27:58,414 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 20:27:58,414 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 20:27:58,414 INFO    HandlerThread:8218 [handler.py:handle_request_defer():170] handle defer: 7
+2023-03-30 20:27:58,414 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: defer
+2023-03-30 20:27:58,414 INFO    SenderThread:8218 [sender.py:send_request_defer():583] handle sender defer: 7
+2023-03-30 20:27:58,527 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json
+2023-03-30 20:27:59,377 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-30 20:28:00,528 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:28:02,172 INFO    SenderThread:8218 [sender.py:transition_state():587] send defer: 8
+2023-03-30 20:28:02,172 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: poll_exit
+2023-03-30 20:28:02,172 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 20:28:02,172 INFO    HandlerThread:8218 [handler.py:handle_request_defer():170] handle defer: 8
+2023-03-30 20:28:02,173 DEBUG   SenderThread:8218 [sender.py:send_request():363] send_request: defer
+2023-03-30 20:28:02,173 INFO    SenderThread:8218 [sender.py:send_request_defer():583] handle sender defer: 8
+2023-03-30 20:28:02,190 INFO    SenderThread:8218 [sender.py:transition_state():587] send defer: 9
+2023-03-30 20:28:02,190 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 20:28:02,190 INFO    HandlerThread:8218 [handler.py:handle_request_defer():170] handle defer: 9
+2023-03-30 20:28:02,190 DEBUG   SenderThread:8218 [sender.py:send():336] send: artifact
+2023-03-30 20:28:02,529 INFO    Thread-13 :8218 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:28:04,378 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:28:05,545 INFO    wandb-upload_1:8218 [upload_job.py:push():93] Skipped uploading /home/dim/.local/share/wandb/artifacts/staging/tmpktc5cdak
+2023-03-30 20:28:06,276 INFO    wandb-upload_0:8218 [upload_job.py:push():96] Uploaded file /home/dim/.local/share/wandb/artifacts/staging/tmp_mfomks5
+2023-03-30 20:28:09,380 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:28:14,383 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:28:19,387 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:28:24,388 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:28:29,391 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:28:34,392 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:28:39,395 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:28:44,398 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:28:49,400 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:28:54,403 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:28:59,406 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:29:04,409 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:29:09,412 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:29:14,415 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:29:19,419 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:29:24,422 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:29:29,426 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:29:34,428 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:29:39,430 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:29:44,431 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:29:49,433 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:29:54,435 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:29:59,438 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:30:04,439 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:30:09,442 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:30:14,445 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:30:19,447 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:30:24,449 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:30:29,454 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:30:34,455 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:30:39,458 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:30:44,461 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:30:49,464 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:30:50,989 WARNING FileStreamThread:8218 [file_stream.py:request_with_retry():670] requests_with_retry encountered retryable exception: ('Connection aborted.', OSError(101, 'Network is unreachable')). func: <bound method Session.post of <requests.sessions.Session object at 0x7f43c1217310>>, args: ('https://api.wandb.ai/files/wandbdimar/libmtlnyu/6pxnt93z/file_stream',), kwargs: {'json': {'files': {'wandb-history.jsonl': {'offset': 1, 'content': ['{"train_losses": {"seg": 3.0044307708740234, "dep": 0.6726154685020447, "nor": 1.1191831827163696}, "train_seg_metrics": {"seg_mIoU": 0.14005208015441895}, "train_dep_metrics": {"dep_aE": 0.6726154685020447, "dep_rE": 16.019916534423828}, "train_nor_metrics": {"nor_mE": 97.83189392089844, "nor_mdnE": 97.78976440429688, "nor_<12,5": 0.0006944444444444445, "nor_<22,5": 0.0030642361111111113, "nor_<30": 0.0065451388888888885}, "_timestamp": 1680200089.8880692, "test_losses": {"seg": 3.121948096678429, "dep": 0.9032678460337452, "nor": 0.4460904659684171}, "test_metrics": {"test_seg": [0.007989313453435898, 0.08223757892847061], "test_dep": [0.9032651685993291, 0.9918100724808703], "test_nor": [53.22622299194336, 46.620872497558594, 0.0119713244378238, 0.05928961051248741, 0.13880674238063068]}, "_runtime": 51.772706270217896, "_step": 1}']}}, 'dropped': 0}}
+2023-03-30 20:30:54,467 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:30:59,469 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:31:04,471 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:31:09,475 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:31:14,478 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:31:19,481 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:31:24,483 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:31:29,487 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:31:34,490 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:31:39,493 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:31:44,496 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:31:49,499 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:31:54,502 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:31:59,504 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:32:04,505 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:32:09,508 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:32:14,510 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:32:19,513 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:32:24,514 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:32:29,517 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:32:34,521 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:32:39,524 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:32:44,527 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:32:49,531 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:32:54,532 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:32:59,534 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:33:04,536 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:33:09,539 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:33:14,542 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:33:19,543 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:33:24,544 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:33:29,546 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:33:34,547 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:33:39,549 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:33:44,551 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:33:49,553 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:33:54,555 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:33:59,556 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:34:04,559 DEBUG   HandlerThread:8218 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 20:34:08,368 WARNING StreamThr :8218 [internal.py:is_dead():415] Internal process exiting, parent pid 8169 disappeared
+2023-03-30 20:34:08,368 ERROR   StreamThr :8218 [internal.py:wandb_internal():153] Internal process shutdown.
+2023-03-30 20:34:08,560 INFO    HandlerThread:8218 [handler.py:finish():842] shutting down handler
+2023-03-30 20:34:09,305 INFO    WriterThread:8218 [datastore.py:close():298] close: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/run-6pxnt93z.wandb
+2023-03-30 20:44:46,573 ERROR   Thread-12 :8218 [internal_api.py:upload_file():2073] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/wandbdimar/libmtlnyu/6pxnt93z/artifact/410266945/wandb_manifest.json?Expires=1680287286&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=DJDeWt68UbLHwRGWMtIdNm%2FzKpYsrt0zHki7NaTLaRc77Xz8xqCAxucCbOw5gjuaLiSbtxOy7AGyJ0ujkEMJefX0b6KkWe9TAWSQu6nwCfwm5vvUbIgvPWTuqLBlfSBYFm6kboJRvmWP%2FXnYHSR9NdHBDQx9mKg0GBEd2NCEZ7SiQfD8CBTKiVrh2mAexgzoeW01YdYzVsQUVrqe%2BolKUzzI%2Bn%2Ff9AI%2B%2FitwLPhZDt7s3LOFr9gFq98QQwfjchemYr9zlEtlxTtIL88k7ekUJbCemBk7WdnbJGmOpIoJtuifU3HkmdgZoTP3d%2Br8tD3D02hAZUGsJyLq%2BhPT8TLrVQ%3D%3D: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Read timed out. (read timeout=None)
+2023-03-30 20:44:46,573 ERROR   Thread-12 :8218 [internal_api.py:upload_file():2075] upload_file request headers: {'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': '98huZ3I1doHHV2fh+q4lyA==', 'Content-Length': '513'}
+2023-03-30 20:44:46,573 ERROR   Thread-12 :8218 [internal_api.py:upload_file():2077] upload_file response body: 
+2023-03-30 20:44:51,232 INFO    SenderThread:8218 [sender.py:send_artifact():1428] sent artifact job-https___github.com_dimarapis_LibMTL.git_examples_warehouseSIM_train_warehouseSIM.py - {'id': 'QXJ0aWZhY3Q6NDEwMjY2OTQ1', 'digest': '11431f2f5a3a1b9994a7eed665507546', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjU5NTMwMTgz', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDEwMjUzODY4', 'versionIndex': 5}}, 'version': 'latest'}
+2023-03-30 20:44:51,232 INFO    SenderThread:8218 [sender.py:finish():1504] shutting down sender
+2023-03-30 20:44:51,232 INFO    SenderThread:8218 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-03-30 20:44:51,837 INFO    SenderThread:8218 [dir_watcher.py:finish():395] scan: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files
+2023-03-30 20:44:51,837 INFO    SenderThread:8218 [dir_watcher.py:finish():409] scan save: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-metadata.json wandb-metadata.json
+2023-03-30 20:44:51,839 INFO    SenderThread:8218 [dir_watcher.py:finish():409] scan save: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/config.yaml config.yaml
+2023-03-30 20:44:51,839 INFO    SenderThread:8218 [dir_watcher.py:finish():409] scan save: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/conda-environment.yaml conda-environment.yaml
+2023-03-30 20:44:51,840 INFO    SenderThread:8218 [dir_watcher.py:finish():409] scan save: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json wandb-summary.json
+2023-03-30 20:44:51,847 INFO    SenderThread:8218 [dir_watcher.py:finish():409] scan save: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/requirements.txt requirements.txt
+2023-03-30 20:44:51,847 INFO    SenderThread:8218 [dir_watcher.py:finish():409] scan save: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log output.log
+2023-03-30 20:44:51,847 INFO    SenderThread:8218 [file_pusher.py:finish():164] shutting down file pusher
+2023-03-30 20:44:51,847 INFO    SenderThread:8218 [file_pusher.py:join():169] waiting for file pusher
+2023-03-30 20:44:52,969 INFO    wandb-upload_4:8218 [upload_job.py:push():138] Uploaded file /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/output.log
+2023-03-30 20:44:52,986 INFO    wandb-upload_1:8218 [upload_job.py:push():138] Uploaded file /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/config.yaml
+2023-03-30 20:44:52,997 INFO    wandb-upload_0:8218 [upload_job.py:push():138] Uploaded file /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/conda-environment.yaml
+2023-03-30 20:44:53,003 INFO    wandb-upload_2:8218 [upload_job.py:push():138] Uploaded file /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/wandb-summary.json
+2023-03-30 20:44:53,007 INFO    wandb-upload_3:8218 [upload_job.py:push():138] Uploaded file /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_201358-6pxnt93z/files/requirements.txt

@@ -1,0 +1,42 @@
+========================================
+Total Params: 59559771
+Trainable Params: 59559771
+Non-trainable Params: 0
+========================================
+LOG FORMAT | segmentation_LOSS mIoU pixAcc | depth_LOSS abs_err rel_err | normal_LOSS mean median <11.25 <22.5 <30 | TIME
+Epoch 0/199
+self_multiinpout False
+753
+torch.Size([3, 288, 512]) torch.Size([288, 512]) torch.Size([1, 288, 512]) torch.Size([3, 288, 512]) torch.Size([1, 288, 384])
+torch.Size([3, 288, 512]) torch.Size([288, 512]) torch.Size([1, 288, 512]) torch.Size([3, 288, 512]) torch.Size([1, 288, 384])
+  0%|                                                      | 0/753 [00:09<?, ?it/s]
+Traceback (most recent call last):
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 127, in <module>
+    main(params)
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 119, in main
+    NYUmodel.train(nyuv2_train_loader, nyuv2_test_loader, 200)
+  File "/home/dim/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 218, in train
+    train_preds = self.model(train_inputs)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/dim/mdpi_robotics/LibMTL/LibMTL/architecture/abstract_arch.py", line 54, in forward
+    out[task] = self.decoders[task](ss_rep)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/nn/modules/container.py", line 119, in forward
+    input = module(input)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/dim/mdpi_robotics/LibMTL/examples/warehouseSIM/aspp.py", line 68, in forward
+    res.append(conv(x))
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/nn/modules/container.py", line 119, in forward
+    input = module(input)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/nn/modules/conv.py", line 399, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/dim/anaconda3/envs/libmtl/lib/python3.8/site-packages/torch/nn/modules/conv.py", line 395, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: Given groups=1, weight of size [256, 2048, 1, 1], expected input[2, 512, 36, 64] to have 2048 channels, but got 512 channels instead

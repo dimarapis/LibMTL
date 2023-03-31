@@ -1,0 +1,21 @@
+========================================
+Total Params: 71891291
+Trainable Params: 71891291
+Non-trainable Params: 0
+========================================
+LOG FORMAT | segmentation_LOSS mIoU pixAcc | depth_LOSS abs_err rel_err | normal_LOSS mean median <11.25 <22.5 <30 | TIME
+Epoch 0/199
+self_multiinpout False
+753
+torch.Size([3, 180, 320]) torch.Size([180, 320]) torch.Size([1, 180, 320]) torch.Size([3, 180, 320]) torch.Size([1, 288, 384])
+torch.Size([3, 180, 320]) torch.Size([180, 320]) torch.Size([1, 180, 320]) torch.Size([3, 180, 320]) torch.Size([1, 288, 384])
+  0%|                                                      | 0/753 [00:00<?, ?it/s]
+torch.Size([2, 23, 23, 40])
+torch.Size([2, 1, 23, 40])
+torch.Size([2, 3, 23, 40])
+batch took 10.745103120803833 seconds
+torch.Size([3, 180, 320]) torch.Size([180, 320]) torch.Size([1, 180, 320]) torch.Size([3, 180, 320]) torch.Size([1, 288, 384])
+
+  0%|                                            | 1/753 [00:10<2:14:40, 10.75s/it]
+torch.Size([2, 23, 23, 40])
+torch.Size([2, 1, 23, 40])

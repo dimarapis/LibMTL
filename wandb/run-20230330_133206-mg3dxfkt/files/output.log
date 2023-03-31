@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 126, in <module>
+    main(params)
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 42, in main
+    force_cudnn_initialization()
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 21, in force_cudnn_initialization
+    torch.nn.functional.conv2d(torch.zeros(s, s, s, s, device=dev), torch.zeros(s, s, s, s, device=dev))
+RuntimeError: CUDA error: out of memory

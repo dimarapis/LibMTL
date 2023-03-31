@@ -66,6 +66,8 @@ def count_improvement(base_result, new_result, weight):
     """
     improvement = 0
     count = 0
+    print(f'base_results: {base_result}')
+    print(f'new_results: {new_result}')
     for task in list(base_result.keys()):
         computed_value = (((-1)**np.array(weight[task]))*\
                         (np.array(base_result[task])-np.array(new_result[task]))/\
@@ -76,4 +78,6 @@ def count_improvement(base_result, new_result, weight):
         print(f'task: {task}, computed_value: {computed_value}, row 1: {((-1)**np.array(weight[task]))},\
             row 2: {(np.array(base_result[task])-np.array(new_result[task]))},\
             row 3: {np.array(base_result[task])}')
+    
+    print(improvement,count)    
     return improvement/count

@@ -1,0 +1,26 @@
+========================================
+Total Params: 71891291
+Trainable Params: 71891291
+Non-trainable Params: 0
+========================================
+LOG FORMAT | segmentation_LOSS mIoU pixAcc | depth_LOSS abs_err rel_err | normal_LOSS mean median <11.25 <22.5 <30 | TIME
+Epoch 0/199
+self_multiinpout False
+753
+  0%|                                                  | 0/753 [00:00<?, ?it/s]
+
+  0%|                                                  | 0/753 [00:29<?, ?it/s]
+Traceback (most recent call last):
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 126, in <module>
+    main(params)
+  File "examples/warehouseSIM/train_warehouseSIM.py", line 118, in main
+    NYUmodel.train(nyuv2_train_loader, nyuv2_test_loader, 200)
+  File "/home/dim/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 258, in train
+    "train_dep_metrics": train_metrics_dep_dict, "train_nor_metrics": train_metrics_nor_dict},
+  File "/home/dim/mdpi_robotics/LibMTL/LibMTL/trainer.py", line 289, in test
+    self.model.eval()
+  File "/home/dim/mdpi_robotics/LibMTL/LibMTL/_record.py", line 42, in update
+    self.metrics[task].update_fun(preds[task], gts[task])
+  File "/home/dim/mdpi_robotics/LibMTL/examples/warehouseSIM/utils.py", line 49, in update_fun
+    abs_err = (torch.sum(abs_err) / torch.nonzero(binary_mask, as_tuple=False).size(0)).item()
+KeyboardInterrupt

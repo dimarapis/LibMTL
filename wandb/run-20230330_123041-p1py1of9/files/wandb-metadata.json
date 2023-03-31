@@ -1,0 +1,136 @@
+{
+    "os": "Linux-5.4.0-146-generic-x86_64-with-glibc2.17",
+    "python": "3.8.16",
+    "heartbeatAt": "2023-03-30T10:30:42.238432",
+    "startedAt": "2023-03-30T10:30:41.578776",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--weighting",
+        "EW",
+        "--arch",
+        "HPS",
+        "--dataset_path",
+        "dataset/warehouseSIM",
+        "--gpu_id",
+        "0",
+        "--scheduler",
+        "step"
+    ],
+    "state": "running",
+    "program": "examples/warehouseSIM/train_warehouseSIM.py",
+    "codePath": "examples/warehouseSIM/train_warehouseSIM.py",
+    "git": {
+        "remote": "https://github.com/dimarapis/LibMTL.git",
+        "commit": "40cf8af4eeade7645dd5d7de21c9de87a0c1f0c6"
+    },
+    "email": "dimarapis@hotmail.com",
+    "root": "/home/dim/mdpi_robotics/LibMTL",
+    "host": "dim-dtu",
+    "username": "dim",
+    "executable": "/home/dim/anaconda3/envs/libmtl/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2668.358875,
+        "min": 800.0,
+        "max": 5300.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2830.598,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 2879.418,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 3080.181,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 2326.67,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 2412.467,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 3048.834,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 2537.799,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 2607.636,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 2706.044,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 2415.175,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 2643.775,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 3085.207,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 2448.75,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 2457.392,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 2657.307,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 2556.489,
+            "min": 800.0,
+            "max": 5300.0
+        }
+    ],
+    "disk": {
+        "total": 857.1477890014648,
+        "used": 805.2011489868164
+    },
+    "gpu": "NVIDIA GeForce RTX 2070 Super with Max-Q Design",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 2070 Super with Max-Q Design",
+            "memory_total": 8370061312
+        }
+    ],
+    "memory": {
+        "total": 31.174644470214844
+    }
+}

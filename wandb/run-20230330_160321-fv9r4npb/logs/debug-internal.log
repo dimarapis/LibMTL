@@ -1,0 +1,479 @@
+2023-03-30 16:03:21,207 INFO    StreamThr :9803 [internal.py:wandb_internal():87] W&B internal server running at pid: 9803, started at: 2023-03-30 16:03:21.207301
+2023-03-30 16:03:21,208 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: status
+2023-03-30 16:03:21,211 INFO    WriterThread:9803 [datastore.py:open_for_write():85] open: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/run-fv9r4npb.wandb
+2023-03-30 16:03:21,212 DEBUG   SenderThread:9803 [sender.py:send():336] send: header
+2023-03-30 16:03:21,218 DEBUG   SenderThread:9803 [sender.py:send():336] send: run
+2023-03-30 16:03:21,817 INFO    SenderThread:9803 [dir_watcher.py:__init__():219] watching files in: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files
+2023-03-30 16:03:21,817 INFO    SenderThread:9803 [sender.py:_start_run_threads():1078] run started: fv9r4npb with start time 1680185001.20823
+2023-03-30 16:03:21,817 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:03:21,817 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:03:21,818 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: check_version
+2023-03-30 16:03:21,818 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: check_version
+2023-03-30 16:03:21,952 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: run_start
+2023-03-30 16:03:21,954 DEBUG   HandlerThread:9803 [system_info.py:__init__():31] System info init
+2023-03-30 16:03:21,954 DEBUG   HandlerThread:9803 [system_info.py:__init__():46] System info init done
+2023-03-30 16:03:21,954 INFO    HandlerThread:9803 [system_monitor.py:start():183] Starting system monitor
+2023-03-30 16:03:21,954 INFO    SystemMonitor:9803 [system_monitor.py:_start():147] Starting system asset monitoring threads
+2023-03-30 16:03:21,954 INFO    HandlerThread:9803 [system_monitor.py:probe():204] Collecting system info
+2023-03-30 16:03:21,954 INFO    SystemMonitor:9803 [interfaces.py:start():187] Started cpu monitoring
+2023-03-30 16:03:21,955 INFO    SystemMonitor:9803 [interfaces.py:start():187] Started disk monitoring
+2023-03-30 16:03:21,955 INFO    SystemMonitor:9803 [interfaces.py:start():187] Started gpu monitoring
+2023-03-30 16:03:21,956 INFO    SystemMonitor:9803 [interfaces.py:start():187] Started memory monitoring
+2023-03-30 16:03:21,956 INFO    SystemMonitor:9803 [interfaces.py:start():187] Started network monitoring
+2023-03-30 16:03:21,963 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:03:21,983 DEBUG   HandlerThread:9803 [system_info.py:probe():195] Probing system
+2023-03-30 16:03:21,986 DEBUG   HandlerThread:9803 [system_info.py:_probe_git():180] Probing git
+2023-03-30 16:03:21,992 DEBUG   HandlerThread:9803 [system_info.py:_probe_git():188] Probing git done
+2023-03-30 16:03:21,992 DEBUG   HandlerThread:9803 [system_info.py:probe():240] Probing system done
+2023-03-30 16:03:21,993 DEBUG   HandlerThread:9803 [system_monitor.py:probe():213] {'os': 'Linux-5.4.0-146-generic-x86_64-with-glibc2.17', 'python': '3.8.16', 'heartbeatAt': '2023-03-30T14:03:21.984052', 'startedAt': '2023-03-30T14:03:21.202229', 'docker': None, 'cuda': None, 'args': ('--weighting', 'EW', '--arch', 'HPS', '--dataset_path', 'dataset/warehouseSIM', '--gpu_id', '0', '--scheduler', 'step'), 'state': 'running', 'program': 'examples/warehouseSIM/train_warehouseSIM.py', 'codePath': 'examples/warehouseSIM/train_warehouseSIM.py', 'git': {'remote': 'https://github.com/dimarapis/LibMTL.git', 'commit': '40cf8af4eeade7645dd5d7de21c9de87a0c1f0c6'}, 'email': 'dimarapis@hotmail.com', 'root': '/home/dim/mdpi_robotics/LibMTL', 'host': 'dim-dtu', 'username': 'dim', 'executable': '/home/dim/anaconda3/envs/libmtl/bin/python', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 3927.9447499999997, 'min': 800.0, 'max': 5300.0}, 'cpu_freq_per_core': [{'current': 4774.676, 'min': 800.0, 'max': 5300.0}, {'current': 4471.311, 'min': 800.0, 'max': 5300.0}, {'current': 4533.213, 'min': 800.0, 'max': 5300.0}, {'current': 3683.349, 'min': 800.0, 'max': 5300.0}, {'current': 4543.827, 'min': 800.0, 'max': 5300.0}, {'current': 4152.694, 'min': 800.0, 'max': 5300.0}, {'current': 2490.557, 'min': 800.0, 'max': 5300.0}, {'current': 4405.875, 'min': 800.0, 'max': 5300.0}, {'current': 3376.198, 'min': 800.0, 'max': 5300.0}, {'current': 4297.074, 'min': 800.0, 'max': 5300.0}, {'current': 4563.165, 'min': 800.0, 'max': 5300.0}, {'current': 3563.081, 'min': 800.0, 'max': 5300.0}, {'current': 3044.973, 'min': 800.0, 'max': 5300.0}, {'current': 4460.133, 'min': 800.0, 'max': 5300.0}, {'current': 2065.667, 'min': 800.0, 'max': 5300.0}, {'current': 4421.323, 'min': 800.0, 'max': 5300.0}], 'disk': {'total': 857.1477890014648, 'used': 804.3176383972168}, 'gpu': 'NVIDIA GeForce RTX 2070 Super with Max-Q Design', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2070 Super with Max-Q Design', 'memory_total': 8370061312}], 'memory': {'total': 31.174644470214844}}
+2023-03-30 16:03:21,993 INFO    HandlerThread:9803 [system_monitor.py:probe():214] Finished collecting system info
+2023-03-30 16:03:21,993 INFO    HandlerThread:9803 [system_monitor.py:probe():217] Publishing system info
+2023-03-30 16:03:21,993 DEBUG   HandlerThread:9803 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-03-30 16:03:21,993 DEBUG   HandlerThread:9803 [system_info.py:_save_pip():67] Saving pip packages done
+2023-03-30 16:03:21,993 DEBUG   HandlerThread:9803 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-03-30 16:03:22,818 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_created():278] file/dir created: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/conda-environment.yaml
+2023-03-30 16:03:22,818 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_created():278] file/dir created: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/requirements.txt
+2023-03-30 16:03:22,819 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_created():278] file/dir created: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:03:22,924 DEBUG   HandlerThread:9803 [system_info.py:_save_conda():86] Saving conda packages done
+2023-03-30 16:03:22,924 INFO    HandlerThread:9803 [system_monitor.py:probe():219] Finished publishing system info
+2023-03-30 16:03:22,926 DEBUG   SenderThread:9803 [sender.py:send():336] send: files
+2023-03-30 16:03:22,926 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-metadata.json with policy now
+2023-03-30 16:03:22,929 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-30 16:03:22,930 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: stop_status
+2023-03-30 16:03:23,155 DEBUG   SenderThread:9803 [sender.py:send():336] send: telemetry
+2023-03-30 16:03:23,766 INFO    wandb-upload_0:9803 [upload_job.py:push():138] Uploaded file /tmp/tmpg0myxle0wandb/k143n8wd-wandb-metadata.json
+2023-03-30 16:03:23,818 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/conda-environment.yaml
+2023-03-30 16:03:23,818 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_created():278] file/dir created: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-metadata.json
+2023-03-30 16:03:23,965 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:03:25,969 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:03:26,819 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_created():278] file/dir created: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/output.log
+2023-03-30 16:03:27,151 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 16:03:27,750 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:03:27,751 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:03:27,759 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:03:27,759 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:03:27,819 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:03:27,970 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:03:28,819 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/output.log
+2023-03-30 16:03:29,285 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:03:29,286 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:03:29,286 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:03:29,286 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:03:29,819 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:03:29,972 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:03:30,819 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/output.log
+2023-03-30 16:03:30,826 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:03:30,827 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:03:30,827 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:03:30,827 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:03:31,820 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:03:31,974 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:03:32,375 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:03:32,376 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 16:03:32,376 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:03:32,377 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:03:32,377 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:03:32,820 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/output.log
+2023-03-30 16:03:32,820 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:03:33,979 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:03:34,001 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:03:34,002 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:03:34,002 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:03:34,002 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:03:34,820 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/output.log
+2023-03-30 16:03:34,821 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:03:35,589 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:03:35,589 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:03:35,589 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:03:35,590 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:03:35,821 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:03:35,981 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:03:36,821 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/output.log
+2023-03-30 16:03:37,282 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:03:37,282 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:03:37,283 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:03:37,283 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:03:37,821 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:03:37,929 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-30 16:03:37,930 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: stop_status
+2023-03-30 16:03:37,983 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:03:38,821 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/output.log
+2023-03-30 16:03:38,881 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:03:39,560 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:03:39,561 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:03:39,561 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 16:03:39,561 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:03:39,821 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:03:39,986 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:03:40,487 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:03:40,488 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:03:40,488 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:03:40,488 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:03:40,822 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/output.log
+2023-03-30 16:03:40,822 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:03:41,993 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:03:42,145 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:03:42,146 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:03:42,146 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:03:42,146 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:03:42,822 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/output.log
+2023-03-30 16:03:42,822 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:03:43,762 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:03:43,763 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:03:43,763 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:03:43,763 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:03:43,823 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:03:43,994 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:03:44,763 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 16:03:44,823 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/output.log
+2023-03-30 16:03:45,398 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:03:45,399 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:03:45,399 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:03:45,399 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:03:45,823 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:03:45,996 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:03:46,823 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/output.log
+2023-03-30 16:03:46,994 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:03:46,995 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:03:46,995 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:03:46,995 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:03:47,824 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:03:48,002 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:03:48,733 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:03:48,734 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:03:48,734 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:03:48,734 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:03:48,824 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/output.log
+2023-03-30 16:03:48,824 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:03:50,003 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:03:50,387 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 16:03:50,388 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:03:50,388 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:03:50,388 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:03:50,388 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:03:50,824 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/output.log
+2023-03-30 16:03:50,824 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:03:52,046 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:03:52,051 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:03:52,052 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:03:52,052 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:03:52,053 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:03:52,825 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/output.log
+2023-03-30 16:03:52,825 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:03:52,929 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-30 16:03:52,930 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: stop_status
+2023-03-30 16:03:53,706 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:03:54,053 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:03:54,593 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:03:54,593 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:03:54,594 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:03:54,825 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:03:55,357 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:03:55,358 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:03:55,358 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:03:55,358 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:03:55,825 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:03:56,059 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:03:56,361 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 16:03:56,826 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/output.log
+2023-03-30 16:03:57,026 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:03:58,065 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:03:58,697 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:04:00,067 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:04:00,394 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:04:02,056 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:04:02,069 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:04:03,323 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:04:03,323 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:04:03,325 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:04:03,325 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:04:03,325 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:04:03,331 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:04:03,331 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:04:03,331 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:04:03,331 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:04:03,332 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:04:03,332 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:04:03,332 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:04:03,689 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:04:03,689 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:04:03,689 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:04:03,690 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:04:03,827 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/config.yaml
+2023-03-30 16:04:03,827 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:04:04,072 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:04:04,827 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/output.log
+2023-03-30 16:04:05,324 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:04:05,325 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:04:05,325 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:04:05,326 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:04:05,828 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:04:06,079 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:04:06,828 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/output.log
+2023-03-30 16:04:06,926 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:04:06,926 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:04:06,926 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:04:06,926 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:04:07,828 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:04:07,930 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-30 16:04:07,930 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: stop_status
+2023-03-30 16:04:08,081 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:04:08,622 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:04:08,623 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 16:04:08,623 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:04:08,623 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:04:08,624 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:04:08,828 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/output.log
+2023-03-30 16:04:08,829 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:04:10,083 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:04:10,306 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:04:10,306 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:04:10,306 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:04:10,306 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:04:10,829 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/output.log
+2023-03-30 16:04:10,829 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:04:12,026 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:04:12,027 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:04:12,027 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:04:12,027 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:04:12,085 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:04:12,829 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/output.log
+2023-03-30 16:04:12,829 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:04:13,728 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:04:13,728 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 16:04:13,729 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:04:13,729 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:04:13,729 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:04:13,830 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:04:14,090 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:04:14,830 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/output.log
+2023-03-30 16:04:15,355 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:04:15,356 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:04:15,356 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:04:15,356 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:04:15,830 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:04:16,097 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:04:16,830 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/output.log
+2023-03-30 16:04:17,047 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:04:17,048 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:04:17,048 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:04:17,048 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:04:17,831 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:04:18,098 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:04:18,736 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:04:18,737 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 16:04:18,737 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:04:18,737 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:04:18,737 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:04:18,831 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/output.log
+2023-03-30 16:04:18,831 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:04:20,100 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:04:20,410 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:04:20,411 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:04:20,411 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:04:20,411 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:04:20,831 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/output.log
+2023-03-30 16:04:20,831 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:04:21,957 DEBUG   SystemMonitor:9803 [system_monitor.py:_start():161] Starting system metrics aggregation loop
+2023-03-30 16:04:21,957 DEBUG   SenderThread:9803 [sender.py:send():336] send: stats
+2023-03-30 16:04:22,086 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:04:22,087 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:04:22,087 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:04:22,088 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:04:22,170 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:04:22,832 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/output.log
+2023-03-30 16:04:22,832 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:04:22,930 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-30 16:04:22,930 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: stop_status
+2023-03-30 16:04:23,811 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:04:24,174 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:04:24,832 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/output.log
+2023-03-30 16:04:25,468 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:04:26,181 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:04:27,137 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:04:27,930 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 16:04:28,191 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:04:28,810 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:04:30,199 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:04:30,540 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:04:32,206 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:04:32,336 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:04:32,931 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 16:04:34,096 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:04:34,214 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:04:35,886 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:04:36,222 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:04:37,540 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:04:37,932 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 16:04:38,224 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:04:39,287 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-30 16:04:40,226 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:04:40,625 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-30 16:04:42,229 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:04:44,235 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:04:45,627 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 16:04:46,238 ERROR   gpu       :9803 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-30 16:04:46,257 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:04:46,257 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:04:46,257 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 16:04:46,258 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:04:46,258 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:04:46,258 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:04:46,258 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:04:46,259 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:04:46,259 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:04:46,259 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:04:46,259 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:04:46,259 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:04:46,259 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:04:46,259 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:04:46,259 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:04:46,259 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:04:46,259 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:04:46,260 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:04:46,260 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:04:46,260 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:04:46,260 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:04:46,260 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:04:46,260 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:04:46,260 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:04:46,260 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:04:46,260 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:04:46,261 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:04:46,261 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:04:46,261 DEBUG   SenderThread:9803 [sender.py:send():336] send: history
+2023-03-30 16:04:46,261 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: summary_record
+2023-03-30 16:04:46,261 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:04:46,261 DEBUG   SenderThread:9803 [sender.py:send():336] send: exit
+2023-03-30 16:04:46,261 INFO    SenderThread:9803 [sender.py:send_exit():559] handling exit code: 255
+2023-03-30 16:04:46,261 INFO    SenderThread:9803 [sender.py:send_exit():561] handling runtime: 77
+2023-03-30 16:04:46,261 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:04:46,261 INFO    SenderThread:9803 [sender.py:send_exit():567] send defer
+2023-03-30 16:04:46,262 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: poll_exit
+2023-03-30 16:04:46,262 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 16:04:46,262 INFO    HandlerThread:9803 [handler.py:handle_request_defer():170] handle defer: 0
+2023-03-30 16:04:46,262 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: defer
+2023-03-30 16:04:46,262 INFO    SenderThread:9803 [sender.py:send_request_defer():583] handle sender defer: 0
+2023-03-30 16:04:46,262 INFO    SenderThread:9803 [sender.py:transition_state():587] send defer: 1
+2023-03-30 16:04:46,262 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 16:04:46,262 INFO    HandlerThread:9803 [handler.py:handle_request_defer():170] handle defer: 1
+2023-03-30 16:04:46,262 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: defer
+2023-03-30 16:04:46,262 INFO    SenderThread:9803 [sender.py:send_request_defer():583] handle sender defer: 1
+2023-03-30 16:04:46,262 INFO    SenderThread:9803 [sender.py:transition_state():587] send defer: 2
+2023-03-30 16:04:46,262 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 16:04:46,262 INFO    HandlerThread:9803 [handler.py:handle_request_defer():170] handle defer: 2
+2023-03-30 16:04:46,262 INFO    HandlerThread:9803 [system_monitor.py:finish():193] Stopping system monitor
+2023-03-30 16:04:46,263 DEBUG   SystemMonitor:9803 [system_monitor.py:_start():168] Finished system metrics aggregation loop
+2023-03-30 16:04:46,263 DEBUG   SystemMonitor:9803 [system_monitor.py:_start():172] Publishing last batch of metrics
+2023-03-30 16:04:46,263 INFO    HandlerThread:9803 [interfaces.py:finish():199] Joined cpu monitor
+2023-03-30 16:04:46,263 INFO    HandlerThread:9803 [interfaces.py:finish():199] Joined disk monitor
+2023-03-30 16:04:46,294 INFO    HandlerThread:9803 [interfaces.py:finish():199] Joined gpu monitor
+2023-03-30 16:04:46,294 INFO    HandlerThread:9803 [interfaces.py:finish():199] Joined memory monitor
+2023-03-30 16:04:46,294 INFO    HandlerThread:9803 [interfaces.py:finish():199] Joined network monitor
+2023-03-30 16:04:46,295 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: defer
+2023-03-30 16:04:46,295 INFO    SenderThread:9803 [sender.py:send_request_defer():583] handle sender defer: 2
+2023-03-30 16:04:46,295 INFO    SenderThread:9803 [sender.py:transition_state():587] send defer: 3
+2023-03-30 16:04:46,295 DEBUG   SenderThread:9803 [sender.py:send():336] send: stats
+2023-03-30 16:04:46,295 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 16:04:46,295 INFO    HandlerThread:9803 [handler.py:handle_request_defer():170] handle defer: 3
+2023-03-30 16:04:46,295 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: defer
+2023-03-30 16:04:46,295 INFO    SenderThread:9803 [sender.py:send_request_defer():583] handle sender defer: 3
+2023-03-30 16:04:46,295 INFO    SenderThread:9803 [sender.py:transition_state():587] send defer: 4
+2023-03-30 16:04:46,295 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 16:04:46,295 INFO    HandlerThread:9803 [handler.py:handle_request_defer():170] handle defer: 4
+2023-03-30 16:04:46,296 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: defer
+2023-03-30 16:04:46,296 INFO    SenderThread:9803 [sender.py:send_request_defer():583] handle sender defer: 4
+2023-03-30 16:04:46,296 INFO    SenderThread:9803 [sender.py:transition_state():587] send defer: 5
+2023-03-30 16:04:46,296 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 16:04:46,296 INFO    HandlerThread:9803 [handler.py:handle_request_defer():170] handle defer: 5
+2023-03-30 16:04:46,296 DEBUG   SenderThread:9803 [sender.py:send():336] send: summary
+2023-03-30 16:04:46,296 INFO    SenderThread:9803 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-30 16:04:46,296 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: defer
+2023-03-30 16:04:46,296 INFO    SenderThread:9803 [sender.py:send_request_defer():583] handle sender defer: 5
+2023-03-30 16:04:46,296 INFO    SenderThread:9803 [sender.py:transition_state():587] send defer: 6
+2023-03-30 16:04:46,296 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 16:04:46,297 INFO    HandlerThread:9803 [handler.py:handle_request_defer():170] handle defer: 6
+2023-03-30 16:04:46,297 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: defer
+2023-03-30 16:04:46,297 INFO    SenderThread:9803 [sender.py:send_request_defer():583] handle sender defer: 6
+2023-03-30 16:04:46,297 INFO    SenderThread:9803 [sender.py:transition_state():587] send defer: 7
+2023-03-30 16:04:46,297 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 16:04:46,297 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 16:04:46,297 INFO    HandlerThread:9803 [handler.py:handle_request_defer():170] handle defer: 7
+2023-03-30 16:04:46,297 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: defer
+2023-03-30 16:04:46,297 INFO    SenderThread:9803 [sender.py:send_request_defer():583] handle sender defer: 7
+2023-03-30 16:04:46,837 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:04:48,266 INFO    SenderThread:9803 [sender.py:transition_state():587] send defer: 8
+2023-03-30 16:04:48,266 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 16:04:48,266 INFO    HandlerThread:9803 [handler.py:handle_request_defer():170] handle defer: 8
+2023-03-30 16:04:48,266 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: defer
+2023-03-30 16:04:48,266 INFO    SenderThread:9803 [sender.py:send_request_defer():583] handle sender defer: 8
+2023-03-30 16:04:48,283 INFO    SenderThread:9803 [sender.py:transition_state():587] send defer: 9
+2023-03-30 16:04:48,283 DEBUG   SenderThread:9803 [sender.py:send():336] send: artifact
+2023-03-30 16:04:48,285 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 16:04:48,285 INFO    HandlerThread:9803 [handler.py:handle_request_defer():170] handle defer: 9
+2023-03-30 16:04:48,838 INFO    Thread-13 :9803 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/output.log
+2023-03-30 16:04:50,628 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 16:04:51,161 INFO    wandb-upload_1:9803 [upload_job.py:push():93] Skipped uploading /home/dim/.local/share/wandb/artifacts/staging/tmpgcc5tjme
+2023-03-30 16:04:52,093 INFO    wandb-upload_0:9803 [upload_job.py:push():96] Uploaded file /home/dim/.local/share/wandb/artifacts/staging/tmpx5v4fcvc
+2023-03-30 16:04:54,020 INFO    SenderThread:9803 [sender.py:send_artifact():1428] sent artifact job-https___github.com_dimarapis_LibMTL.git_examples_warehouseSIM_train_warehouseSIM.py - {'id': 'QXJ0aWZhY3Q6NDEwMTA3MTk3', 'digest': '67b68893c0b872f9159789c54931da42', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjU5NTMwMTgz', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDEwMDQ2MDgw', 'versionIndex': 2}}, 'version': 'latest'}
+2023-03-30 16:04:54,020 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: defer
+2023-03-30 16:04:54,020 INFO    SenderThread:9803 [sender.py:send_request_defer():583] handle sender defer: 9
+2023-03-30 16:04:54,020 INFO    SenderThread:9803 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-03-30 16:04:54,020 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: status_report
+2023-03-30 16:04:54,839 INFO    SenderThread:9803 [dir_watcher.py:finish():395] scan: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files
+2023-03-30 16:04:54,839 INFO    SenderThread:9803 [dir_watcher.py:finish():409] scan save: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-metadata.json wandb-metadata.json
+2023-03-30 16:04:54,840 INFO    SenderThread:9803 [dir_watcher.py:finish():409] scan save: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/config.yaml config.yaml
+2023-03-30 16:04:54,840 INFO    SenderThread:9803 [dir_watcher.py:finish():409] scan save: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/conda-environment.yaml conda-environment.yaml
+2023-03-30 16:04:54,840 INFO    SenderThread:9803 [dir_watcher.py:finish():409] scan save: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json wandb-summary.json
+2023-03-30 16:04:54,840 INFO    SenderThread:9803 [dir_watcher.py:finish():409] scan save: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/requirements.txt requirements.txt
+2023-03-30 16:04:54,842 INFO    SenderThread:9803 [dir_watcher.py:finish():409] scan save: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/output.log output.log
+2023-03-30 16:04:54,842 INFO    SenderThread:9803 [sender.py:transition_state():587] send defer: 10
+2023-03-30 16:04:54,842 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 16:04:54,842 INFO    HandlerThread:9803 [handler.py:handle_request_defer():170] handle defer: 10
+2023-03-30 16:04:54,845 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: defer
+2023-03-30 16:04:54,845 INFO    SenderThread:9803 [sender.py:send_request_defer():583] handle sender defer: 10
+2023-03-30 16:04:54,845 INFO    SenderThread:9803 [file_pusher.py:finish():164] shutting down file pusher
+2023-03-30 16:04:55,629 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-30 16:04:55,797 INFO    wandb-upload_4:9803 [upload_job.py:push():138] Uploaded file /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/output.log
+2023-03-30 16:04:55,819 INFO    wandb-upload_1:9803 [upload_job.py:push():138] Uploaded file /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/config.yaml
+2023-03-30 16:04:56,226 INFO    wandb-upload_0:9803 [upload_job.py:push():138] Uploaded file /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/conda-environment.yaml
+2023-03-30 16:04:56,238 INFO    wandb-upload_2:9803 [upload_job.py:push():138] Uploaded file /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/wandb-summary.json
+2023-03-30 16:04:56,279 INFO    wandb-upload_3:9803 [upload_job.py:push():138] Uploaded file /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/files/requirements.txt
+2023-03-30 16:04:56,480 INFO    Thread-12 :9803 [sender.py:transition_state():587] send defer: 11
+2023-03-30 16:04:56,481 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 16:04:56,481 INFO    HandlerThread:9803 [handler.py:handle_request_defer():170] handle defer: 11
+2023-03-30 16:04:56,482 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: defer
+2023-03-30 16:04:56,482 INFO    SenderThread:9803 [sender.py:send_request_defer():583] handle sender defer: 11
+2023-03-30 16:04:56,482 INFO    SenderThread:9803 [file_pusher.py:join():169] waiting for file pusher
+2023-03-30 16:04:56,482 INFO    SenderThread:9803 [sender.py:transition_state():587] send defer: 12
+2023-03-30 16:04:56,483 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 16:04:56,483 INFO    HandlerThread:9803 [handler.py:handle_request_defer():170] handle defer: 12
+2023-03-30 16:04:56,483 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: defer
+2023-03-30 16:04:56,484 INFO    SenderThread:9803 [sender.py:send_request_defer():583] handle sender defer: 12
+2023-03-30 16:04:58,467 INFO    SenderThread:9803 [sender.py:transition_state():587] send defer: 13
+2023-03-30 16:04:58,467 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 16:04:58,467 INFO    HandlerThread:9803 [handler.py:handle_request_defer():170] handle defer: 13
+2023-03-30 16:04:58,468 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: defer
+2023-03-30 16:04:58,468 INFO    SenderThread:9803 [sender.py:send_request_defer():583] handle sender defer: 13
+2023-03-30 16:04:58,468 INFO    SenderThread:9803 [sender.py:transition_state():587] send defer: 14
+2023-03-30 16:04:58,468 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: defer
+2023-03-30 16:04:58,468 DEBUG   SenderThread:9803 [sender.py:send():336] send: final
+2023-03-30 16:04:58,468 INFO    HandlerThread:9803 [handler.py:handle_request_defer():170] handle defer: 14
+2023-03-30 16:04:58,468 DEBUG   SenderThread:9803 [sender.py:send():336] send: footer
+2023-03-30 16:04:58,468 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: defer
+2023-03-30 16:04:58,468 INFO    SenderThread:9803 [sender.py:send_request_defer():583] handle sender defer: 14
+2023-03-30 16:04:58,469 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-30 16:04:58,469 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: poll_exit
+2023-03-30 16:04:58,469 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: server_info
+2023-03-30 16:04:58,469 DEBUG   SenderThread:9803 [sender.py:send_request():363] send_request: server_info
+2023-03-30 16:04:58,471 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: get_summary
+2023-03-30 16:04:58,472 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: sampled_history
+2023-03-30 16:04:58,863 INFO    MainThread:9803 [wandb_run.py:_footer_history_summary_info():3422] rendering history
+2023-03-30 16:04:58,863 INFO    MainThread:9803 [wandb_run.py:_footer_history_summary_info():3454] rendering summary
+2023-03-30 16:04:58,864 INFO    MainThread:9803 [wandb_run.py:_footer_sync_info():3380] logging synced files
+2023-03-30 16:04:58,864 DEBUG   HandlerThread:9803 [handler.py:handle_request():144] handle_request: shutdown
+2023-03-30 16:04:58,864 INFO    HandlerThread:9803 [handler.py:finish():842] shutting down handler
+2023-03-30 16:04:59,469 INFO    WriterThread:9803 [datastore.py:close():298] close: /home/dim/mdpi_robotics/LibMTL/wandb/run-20230330_160321-fv9r4npb/run-fv9r4npb.wandb
+2023-03-30 16:04:59,863 INFO    SenderThread:9803 [sender.py:finish():1504] shutting down sender
+2023-03-30 16:04:59,863 INFO    SenderThread:9803 [file_pusher.py:finish():164] shutting down file pusher
+2023-03-30 16:04:59,863 INFO    SenderThread:9803 [file_pusher.py:join():169] waiting for file pusher
